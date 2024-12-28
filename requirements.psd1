@@ -1,4 +1,4 @@
 @{
     # Modules to import from the PowerShell Gallery
-    'Microsoft.Graph' = '5.*'
+    'Microsoft.Graph' = '2.*'
 }
