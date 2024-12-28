@@ -1,4 +1,4 @@
 @{
-    # Modules to import from the PowerShell Gallery
-    'Microsoft.Graph' = '2.*'
+    'Microsoft.Graph.Authentication' = '2.*'
+    'Microsoft.Graph.Users' = '2.*'
 }
