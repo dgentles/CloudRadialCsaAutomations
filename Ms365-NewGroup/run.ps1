@@ -2,11 +2,11 @@
 
 .SYNOPSIS
     
-    This function is to create a new group in Microsoft 365.
+    This function is to create a new Security group in Microsoft 365.
 
 .DESCRIPTION
     
-    This function is to create a new group in Microsoft 365.
+    This function is to create a new security group in Microsoft 365.
     
     The function requires the following environment variables to be set:
     
@@ -112,7 +112,8 @@ if ($resultCode -Eq 200) {
         $message = "Group Name already exists."
         $resultCode = 500
     }
-    $GroupObject = New-MgGroup -DisplayName $GroupName -Description $GroupDescription -MailEnabled:$true -MailNickname $GroupName -SecurityEnabled:$true
+    $GroupObject = New-MgGroup -DisplayName $GroupName -Description $GroupDescription -MailEnabled:$false -MailNickname $GroupName -SecurityEnabled:$true
+    # $GroupObject = New-MgGroup -DisplayName $GroupName -Description $GroupDescription -MailEnabled:$true -MailNickname $GroupName -SecurityEnabled:$true
     # $GroupObject = New-MgGroup -DisplayName $GroupName -Description $GroupDescription -MailEnabled $true -MailNickname $GroupName -SecurityEnabled $true
 
     if (-Not $GroupObject) {
