@@ -76,8 +76,10 @@ if (-not $tenantId) {
     return
 }
 
-Write-Host $tenantId
-
+Write-Host "Group Name: $GroupName"
+Write-Host "Group Description: $GroupDescription"
+Write-Host "Tenant Id: $TenantId"
+Write-Host "Ticket Id: $TicketId"
 # Define the client ID and client secret (stored in environment variables for security)
 $clientId = $env:Ms365_AuthAppId
 $clientSecret = $env:Ms365_AuthSecretId
