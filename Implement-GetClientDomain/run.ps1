@@ -70,6 +70,7 @@ if (-not $tenantId) {
     $response = @{
         status = 400
         body = "Tenant ID is required."
+        Write-Host "Function triggered However Tenant ID is empty"
     }
     Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
         StatusCode  = [HttpStatusCode]::BadRequest
@@ -78,6 +79,8 @@ if (-not $tenantId) {
     })
     return
 }
+
+Write-Host $tenantID
 
 # Define the client ID and client secret (stored in environment variables for security)
 $clientId = $env:Ms365_AuthAppId
@@ -107,14 +110,14 @@ $endpoint = "https://graph.microsoft.com/v1.0/domains"
 $response = Invoke-RestMethod -Uri $endpoint -Headers $headers -Method Get
 
 # Find the default domain
-$defaultDomain = $response.value | Where-Object { $_.isDefault -eq $true }
+$ClientDomain = $response.value | Where-Object { $_.isDefault -eq $true }
 
 # Prepare the response
-if ($defaultDomain) {
+if ($ClientDomain) {
     $response = @{
         status = 200
         body = @{
-            DefaultDomain = $defaultDomain.id
+            ClientDomain = $ClientDomain.id
         }
     }
 } else {
@@ -123,7 +126,7 @@ if ($defaultDomain) {
         body = "Default domain not found."
     }
 }
-
+Write-Host "ClientDomain =" $ClientDomain.id
 # Return the response
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
     StatusCode  = [HttpStatusCode]::OK
