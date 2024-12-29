@@ -1,3 +1,40 @@
+<#
+This Azure Function PowerShell script performs the following tasks:
+
+Initialization:
+
+Imports the System.Net namespace.
+Defines parameters $Request and $TriggerMetadata.
+Sets up variables for the transport rule name, recipient addresses, SCL value, and result code.
+Security Check:
+
+Validates the security key from the request headers against an environment variable.
+Input Validation:
+
+Checks if the ClientDomain is provided and trims it.
+Sets a default value for TicketId if not provided.
+Logging:
+
+Logs the client domain and ticket ID.
+Exchange Online Connection:
+
+If the result code is 200, it attempts to connect to Exchange Online using an access token obtained via client credentials.
+The connection can be made using managed identity, user principal name, or delegated organization (commented out options).
+Transport Rule Check and Creation:
+
+Checks if the transport rule "CF_Managed - Whitelist Cloudfirst Users" exists.
+If the rule does not exist, it creates the rule with specified recipient addresses, sender condition, and SCL value.
+Response Construction:
+
+Constructs a response body with a message, ticket ID, result code, and status.
+Sends the response with a status code of 200 and content type of JSON.
+Cleanup:
+
+Disconnects from Exchange Online.
+This script ensures that a specific mail flow rule is present in Exchange Online, creating it if necessary, and provides a structured response based on the operation's success. If you have any questions or need further details, feel free to ask!
+
+#>
+
 using namespace System.Net
 
 param($Request, $TriggerMetadata)
