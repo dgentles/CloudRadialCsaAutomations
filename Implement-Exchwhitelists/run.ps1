@@ -1,5 +1,7 @@
 <#
-This Azure Function PowerShell script performs the following tasks:
+This Azure Function PowerShell script is to create a transport rule that whitelists cloudfirst addresses
+
+it performs the following tasks:
 
 Initialization:
 
