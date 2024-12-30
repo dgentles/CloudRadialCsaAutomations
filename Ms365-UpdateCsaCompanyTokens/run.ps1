@@ -85,7 +85,9 @@ write-host $base64AuthInfo
 }
 
 #$companyId = $Request.Body.CompanyId
-$companyId = $Request.Body.Ticket.Questions.find(question => question.Id === "CompanyId").Value;
+$companyId = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "CompanyId" }).Value
+
+#$companyId = $Request.Body.Ticket.Questions.find(question => question.Id === "CompanyId").Value; - Error Java Script Code
 $tenantId = $Request.Body.Company.CompanyTenantId
 $SecurityKey = $env:SecurityKey
 Write-Host "The Company ID is: $companyId."
