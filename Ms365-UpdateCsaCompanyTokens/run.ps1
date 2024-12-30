@@ -131,8 +131,15 @@ $domainNames = $domains | Select-Object -ExpandProperty Id
 $domainNames = $domainNames | Sort-Object
 
 $domainNamesString = $domainNames -join ","
+$primaryDomain = $domains | Where-Object { $_.IsDefault -eq $true }
 
+if ($primaryDomain) {
+    Write-Host "Primary Domain: $($primaryDomain.Id)"
+} else {
+    Write-Host "No primary domain found."
+}
 Set-CloudRadialToken -Token "CompanyDomains" -AppId ${env:CloudRadialCsa_ApiPublicKey} -SecretId ${env:CloudRadialCsa_ApiPrivateKey} -CompanyId $companyId -GroupList $domainNamesString
+Set-CloudRadialToken -Token "CompanyPrimaryDomain" -AppId ${env:CloudRadialCsa_ApiPublicKey} -SecretId ${env:CloudRadialCsa_ApiPrivateKey} -CompanyId $companyId -GroupList $primaryDomain
 
 Write-Host "Updated CompanyDomains for Company Id: $companyId."
 
