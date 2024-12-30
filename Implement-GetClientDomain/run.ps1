@@ -56,8 +56,8 @@ Write-Host Req.Body
 
 # Extract the tenant ID from the request body
 #$tenantId = $Request.Body.TenantId
-$tenantId = $Request.Body.CompanyTenantId
-tenantId = req.body.Company.CompanyTenantId;
+$TenantId = $Request.Body.Company.CompanyTenantId
+#$tenantId = req.body.Company.CompanyTenantId
 $SecurityKey = $env:SecurityKey
 
 if ($SecurityKey -and $SecurityKey -ne $Request.Headers.SecurityKey) {
@@ -66,7 +66,7 @@ if ($SecurityKey -and $SecurityKey -ne $Request.Headers.SecurityKey) {
 }
 
 # Validate the tenant ID
-if (-not $tenantId) {
+if (-not $TenantId) {
     Write-Host "Function triggered, however Tenant ID is empty"
     $response = @{
         status = 400
