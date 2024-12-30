@@ -50,14 +50,12 @@ param($Request, $TriggerMetadata)
 
 # Log the function trigger
 Write-Host "Function triggered to get default domain for tenant."
-Write-Host $Request.Body
-Write-Host Request.Body
-Write-Host Req.Body
+
 
 # Extract the tenant ID from the request body
-#$tenantId = $Request.Body.TenantId
 $TenantId = $Request.Body.Company.CompanyTenantId
-#$tenantId = req.body.Company.CompanyTenantId
+$TicktId = $Request.Body.Ticket.TicketId
+
 $SecurityKey = $env:SecurityKey
 
 if ($SecurityKey -and $SecurityKey -ne $Request.Headers.SecurityKey) {
