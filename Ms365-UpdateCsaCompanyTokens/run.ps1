@@ -84,10 +84,11 @@ write-host $base64AuthInfo
     Write-Host "API response: $($response | ConvertTo-Json -Depth 4)"
 }
 
-$companyId = $Request.Body.CompanyId
-$tenantId = $Request.Body.TenantId
+#$companyId = $Request.Body.CompanyId
+$companyId = $Request.Body.Ticket.Questions.find(question => question.Id === "CompanyId").Value;
+$tenantId = $Request.Body.Company.CompanyTenantId
 $SecurityKey = $env:SecurityKey
-
+Write-Host "The Company ID is: $companyId."
 if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
     Write-Host "Invalid security key"
     break;
