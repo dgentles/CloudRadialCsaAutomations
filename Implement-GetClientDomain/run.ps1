@@ -53,7 +53,8 @@ Write-Host "Function triggered to get default domain for tenant."
 Write-Host $Request.Body
 
 # Extract the tenant ID from the request body
-$tenantId = $Request.Body.TenantId
+#$tenantId = $Request.Body.TenantId
+$tenantId = $Request.Body.CompanyTenantId
 $SecurityKey = $env:SecurityKey
 
 if ($SecurityKey -and $SecurityKey -ne $Request.Headers.SecurityKey) {
