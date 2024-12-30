@@ -54,7 +54,7 @@ Write-Host "Function triggered to get default domain for tenant."
 
 # Extract the tenant ID from the request body
 $TenantId = $Request.Body.Company.CompanyTenantId
-$TicktId = $Request.Body.Ticket.TicketId
+$TicketId = $Request.Body.Ticket.TicketId
 
 $SecurityKey = $env:SecurityKey
 
@@ -117,6 +117,7 @@ if ($ClientDomain) {
         status = 200
         body = @{
             ClientDomain = $ClientDomain.id
+            TicketID = $TicketId
         }
     }
     Write-Host "ClientDomain =" $ClientDomain.id
