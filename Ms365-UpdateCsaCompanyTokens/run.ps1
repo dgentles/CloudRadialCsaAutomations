@@ -140,6 +140,7 @@ if ($primaryDomain) {
 }
 Set-CloudRadialToken -Token "CompanyDomains" -AppId ${env:CloudRadialCsa_ApiPublicKey} -SecretId ${env:CloudRadialCsa_ApiPrivateKey} -CompanyId $companyId -GroupList $domainNamesString
 Set-CloudRadialToken -Token "CompanyPrimaryDomain" -AppId ${env:CloudRadialCsa_ApiPublicKey} -SecretId ${env:CloudRadialCsa_ApiPrivateKey} -CompanyId $companyId -GroupList $primaryDomain
+Set-CloudRadialToken -Token "CompanyId" -AppId ${env:CloudRadialCsa_ApiPublicKey} -SecretId ${env:CloudRadialCsa_ApiPrivateKey} -CompanyId $companyId -GroupList $CompanyId
 
 Write-Host "Updated CompanyDomains for Company Id: $companyId."
 
