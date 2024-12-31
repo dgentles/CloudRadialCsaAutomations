@@ -64,7 +64,7 @@ if (-Not $ClientDomain) {
     $resultCode = 500
 }
 else {
-    $ClientDomain = $GroupName.Trim()
+    $ClientDomain = $ClientDomain.Trim()
 }
 
 if (-Not $TicketId) {
