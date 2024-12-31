@@ -61,7 +61,7 @@ if ($null -ne $rule) {
     # Create the mail flow rule
     New-TransportRule -Name $ruleName `
         -RecipientAddressContainsWords $recipientAddresses `
-        -SenderIsExternal `
+        -FromScope NotInOrganization `
         -SetSCL $sclValue
 }
 
