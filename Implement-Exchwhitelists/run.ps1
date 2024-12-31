@@ -47,7 +47,9 @@ $recipientAddresses = @("ask@cloudfirstinc.com", "dgentles@cloudfirstinc.com", "
 $sclValue = -1
 $resultCode = 200
 $message = ""
-$ClientDomain = $Request.Body.ClientDomain
+$ClientDomain = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "ClientDomain" }).Value
+
+#$ClientDomain = $Request.Body.ClientDomain
 $TenantId = $Request.Body.TenantId
 $TicketId = $Request.Body.TicketId
 $SecurityKey = $env:SecurityKey
