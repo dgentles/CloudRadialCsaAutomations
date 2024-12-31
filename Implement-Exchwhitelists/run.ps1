@@ -9,6 +9,7 @@ $sclValue = -1
 $resultCode = 200
 $message = ""
 $ClientDomain = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "ClientDomain" }).Value
+$Cleanup = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "Cleanup" }).Value
 
 $TenantId = $Request.Body.Company.CompanyTenantId
 #$TenantId = $env:Ms365_TenantId
@@ -53,16 +54,26 @@ if ($resultCode -Eq 200) {
 # Check if the transport rule exists
 $rule = Get-TransportRule -Identity $ruleName -ErrorAction SilentlyContinue
 
-# Output the result
-if ($null -ne $rule) {
-    Write-Output "Transport rule '$ruleName' exists."
+if ($cleanup -eq "yes") {
+    if ($null -ne $rule) {
+        # Delete the transport rule
+        Remove-TransportRule -Identity $ruleName -Confirm:$false
+        Write-Output "Transport rule '$ruleName' deleted."
+    } else {
+        Write-Output "Transport rule '$ruleName' does not exist, nothing to delete."
+    }
 } else {
-    Write-Output "Transport rule '$ruleName' does not exist."
-    # Create the mail flow rule
-    New-TransportRule -Name $ruleName `
-        -RecipientAddressContainsWords $recipientAddresses `
-        -FromScope NotInOrganization `
-        -SetSCL $sclValue
+    # Output the result
+    if ($null -ne $rule) {
+        Write-Output "Transport rule '$ruleName' exists."
+    } else {
+        Write-Output "Transport rule '$ruleName' does not exist."
+        # Create the mail flow rule
+        New-TransportRule -Name $ruleName `
+            -RecipientAddressContainsWords $recipientAddresses `
+            -FromScope NotInOrganization `
+            -SetSCL $sclValue
+    }
 }
 
 $body = @{
