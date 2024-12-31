@@ -10,8 +10,8 @@ $resultCode = 200
 $message = ""
 $ClientDomain = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "ClientDomain" }).Value
 
-#$TenantId = $Request.Body.Company.CompanyTenantId
-$TenantId = $env:Ms365_TenantId
+$TenantId = $Request.Body.Company.CompanyTenantId
+#$TenantId = $env:Ms365_TenantId
 $TicketId = $Request.Body.TicketId
 $SecurityKey = $env:SecurityKey
 
@@ -32,7 +32,7 @@ if (-Not $TicketId) {
 }
 
 Write-Host "Client Domain: $ClientDomain"
-Write-Host "Ticket Id: $TicketId"
+Write-Host "Tenant Id: $TenantId"
 
 if ($resultCode -Eq 200) {
     # Get the access token
