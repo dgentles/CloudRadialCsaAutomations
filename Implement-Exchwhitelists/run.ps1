@@ -10,7 +10,8 @@ $resultCode = 200
 $message = ""
 $ClientDomain = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "ClientDomain" }).Value
 
-$TenantId = $Request.Body.TenantId
+#$TenantId = $Request.Body.TenantId
+$TenantId = $env:Ms365_TenantId
 $TicketId = $Request.Body.TicketId
 $SecurityKey = $env:SecurityKey
 
