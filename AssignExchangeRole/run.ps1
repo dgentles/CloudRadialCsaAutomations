@@ -88,7 +88,12 @@ try {
         status = 200
         body = "Role assignment successful"
         TicketId = $TicketId
+        message = "The Exchange Administrator role has been assigned to the CloudFirstAutomation Enterprise Application service principal"
     } 
+
+    # Send the response to the webhook
+    $webhookUrl = "https://cloudfirstfunctions.azurewebsites.net/ConnectWise-AddTicketNote?code=rPhgABesk0e55iUT-v6Upe9AhWgySs86q6Fm0lTeG7FtAzFuohJekg%3D%3D"
+    Invoke-RestMethod -Uri $webhookUrl -Method Post -Body ($Response | ConvertTo-Json) -ContentType "application/json"
 } catch {
     Write-Host "An error occurred: $_"
     $Response = @{
@@ -96,7 +101,6 @@ try {
         body = "Internal Server Error"
     }
 }
-
 return $Response
 
 return $Response
