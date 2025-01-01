@@ -50,7 +50,7 @@ using namespace System.Net
 param($Request, $TriggerMetadata)
 
 # Import the required module
-Import-Module Microsoft.Graph
+# Import-Module Microsoft.Graph
 
 # Define the variables
 $AppID = $env:Ms365_AuthAppId
