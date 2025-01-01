@@ -1,4 +1,4 @@
-<# 
+<#
 
 .SYNOPSIS
     
@@ -61,17 +61,42 @@ if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
     break;
 }
 
+try {
+    $secure365Password = ConvertTo-SecureString -String $env:Ms365_AuthSecretId -AsPlainText -Force
+    $credential365 = New-Object System.Management.Automation.PSCredential($env:Ms365_AuthAppId, $secure365Password)
 
-$secure365Password = ConvertTo-SecureString -String $env:Ms365_AuthSecretId -AsPlainText -Force
-$credential365 = New-Object System.Management.Automation.PSCredential($env:Ms365_AuthAppId, $secure365Password)
+    Connect-MgGraph -ClientSecretCredential $credential365 -TenantId $TenantID -Scopes "RoleManagement.ReadWrite.Directory", "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
 
-Connect-MgGraph -ClientSecretCredential $credential365 -TenantId $TenantId -Scopes "RoleManagement.ReadWrite.Directory", "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
+    # Get the role definition ID for the Exchange Administrator role
+    $roleDefinitions = Get-MgRoleManagementDirectoryRoleDefinition -Filter "displayName eq '$RoleName'"
+    if ($null -eq $roleDefinitions -or $roleDefinitions.Count -eq 0) {
+        throw "Role definition not found for $RoleName"
+    }
+    $roleDefinition = $roleDefinitions[0]
+    $roleDefinitionId = $roleDefinition.Id
 
+    # Get the service principal ID for the application
+    $servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '$AppID'"
+    $servicePrincipalId = $servicePrincipal.Id
 
-# Get the role definition ID for the Exchange Administrator role
-$roleDefinition = Get-MgRoleManagementDirectoryRoleDefinition -Filter "displayName eq '$RoleName'"
-$roleDefinitionId = $roleDefinition.Id
+    # Assign the role to the service principal in the remote tenant
+    New-MgRoleManagementDirectoryRoleAssignment -PrincipalId $servicePrincipalId -RoleDefinitionId $roleDefinitionId -DirectoryScopeId "/" -DirectoryScopeTenantId $TenantID
 
+<<<<<<< HEAD
+    # Output bindings are passed out via return value.
+   $Response = @{
+        status = 200
+        body = "Role assignment successful"
+        TicketId = $TicketId
+    
+    } 
+} catch {
+    Write-Host "An error occurred: $_"
+    $Response = @{
+        status = 500
+        body = "Internal Server Error"
+    }
+=======
 # Get the service principal ID for the application
 $servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '$AppID'"
 $servicePrincipalId = $servicePrincipal.Id
@@ -84,6 +109,7 @@ $Response = @{
     status = 200
     body = "Role assignment successful"
     TicketId = $TicketId
+>>>>>>> a2c383dfe03bc240e5edb2893b56b119c72049c5
 }
 
 return $Response
