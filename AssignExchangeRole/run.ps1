@@ -65,8 +65,9 @@ try {
     $secure365Password = ConvertTo-SecureString -String $env:Ms365_AuthSecretId -AsPlainText -Force
     $credential365 = New-Object System.Management.Automation.PSCredential($env:Ms365_AuthAppId, $secure365Password)
 
-    # Use Connect-MgGraph with ClientId and ClientSecret explicitly
-    Connect-MgGraph -ClientId $env:Ms365_AuthAppId -ClientSecret $env:Ms365_AuthSecretId -TenantId $TenantID -Scopes "RoleManagement.ReadWrite.Directory", "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
+    # Use Connect-MgGraph with ClientSecretCredential
+    $clientSecretCredential = New-Object Microsoft.Graph.Auth.ClientSecretCredential($env:Ms365_TenantId, $env:Ms365_AuthAppId, $env:Ms365_AuthSecretId)
+    Connect-MgGraph -ClientSecretCredential $clientSecretCredential -Scopes "RoleManagement.ReadWrite.Directory", "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
 
     # Get the role definition ID for the Exchange Administrator role
     $roleDefinitions = Get-MgRoleManagementDirectoryRoleDefinition -Filter "displayName eq '$RoleName'"
