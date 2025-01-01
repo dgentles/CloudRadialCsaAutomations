@@ -82,13 +82,11 @@ try {
     # Assign the role to the service principal in the remote tenant
     New-MgRoleManagementDirectoryRoleAssignment -PrincipalId $servicePrincipalId -RoleDefinitionId $roleDefinitionId -DirectoryScopeId "/" -DirectoryScopeTenantId $TenantID
 
-
     # Output bindings are passed out via return value.
-   $Response = @{
+    $Response = @{
         status = 200
         body = "Role assignment successful"
         TicketId = $TicketId
-    
     } 
 } catch {
     Write-Host "An error occurred: $_"
@@ -96,20 +94,6 @@ try {
         status = 500
         body = "Internal Server Error"
     }
-=======
-# Get the service principal ID for the application
-$servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '$AppID'"
-$servicePrincipalId = $servicePrincipal.Id
-
-# Assign the role to the service principal in the remote tenant
-New-MgRoleManagementDirectoryRoleAssignment -PrincipalId $servicePrincipalId -RoleDefinitionId $roleDefinitionId -DirectoryScopeId "/" -DirectoryScopeTenantId $TenantID
-
-# Output bindings are passed out via return value.
-$Response = @{
-    status = 200
-    body = "Role assignment successful"
-    TicketId = $TicketId
-
 }
 
 return $Response
