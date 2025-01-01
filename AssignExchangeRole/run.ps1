@@ -45,8 +45,9 @@
     ResultStatus - "Success" or "Failure"
 
 #>
-# Input bindings are passed in via param block.
-param($Request)
+using namespace System.Net
+
+param($Request, $TriggerMetadata)
 
 # Define the variables
 $AppID = $env:Ms365_AuthAppId
