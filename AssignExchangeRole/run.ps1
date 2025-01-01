@@ -58,14 +58,15 @@ $SecurityKey = $env:SecurityKey
 
 if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
     Write-Host "Invalid security key"
-    break;
+    break
 }
 
 try {
     $secure365Password = ConvertTo-SecureString -String $env:Ms365_AuthSecretId -AsPlainText -Force
     $credential365 = New-Object System.Management.Automation.PSCredential($env:Ms365_AuthAppId, $secure365Password)
 
-    Connect-MgGraph -ClientSecretCredential $credential365 -TenantId $TenantID
+    # Use Connect-MgGraph with ClientId and ClientSecret explicitly
+    Connect-MgGraph -ClientId $env:Ms365_AuthAppId -ClientSecret $env:Ms365_AuthSecretId -TenantId $TenantID -Scopes "RoleManagement.ReadWrite.Directory", "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
 
     # Get the role definition ID for the Exchange Administrator role
     $roleDefinitions = Get-MgRoleManagementDirectoryRoleDefinition -Filter "displayName eq '$RoleName'"
@@ -95,5 +96,7 @@ try {
         body = "Internal Server Error"
     }
 }
+
+return $Response
 
 return $Response
