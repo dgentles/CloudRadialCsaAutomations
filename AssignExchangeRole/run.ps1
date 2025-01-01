@@ -52,8 +52,8 @@ param($Request, $TriggerMetadata)
 # Define the variables
 $AppID = $env:Ms365_AuthAppId
 $RoleName = "Exchange Administrator"
-$TenantID = "remote-tenant-id"
-$TicketId = $Request.Body.TicketId
+$TenantID = $Request.Body.Company.CompanyTenantId
+$TicketId = $Request.Body.Ticket.TicketId
 $SecurityKey = $env:SecurityKey
 
 if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
@@ -82,7 +82,7 @@ try {
     # Assign the role to the service principal in the remote tenant
     New-MgRoleManagementDirectoryRoleAssignment -PrincipalId $servicePrincipalId -RoleDefinitionId $roleDefinitionId -DirectoryScopeId "/" -DirectoryScopeTenantId $TenantID
 
-<<<<<<< HEAD
+
     # Output bindings are passed out via return value.
    $Response = @{
         status = 200
@@ -109,7 +109,7 @@ $Response = @{
     status = 200
     body = "Role assignment successful"
     TicketId = $TicketId
->>>>>>> a2c383dfe03bc240e5edb2893b56b119c72049c5
+
 }
 
 return $Response
