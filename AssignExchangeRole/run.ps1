@@ -49,6 +49,9 @@ using namespace System.Net
 
 param($Request, $TriggerMetadata)
 
+# Import the required module
+Import-Module Microsoft.Graph
+
 # Define the variables
 $AppID = $env:Ms365_AuthAppId
 $RoleName = "Exchange Administrator"
@@ -66,7 +69,7 @@ try {
     $credential365 = New-Object System.Management.Automation.PSCredential($env:Ms365_AuthAppId, $secure365Password)
 
     # Use Connect-MgGraph with ClientSecretCredential
-    $clientSecretCredential = New-Object Microsoft.Graph.Auth.ClientSecretCredential($env:Ms365_TenantId, $env:Ms365_AuthAppId, $env:Ms365_AuthSecretId)
+    $clientSecretCredential = [Microsoft.Graph.PowerShell.Authentication.ClientSecretCredential]::new($env:Ms365_TenantId, $env:Ms365_AuthAppId, $env:Ms365_AuthSecretId)
     Connect-MgGraph -ClientSecretCredential $clientSecretCredential -Scopes "RoleManagement.ReadWrite.Directory", "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
 
     # Get the role definition ID for the Exchange Administrator role
