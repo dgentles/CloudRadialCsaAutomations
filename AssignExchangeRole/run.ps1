@@ -82,6 +82,7 @@ New-MgRoleManagementDirectoryRoleAssignment -PrincipalId $servicePrincipalId -Ro
 $Response = @{
     status = 200
     body = "Role assignment successful"
+    TicketId = $TicketId
 }
 
 return $Response
