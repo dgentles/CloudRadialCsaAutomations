@@ -1,0 +1,468 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.CloudCommunications</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:26:46-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:00:20.8492548-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-MgCommunicationCallLargeGalleryView</S>
+                <S>Clear-MgCommunicationPresence</S>
+                <S>Clear-MgCommunicationPresenceUserPreferredPresence</S>
+                <S>Get-MgCommunicationCall</S>
+                <S>Get-MgCommunicationCallAudioRoutingGroup</S>
+                <S>Get-MgCommunicationCallAudioRoutingGroupCount</S>
+                <S>Get-MgCommunicationCallContentSharingSession</S>
+                <S>Get-MgCommunicationCallContentSharingSessionCount</S>
+                <S>Get-MgCommunicationCallCount</S>
+                <S>Get-MgCommunicationCallOperation</S>
+                <S>Get-MgCommunicationCallOperationCount</S>
+                <S>Get-MgCommunicationCallParticipant</S>
+                <S>Get-MgCommunicationCallParticipantCount</S>
+                <S>Get-MgCommunicationCallRecord</S>
+                <S>Get-MgCommunicationCallRecordCount</S>
+                <S>Get-MgCommunicationCallRecordOrganizerV2</S>
+                <S>Get-MgCommunicationCallRecordParticipant</S>
+                <S>Get-MgCommunicationCallRecordParticipantV2</S>
+                <S>Get-MgCommunicationCallRecordSession</S>
+                <S>Get-MgCommunicationCallRecordSessionCount</S>
+                <S>Get-MgCommunicationCallRecordSessionSegmentCount</S>
+                <S>Get-MgCommunicationOnlineMeeting</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReportCount</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendeeReport</S>
+                <S>Get-MgCommunicationOnlineMeetingCount</S>
+                <S>Get-MgCommunicationOnlineMeetingRecording</S>
+                <S>Get-MgCommunicationOnlineMeetingRecordingContent</S>
+                <S>Get-MgCommunicationOnlineMeetingRecordingCount</S>
+                <S>Get-MgCommunicationOnlineMeetingRecordingDelta</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscript</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptContent</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptCount</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptDelta</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptMetadataContent</S>
+                <S>Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl</S>
+                <S>Get-MgCommunicationPresence</S>
+                <S>Get-MgCommunicationPresenceByUserId</S>
+                <S>Get-MgCommunicationPresenceCount</S>
+                <S>Get-MgUserOnlineMeeting</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReport</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReportCount</S>
+                <S>Get-MgUserOnlineMeetingAttendeeReport</S>
+                <S>Get-MgUserOnlineMeetingCount</S>
+                <S>Get-MgUserOnlineMeetingRecording</S>
+                <S>Get-MgUserOnlineMeetingRecordingContent</S>
+                <S>Get-MgUserOnlineMeetingRecordingCount</S>
+                <S>Get-MgUserOnlineMeetingTranscript</S>
+                <S>Get-MgUserOnlineMeetingTranscriptContent</S>
+                <S>Get-MgUserOnlineMeetingTranscriptCount</S>
+                <S>Get-MgUserOnlineMeetingTranscriptMetadataContent</S>
+                <S>Get-MgUserPresence</S>
+                <S>Invoke-MgAnswerCommunicationCall</S>
+                <S>Invoke-MgCreateOrGetCommunicationOnlineMeeting</S>
+                <S>Invoke-MgInviteCommunicationCallParticipant</S>
+                <S>Invoke-MgKeepCommunicationCallAlive</S>
+                <S>Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality</S>
+                <S>Invoke-MgMuteCommunicationCall</S>
+                <S>Invoke-MgMuteCommunicationCallParticipant</S>
+                <S>Invoke-MgPlayCommunicationCallPrompt</S>
+                <S>Invoke-MgRecordCommunicationCallResponse</S>
+                <S>Invoke-MgRedirectCommunicationCall</S>
+                <S>Invoke-MgRejectCommunicationCall</S>
+                <S>Invoke-MgSubscribeCommunicationCallToTone</S>
+                <S>Invoke-MgUnmuteCommunicationCall</S>
+                <S>Move-MgCommunicationCall</S>
+                <S>New-MgCommunicationCall</S>
+                <S>New-MgCommunicationCallAudioRoutingGroup</S>
+                <S>New-MgCommunicationCallContentSharingSession</S>
+                <S>New-MgCommunicationCallOperation</S>
+                <S>New-MgCommunicationCallParticipant</S>
+                <S>New-MgCommunicationCallRecordParticipantV2</S>
+                <S>New-MgCommunicationCallRecordSession</S>
+                <S>New-MgCommunicationOnlineMeeting</S>
+                <S>New-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>New-MgCommunicationOnlineMeetingRecording</S>
+                <S>New-MgCommunicationOnlineMeetingTranscript</S>
+                <S>New-MgCommunicationPresence</S>
+                <S>New-MgUserOnlineMeeting</S>
+                <S>New-MgUserOnlineMeetingAttendanceReport</S>
+                <S>New-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>New-MgUserOnlineMeetingRecording</S>
+                <S>New-MgUserOnlineMeetingTranscript</S>
+                <S>Remove-MgCommunicationCall</S>
+                <S>Remove-MgCommunicationCallAudioRoutingGroup</S>
+                <S>Remove-MgCommunicationCallContentSharingSession</S>
+                <S>Remove-MgCommunicationCallOperation</S>
+                <S>Remove-MgCommunicationCallParticipant</S>
+                <S>Remove-MgCommunicationCallRecordOrganizerV2</S>
+                <S>Remove-MgCommunicationCallRecordParticipantV2</S>
+                <S>Remove-MgCommunicationCallRecordSession</S>
+                <S>Remove-MgCommunicationOnlineMeeting</S>
+                <S>Remove-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Remove-MgCommunicationOnlineMeetingAttendeeReport</S>
+                <S>Remove-MgCommunicationOnlineMeetingRecording</S>
+                <S>Remove-MgCommunicationOnlineMeetingRecordingContent</S>
+                <S>Remove-MgCommunicationOnlineMeetingTranscript</S>
+                <S>Remove-MgCommunicationOnlineMeetingTranscriptContent</S>
+                <S>Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent</S>
+                <S>Remove-MgCommunicationPresence</S>
+                <S>Remove-MgUserOnlineMeeting</S>
+                <S>Remove-MgUserOnlineMeetingAttendanceReport</S>
+                <S>Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Remove-MgUserOnlineMeetingAttendeeReport</S>
+                <S>Remove-MgUserOnlineMeetingRecording</S>
+                <S>Remove-MgUserOnlineMeetingRecordingContent</S>
+                <S>Remove-MgUserOnlineMeetingTranscript</S>
+                <S>Remove-MgUserOnlineMeetingTranscriptContent</S>
+                <S>Remove-MgUserOnlineMeetingTranscriptMetadataContent</S>
+                <S>Remove-MgUserPresence</S>
+                <S>Rename-MgCommunicationCallScreenSharingRole</S>
+                <S>Send-MgCommunicationCallDtmfTone</S>
+                <S>Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm</S>
+                <S>Send-MgCommunicationOnlineMeetingVirtualAppointmentSm</S>
+                <S>Set-MgCommunicationOnlineMeetingAttendeeReport</S>
+                <S>Set-MgCommunicationOnlineMeetingRecordingContent</S>
+                <S>Set-MgCommunicationOnlineMeetingTranscriptContent</S>
+                <S>Set-MgCommunicationOnlineMeetingTranscriptMetadataContent</S>
+                <S>Set-MgCommunicationPresence</S>
+                <S>Set-MgCommunicationPresenceStatusMessage</S>
+                <S>Set-MgCommunicationPresenceUserPreferredPresence</S>
+                <S>Set-MgUserOnlineMeetingAttendeeReport</S>
+                <S>Set-MgUserOnlineMeetingRecordingContent</S>
+                <S>Set-MgUserOnlineMeetingTranscriptContent</S>
+                <S>Set-MgUserOnlineMeetingTranscriptMetadataContent</S>
+                <S>Start-MgCommunicationCallParticipantHoldMusic</S>
+                <S>Stop-MgCommunicationCallMediaProcessing</S>
+                <S>Stop-MgCommunicationCallParticipantHoldMusic</S>
+                <S>Update-MgCommunicationCallAudioRoutingGroup</S>
+                <S>Update-MgCommunicationCallContentSharingSession</S>
+                <S>Update-MgCommunicationCallOperation</S>
+                <S>Update-MgCommunicationCallParticipant</S>
+                <S>Update-MgCommunicationCallRecordingStatus</S>
+                <S>Update-MgCommunicationCallRecordOrganizerV2</S>
+                <S>Update-MgCommunicationCallRecordParticipantV2</S>
+                <S>Update-MgCommunicationCallRecordSession</S>
+                <S>Update-MgCommunicationOnlineMeeting</S>
+                <S>Update-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Update-MgCommunicationOnlineMeetingRecording</S>
+                <S>Update-MgCommunicationOnlineMeetingTranscript</S>
+                <S>Update-MgCommunicationPresence</S>
+                <S>Update-MgUserOnlineMeeting</S>
+                <S>Update-MgUserOnlineMeetingAttendanceReport</S>
+                <S>Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Update-MgUserOnlineMeetingRecording</S>
+                <S>Update-MgUserOnlineMeetingTranscript</S>
+                <S>Update-MgUserPresence</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-MgCommunicationCallLargeGalleryView</S>
+                <S>Clear-MgCommunicationPresence</S>
+                <S>Clear-MgCommunicationPresenceUserPreferredPresence</S>
+                <S>Get-MgCommunicationCall</S>
+                <S>Get-MgCommunicationCallAudioRoutingGroup</S>
+                <S>Get-MgCommunicationCallAudioRoutingGroupCount</S>
+                <S>Get-MgCommunicationCallContentSharingSession</S>
+                <S>Get-MgCommunicationCallContentSharingSessionCount</S>
+                <S>Get-MgCommunicationCallCount</S>
+                <S>Get-MgCommunicationCallOperation</S>
+                <S>Get-MgCommunicationCallOperationCount</S>
+                <S>Get-MgCommunicationCallParticipant</S>
+                <S>Get-MgCommunicationCallParticipantCount</S>
+                <S>Get-MgCommunicationCallRecord</S>
+                <S>Get-MgCommunicationCallRecordCount</S>
+                <S>Get-MgCommunicationCallRecordOrganizerV2</S>
+                <S>Get-MgCommunicationCallRecordParticipant</S>
+                <S>Get-MgCommunicationCallRecordParticipantV2</S>
+                <S>Get-MgCommunicationCallRecordSession</S>
+                <S>Get-MgCommunicationCallRecordSessionCount</S>
+                <S>Get-MgCommunicationCallRecordSessionSegmentCount</S>
+                <S>Get-MgCommunicationOnlineMeeting</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendanceReportCount</S>
+                <S>Get-MgCommunicationOnlineMeetingAttendeeReport</S>
+                <S>Get-MgCommunicationOnlineMeetingCount</S>
+                <S>Get-MgCommunicationOnlineMeetingRecording</S>
+                <S>Get-MgCommunicationOnlineMeetingRecordingContent</S>
+                <S>Get-MgCommunicationOnlineMeetingRecordingCount</S>
+                <S>Get-MgCommunicationOnlineMeetingRecordingDelta</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscript</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptContent</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptCount</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptDelta</S>
+                <S>Get-MgCommunicationOnlineMeetingTranscriptMetadataContent</S>
+                <S>Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl</S>
+                <S>Get-MgCommunicationPresence</S>
+                <S>Get-MgCommunicationPresenceByUserId</S>
+                <S>Get-MgCommunicationPresenceCount</S>
+                <S>Get-MgUserOnlineMeeting</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReport</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount</S>
+                <S>Get-MgUserOnlineMeetingAttendanceReportCount</S>
+                <S>Get-MgUserOnlineMeetingAttendeeReport</S>
+                <S>Get-MgUserOnlineMeetingCount</S>
+                <S>Get-MgUserOnlineMeetingRecording</S>
+                <S>Get-MgUserOnlineMeetingRecordingContent</S>
+                <S>Get-MgUserOnlineMeetingRecordingCount</S>
+                <S>Get-MgUserOnlineMeetingTranscript</S>
+                <S>Get-MgUserOnlineMeetingTranscriptContent</S>
+                <S>Get-MgUserOnlineMeetingTranscriptCount</S>
+                <S>Get-MgUserOnlineMeetingTranscriptMetadataContent</S>
+                <S>Get-MgUserPresence</S>
+                <S>Invoke-MgAnswerCommunicationCall</S>
+                <S>Invoke-MgCreateOrGetCommunicationOnlineMeeting</S>
+                <S>Invoke-MgInviteCommunicationCallParticipant</S>
+                <S>Invoke-MgKeepCommunicationCallAlive</S>
+                <S>Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality</S>
+                <S>Invoke-MgMuteCommunicationCall</S>
+                <S>Invoke-MgMuteCommunicationCallParticipant</S>
+                <S>Invoke-MgPlayCommunicationCallPrompt</S>
+                <S>Invoke-MgRecordCommunicationCallResponse</S>
+                <S>Invoke-MgRedirectCommunicationCall</S>
+                <S>Invoke-MgRejectCommunicationCall</S>
+                <S>Invoke-MgSubscribeCommunicationCallToTone</S>
+                <S>Invoke-MgUnmuteCommunicationCall</S>
+                <S>Move-MgCommunicationCall</S>
+                <S>New-MgCommunicationCall</S>
+                <S>New-MgCommunicationCallAudioRoutingGroup</S>
+                <S>New-MgCommunicationCallContentSharingSession</S>
+                <S>New-MgCommunicationCallOperation</S>
+                <S>New-MgCommunicationCallParticipant</S>
+                <S>New-MgCommunicationCallRecordParticipantV2</S>
+                <S>New-MgCommunicationCallRecordSession</S>
+                <S>New-MgCommunicationOnlineMeeting</S>
+                <S>New-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>New-MgCommunicationOnlineMeetingRecording</S>
+                <S>New-MgCommunicationOnlineMeetingTranscript</S>
+                <S>New-MgCommunicationPresence</S>
+                <S>New-MgUserOnlineMeeting</S>
+                <S>New-MgUserOnlineMeetingAttendanceReport</S>
+                <S>New-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>New-MgUserOnlineMeetingRecording</S>
+                <S>New-MgUserOnlineMeetingTranscript</S>
+                <S>Remove-MgCommunicationCall</S>
+                <S>Remove-MgCommunicationCallAudioRoutingGroup</S>
+                <S>Remove-MgCommunicationCallContentSharingSession</S>
+                <S>Remove-MgCommunicationCallOperation</S>
+                <S>Remove-MgCommunicationCallParticipant</S>
+                <S>Remove-MgCommunicationCallRecordOrganizerV2</S>
+                <S>Remove-MgCommunicationCallRecordParticipantV2</S>
+                <S>Remove-MgCommunicationCallRecordSession</S>
+                <S>Remove-MgCommunicationOnlineMeeting</S>
+                <S>Remove-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Remove-MgCommunicationOnlineMeetingAttendeeReport</S>
+                <S>Remove-MgCommunicationOnlineMeetingRecording</S>
+                <S>Remove-MgCommunicationOnlineMeetingRecordingContent</S>
+                <S>Remove-MgCommunicationOnlineMeetingTranscript</S>
+                <S>Remove-MgCommunicationOnlineMeetingTranscriptContent</S>
+                <S>Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent</S>
+                <S>Remove-MgCommunicationPresence</S>
+                <S>Remove-MgUserOnlineMeeting</S>
+                <S>Remove-MgUserOnlineMeetingAttendanceReport</S>
+                <S>Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Remove-MgUserOnlineMeetingAttendeeReport</S>
+                <S>Remove-MgUserOnlineMeetingRecording</S>
+                <S>Remove-MgUserOnlineMeetingRecordingContent</S>
+                <S>Remove-MgUserOnlineMeetingTranscript</S>
+                <S>Remove-MgUserOnlineMeetingTranscriptContent</S>
+                <S>Remove-MgUserOnlineMeetingTranscriptMetadataContent</S>
+                <S>Remove-MgUserPresence</S>
+                <S>Rename-MgCommunicationCallScreenSharingRole</S>
+                <S>Send-MgCommunicationCallDtmfTone</S>
+                <S>Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm</S>
+                <S>Send-MgCommunicationOnlineMeetingVirtualAppointmentSm</S>
+                <S>Set-MgCommunicationOnlineMeetingAttendeeReport</S>
+                <S>Set-MgCommunicationOnlineMeetingRecordingContent</S>
+                <S>Set-MgCommunicationOnlineMeetingTranscriptContent</S>
+                <S>Set-MgCommunicationOnlineMeetingTranscriptMetadataContent</S>
+                <S>Set-MgCommunicationPresence</S>
+                <S>Set-MgCommunicationPresenceStatusMessage</S>
+                <S>Set-MgCommunicationPresenceUserPreferredPresence</S>
+                <S>Set-MgUserOnlineMeetingAttendeeReport</S>
+                <S>Set-MgUserOnlineMeetingRecordingContent</S>
+                <S>Set-MgUserOnlineMeetingTranscriptContent</S>
+                <S>Set-MgUserOnlineMeetingTranscriptMetadataContent</S>
+                <S>Start-MgCommunicationCallParticipantHoldMusic</S>
+                <S>Stop-MgCommunicationCallMediaProcessing</S>
+                <S>Stop-MgCommunicationCallParticipantHoldMusic</S>
+                <S>Update-MgCommunicationCallAudioRoutingGroup</S>
+                <S>Update-MgCommunicationCallContentSharingSession</S>
+                <S>Update-MgCommunicationCallOperation</S>
+                <S>Update-MgCommunicationCallParticipant</S>
+                <S>Update-MgCommunicationCallRecordingStatus</S>
+                <S>Update-MgCommunicationCallRecordOrganizerV2</S>
+                <S>Update-MgCommunicationCallRecordParticipantV2</S>
+                <S>Update-MgCommunicationCallRecordSession</S>
+                <S>Update-MgCommunicationOnlineMeeting</S>
+                <S>Update-MgCommunicationOnlineMeetingAttendanceReport</S>
+                <S>Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Update-MgCommunicationOnlineMeetingRecording</S>
+                <S>Update-MgCommunicationOnlineMeetingTranscript</S>
+                <S>Update-MgCommunicationPresence</S>
+                <S>Update-MgUserOnlineMeeting</S>
+                <S>Update-MgUserOnlineMeetingAttendanceReport</S>
+                <S>Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord</S>
+                <S>Update-MgUserOnlineMeetingRecording</S>
+                <S>Update-MgUserOnlineMeetingTranscript</S>
+                <S>Update-MgUserPresence</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1122992</S>
+          <S N="downloadCount">10760510</S>
+          <S N="packageSize">1744585</S>
+          <S N="published">11/21/2024 6:26:46 AM -05:00</S>
+          <S N="created">11/21/2024 6:26:46 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Add-MgCommunicationCallLargeGalleryView PSCommand_Add-MgCommunicationCallLargeGalleryView PSFunction_Clear-MgCommunicationPresence PSCommand_Clear-MgCommunicationPresence PSFunction_Clear-MgCommunicationPresenceUserPreferredPresence PSCommand_Clear-MgCommunicationPresenceUserPreferredPresence PSFunction_Get-MgCommunicationCall PSCommand_Get-MgCommunicationCall PSFunction_Get-MgCommunicationCallAudioRoutingGroup PSCommand_Get-MgCommunicationCallAudioRoutingGroup PSFunction_Get-MgCommunicationCallAudioRoutingGroupCount PSCommand_Get-MgCommunicationCallAudioRoutingGroupCount PSFunction_Get-MgCommunicationCallContentSharingSession PSCommand_Get-MgCommunicationCallContentSharingSession PSFunction_Get-MgCommunicationCallContentSharingSessionCount PSCommand_Get-MgCommunicationCallContentSharingSessionCount PSFunction_Get-MgCommunicationCallCount PSCommand_Get-MgCommunicationCallCount PSFunction_Get-MgCommunicationCallOperation PSCommand_Get-MgCommunicationCallOperation PSFunction_Get-MgCommunicationCallOperationCount PSCommand_Get-MgCommunicationCallOperationCount PSFunction_Get-MgCommunicationCallParticipant PSCommand_Get-MgCommunicationCallParticipant PSFunction_Get-MgCommunicationCallParticipantCount PSCommand_Get-MgCommunicationCallParticipantCount PSFunction_Get-MgCommunicationCallRecord PSCommand_Get-MgCommunicationCallRecord PSFunction_Get-MgCommunicationCallRecordCount PSCommand_Get-MgCommunicationCallRecordCount PSFunction_Get-MgCommunicationCallRecordOrganizerV2 PSCommand_Get-MgCommunicationCallRecordOrganizerV2 PSFunction_Get-MgCommunicationCallRecordParticipant PSCommand_Get-MgCommunicationCallRecordParticipant PSFunction_Get-MgCommunicationCallRecordParticipantV2 PSCommand_Get-MgCommunicationCallRecordParticipantV2 PSFunction_Get-MgCommunicationCallRecordSession PSCommand_Get-MgCommunicationCallRecordSession PSFunction_Get-MgCommunicationCallRecordSessionCount PSCommand_Get-MgCommunicationCallRecordSessionCount PSFunction_Get-MgCommunicationCallRecordSessionSegmentCount PSCommand_Get-MgCommunicationCallRecordSessionSegmentCount PSFunction_Get-MgCommunicationOnlineMeeting PSCommand_Get-MgCommunicationOnlineMeeting PSFunction_Get-MgCommunicationOnlineMeetingAttendanceReport PSCommand_Get-MgCommunicationOnlineMeetingAttendanceReport PSFunction_Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSCommand_Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSFunction_Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount PSCommand_Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount PSFunction_Get-MgCommunicationOnlineMeetingAttendanceReportCount PSCommand_Get-MgCommunicationOnlineMeetingAttendanceReportCount PSFunction_Get-MgCommunicationOnlineMeetingAttendeeReport PSCommand_Get-MgCommunicationOnlineMeetingAttendeeReport PSFunction_Get-MgCommunicationOnlineMeetingCount PSCommand_Get-MgCommunicationOnlineMeetingCount PSFunction_Get-MgCommunicationOnlineMeetingRecording PSCommand_Get-MgCommunicationOnlineMeetingRecording PSFunction_Get-MgCommunicationOnlineMeetingRecordingContent PSCommand_Get-MgCommunicationOnlineMeetingRecordingContent PSFunction_Get-MgCommunicationOnlineMeetingRecordingCount PSCommand_Get-MgCommunicationOnlineMeetingRecordingCount PSFunction_Get-MgCommunicationOnlineMeetingRecordingDelta PSCommand_Get-MgCommunicationOnlineMeetingRecordingDelta PSFunction_Get-MgCommunicationOnlineMeetingTranscript PSCommand_Get-MgCommunicationOnlineMeetingTranscript PSFunction_Get-MgCommunicationOnlineMeetingTranscriptContent PSCommand_Get-MgCommunicationOnlineMeetingTranscriptContent PSFunction_Get-MgCommunicationOnlineMeetingTranscriptCount PSCommand_Get-MgCommunicationOnlineMeetingTranscriptCount PSFunction_Get-MgCommunicationOnlineMeetingTranscriptDelta PSCommand_Get-MgCommunicationOnlineMeetingTranscriptDelta PSFunction_Get-MgCommunicationOnlineMeetingTranscriptMetadataContent PSCommand_Get-MgCommunicationOnlineMeetingTranscriptMetadataContent PSFunction_Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl PSCommand_Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl PSFunction_Get-MgCommunicationPresence PSCommand_Get-MgCommunicationPresence PSFunction_Get-MgCommunicationPresenceByUserId PSCommand_Get-MgCommunicationPresenceByUserId PSFunction_Get-MgCommunicationPresenceCount PSCommand_Get-MgCommunicationPresenceCount PSFunction_Get-MgUserOnlineMeeting PSCommand_Get-MgUserOnlineMeeting PSFunction_Get-MgUserOnlineMeetingAttendanceReport PSCommand_Get-MgUserOnlineMeetingAttendanceReport PSFunction_Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSCommand_Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSFunction_Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount PSCommand_Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount PSFunction_Get-MgUserOnlineMeetingAttendanceReportCount PSCommand_Get-MgUserOnlineMeetingAttendanceReportCount PSFunction_Get-MgUserOnlineMeetingAttendeeReport PSCommand_Get-MgUserOnlineMeetingAttendeeReport PSFunction_Get-MgUserOnlineMeetingCount PSCommand_Get-MgUserOnlineMeetingCount PSFunction_Get-MgUserOnlineMeetingRecording PSCommand_Get-MgUserOnlineMeetingRecording PSFunction_Get-MgUserOnlineMeetingRecordingContent PSCommand_Get-MgUserOnlineMeetingRecordingContent PSFunction_Get-MgUserOnlineMeetingRecordingCount PSCommand_Get-MgUserOnlineMeetingRecordingCount PSFunction_Get-MgUserOnlineMeetingTranscript PSCommand_Get-MgUserOnlineMeetingTranscript PSFunction_Get-MgUserOnlineMeetingTranscriptContent PSCommand_Get-MgUserOnlineMeetingTranscriptContent PSFunction_Get-MgUserOnlineMeetingTranscriptCount PSCommand_Get-MgUserOnlineMeetingTranscriptCount PSFunction_Get-MgUserOnlineMeetingTranscriptMetadataContent PSCommand_Get-MgUserOnlineMeetingTranscriptMetadataContent PSFunction_Get-MgUserPresence PSCommand_Get-MgUserPresence PSFunction_Invoke-MgAnswerCommunicationCall PSCommand_Invoke-MgAnswerCommunicationCall PSFunction_Invoke-MgCreateOrGetCommunicationOnlineMeeting PSCommand_Invoke-MgCreateOrGetCommunicationOnlineMeeting PSFunction_Invoke-MgInviteCommunicationCallParticipant PSCommand_Invoke-MgInviteCommunicationCallParticipant PSFunction_Invoke-MgKeepCommunicationCallAlive PSCommand_Invoke-MgKeepCommunicationCallAlive PSFunction_Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality PSCommand_Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality PSFunction_Invoke-MgMuteCommunicationCall PSCommand_Invoke-MgMuteCommunicationCall PSFunction_Invoke-MgMuteCommunicationCallParticipant PSCommand_Invoke-MgMuteCommunicationCallParticipant PSFunction_Invoke-MgPlayCommunicationCallPrompt PSCommand_Invoke-MgPlayCommunicationCallPrompt PSFunction_Invoke-MgRecordCommunicationCallResponse PSCommand_Invoke-MgRecordCommunicationCallResponse PSFunction_Invoke-MgRedirectCommunicationCall PSCommand_Invoke-MgRedirectCommunicationCall PSFunction_Invoke-MgRejectCommunicationCall PSCommand_Invoke-MgRejectCommunicationCall PSFunction_Invoke-MgSubscribeCommunicationCallToTone PSCommand_Invoke-MgSubscribeCommunicationCallToTone PSFunction_Invoke-MgUnmuteCommunicationCall PSCommand_Invoke-MgUnmuteCommunicationCall PSFunction_Move-MgCommunicationCall PSCommand_Move-MgCommunicationCall PSFunction_New-MgCommunicationCall PSCommand_New-MgCommunicationCall PSFunction_New-MgCommunicationCallAudioRoutingGroup PSCommand_New-MgCommunicationCallAudioRoutingGroup PSFunction_New-MgCommunicationCallContentSharingSession PSCommand_New-MgCommunicationCallContentSharingSession PSFunction_New-MgCommunicationCallOperation PSCommand_New-MgCommunicationCallOperation PSFunction_New-MgCommunicationCallParticipant PSCommand_New-MgCommunicationCallParticipant PSFunction_New-MgCommunicationCallRecordParticipantV2 PSCommand_New-MgCommunicationCallRecordParticipantV2 PSFunction_New-MgCommunicationCallRecordSession PSCommand_New-MgCommunicationCallRecordSession PSFunction_New-MgCommunicationOnlineMeeting PSCommand_New-MgCommunicationOnlineMeeting PSFunction_New-MgCommunicationOnlineMeetingAttendanceReport PSCommand_New-MgCommunicationOnlineMeetingAttendanceReport PSFunction_New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSCommand_New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSFunction_New-MgCommunicationOnlineMeetingRecording PSCommand_New-MgCommunicationOnlineMeetingRecording PSFunction_New-MgCommunicationOnlineMeetingTranscript PSCommand_New-MgCommunicationOnlineMeetingTranscript PSFunction_New-MgCommunicationPresence PSCommand_New-MgCommunicationPresence PSFunction_New-MgUserOnlineMeeting PSCommand_New-MgUserOnlineMeeting PSFunction_New-MgUserOnlineMeetingAttendanceReport PSCommand_New-MgUserOnlineMeetingAttendanceReport PSFunction_New-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSCommand_New-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSFunction_New-MgUserOnlineMeetingRecording PSCommand_New-MgUserOnlineMeetingRecording PSFunction_New-MgUserOnlineMeetingTranscript PSCommand_New-MgUserOnlineMeetingTranscript PSFunction_Remove-MgCommunicationCall PSCommand_Remove-MgCommunicationCall PSFunction_Remove-MgCommunicationCallAudioRoutingGroup PSCommand_Remove-MgCommunicationCallAudioRoutingGroup PSFunction_Remove-MgCommunicationCallContentSharingSession PSCommand_Remove-MgCommunicationCallContentSharingSession PSFunction_Remove-MgCommunicationCallOperation PSCommand_Remove-MgCommunicationCallOperation PSFunction_Remove-MgCommunicationCallParticipant PSCommand_Remove-MgCommunicationCallParticipant PSFunction_Remove-MgCommunicationCallRecordOrganizerV2 PSCommand_Remove-MgCommunicationCallRecordOrganizerV2 PSFunction_Remove-MgCommunicationCallRecordParticipantV2 PSCommand_Remove-MgCommunicationCallRecordParticipantV2 PSFunction_Remove-MgCommunicationCallRecordSession PSCommand_Remove-MgCommunicationCallRecordSession PSFunction_Remove-MgCommunicationOnlineMeeting PSCommand_Remove-MgCommunicationOnlineMeeting PSFunction_Remove-MgCommunicationOnlineMeetingAttendanceReport PSCommand_Remove-MgCommunicationOnlineMeetingAttendanceReport PSFunction_Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSCommand_Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSFunction_Remove-MgCommunicationOnlineMeetingAttendeeReport PSCommand_Remove-MgCommunicationOnlineMeetingAttendeeReport PSFunction_Remove-MgCommunicationOnlineMeetingRecording PSCommand_Remove-MgCommunicationOnlineMeetingRecording PSFunction_Remove-MgCommunicationOnlineMeetingRecordingContent PSCommand_Remove-MgCommunicationOnlineMeetingRecordingContent PSFunction_Remove-MgCommunicationOnlineMeetingTranscript PSCommand_Remove-MgCommunicationOnlineMeetingTranscript PSFunction_Remove-MgCommunicationOnlineMeetingTranscriptContent PSCommand_Remove-MgCommunicationOnlineMeetingTranscriptContent PSFunction_Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent PSCommand_Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent PSFunction_Remove-MgCommunicationPresence PSCommand_Remove-MgCommunicationPresence PSFunction_Remove-MgUserOnlineMeeting PSCommand_Remove-MgUserOnlineMeeting PSFunction_Remove-MgUserOnlineMeetingAttendanceReport PSCommand_Remove-MgUserOnlineMeetingAttendanceReport PSFunction_Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSCommand_Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSFunction_Remove-MgUserOnlineMeetingAttendeeReport PSCommand_Remove-MgUserOnlineMeetingAttendeeReport PSFunction_Remove-MgUserOnlineMeetingRecording PSCommand_Remove-MgUserOnlineMeetingRecording PSFunction_Remove-MgUserOnlineMeetingRecordingContent PSCommand_Remove-MgUserOnlineMeetingRecordingContent PSFunction_Remove-MgUserOnlineMeetingTranscript PSCommand_Remove-MgUserOnlineMeetingTranscript PSFunction_Remove-MgUserOnlineMeetingTranscriptContent PSCommand_Remove-MgUserOnlineMeetingTranscriptContent PSFunction_Remove-MgUserOnlineMeetingTranscriptMetadataContent PSCommand_Remove-MgUserOnlineMeetingTranscriptMetadataContent PSFunction_Remove-MgUserPresence PSCommand_Remove-MgUserPresence PSFunction_Rename-MgCommunicationCallScreenSharingRole PSCommand_Rename-MgCommunicationCallScreenSharingRole PSFunction_Send-MgCommunicationCallDtmfTone PSCommand_Send-MgCommunicationCallDtmfTone PSFunction_Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm PSCommand_Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm PSFunction_Send-MgCommunicationOnlineMeetingVirtualAppointmentSm PSCommand_Send-MgCommunicationOnlineMeetingVirtualAppointmentSm PSFunction_Set-MgCommunicationOnlineMeetingAttendeeReport PSCommand_Set-MgCommunicationOnlineMeetingAttendeeReport PSFunction_Set-MgCommunicationOnlineMeetingRecordingContent PSCommand_Set-MgCommunicationOnlineMeetingRecordingContent PSFunction_Set-MgCommunicationOnlineMeetingTranscriptContent PSCommand_Set-MgCommunicationOnlineMeetingTranscriptContent PSFunction_Set-MgCommunicationOnlineMeetingTranscriptMetadataContent PSCommand_Set-MgCommunicationOnlineMeetingTranscriptMetadataContent PSFunction_Set-MgCommunicationPresence PSCommand_Set-MgCommunicationPresence PSFunction_Set-MgCommunicationPresenceStatusMessage PSCommand_Set-MgCommunicationPresenceStatusMessage PSFunction_Set-MgCommunicationPresenceUserPreferredPresence PSCommand_Set-MgCommunicationPresenceUserPreferredPresence PSFunction_Set-MgUserOnlineMeetingAttendeeReport PSCommand_Set-MgUserOnlineMeetingAttendeeReport PSFunction_Set-MgUserOnlineMeetingRecordingContent PSCommand_Set-MgUserOnlineMeetingRecordingContent PSFunction_Set-MgUserOnlineMeetingTranscriptContent PSCommand_Set-MgUserOnlineMeetingTranscriptContent PSFunction_Set-MgUserOnlineMeetingTranscriptMetadataContent PSCommand_Set-MgUserOnlineMeetingTranscriptMetadataContent PSFunction_Start-MgCommunicationCallParticipantHoldMusic PSCommand_Start-MgCommunicationCallParticipantHoldMusic PSFunction_Stop-MgCommunicationCallMediaProcessing PSCommand_Stop-MgCommunicationCallMediaProcessing PSFunction_Stop-MgCommunicationCallParticipantHoldMusic PSCommand_Stop-MgCommunicationCallParticipantHoldMusic PSFunction_Update-MgCommunicationCallAudioRoutingGroup PSCommand_Update-MgCommunicationCallAudioRoutingGroup PSFunction_Update-MgCommunicationCallContentSharingSession PSCommand_Update-MgCommunicationCallContentSharingSession PSFunction_Update-MgCommunicationCallOperation PSCommand_Update-MgCommunicationCallOperation PSFunction_Update-MgCommunicationCallParticipant PSCommand_Update-MgCommunicationCallParticipant PSFunction_Update-MgCommunicationCallRecordingStatus PSCommand_Update-MgCommunicationCallRecordingStatus PSFunction_Update-MgCommunicationCallRecordOrganizerV2 PSCommand_Update-MgCommunicationCallRecordOrganizerV2 PSFunction_Update-MgCommunicationCallRecordParticipantV2 PSCommand_Update-MgCommunicationCallRecordParticipantV2 PSFunction_Update-MgCommunicationCallRecordSession PSCommand_Update-MgCommunicationCallRecordSession PSFunction_Update-MgCommunicationOnlineMeeting PSCommand_Update-MgCommunicationOnlineMeeting PSFunction_Update-MgCommunicationOnlineMeetingAttendanceReport PSCommand_Update-MgCommunicationOnlineMeetingAttendanceReport PSFunction_Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSCommand_Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord PSFunction_Update-MgCommunicationOnlineMeetingRecording PSCommand_Update-MgCommunicationOnlineMeetingRecording PSFunction_Update-MgCommunicationOnlineMeetingTranscript PSCommand_Update-MgCommunicationOnlineMeetingTranscript PSFunction_Update-MgCommunicationPresence PSCommand_Update-MgCommunicationPresence PSFunction_Update-MgUserOnlineMeeting PSCommand_Update-MgUserOnlineMeeting PSFunction_Update-MgUserOnlineMeetingAttendanceReport PSCommand_Update-MgUserOnlineMeetingAttendanceReport PSFunction_Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSCommand_Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord PSFunction_Update-MgUserOnlineMeetingRecording PSCommand_Update-MgUserOnlineMeetingRecording PSFunction_Update-MgUserOnlineMeetingTranscript PSCommand_Update-MgUserOnlineMeetingTranscript PSFunction_Update-MgUserPresence PSCommand_Update-MgUserPresence PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.CloudCommunications.nuspec|Microsoft.Graph.CloudCommunications.format.ps1xml|Microsoft.Graph.CloudCommunications.psd1|Microsoft.Graph.CloudCommunications.psm1|bin\Microsoft.Graph.CloudCommunications.private.dll|bin\Microsoft.Graph.CloudCommunications.private.deps.json|internal\Microsoft.Graph.CloudCommunications.internal.psm1|custom\Microsoft.Graph.CloudCommunications.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">2c67fc60-8c99-463f-9b0c-8a70e4623246</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.CloudCommunications\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>

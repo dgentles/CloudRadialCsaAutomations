@@ -1,0 +1,270 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.PersonalContacts</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:28:38-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:02:25.0928912-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgUserContact</S>
+                <S>Get-MgUserContactCount</S>
+                <S>Get-MgUserContactExtension</S>
+                <S>Get-MgUserContactExtensionCount</S>
+                <S>Get-MgUserContactFolder</S>
+                <S>Get-MgUserContactFolderChildFolder</S>
+                <S>Get-MgUserContactFolderChildFolderContact</S>
+                <S>Get-MgUserContactFolderChildFolderContactCount</S>
+                <S>Get-MgUserContactFolderChildFolderContactExtension</S>
+                <S>Get-MgUserContactFolderChildFolderContactExtensionCount</S>
+                <S>Get-MgUserContactFolderChildFolderContactPhoto</S>
+                <S>Get-MgUserContactFolderChildFolderContactPhotoContent</S>
+                <S>Get-MgUserContactFolderChildFolderCount</S>
+                <S>Get-MgUserContactFolderContact</S>
+                <S>Get-MgUserContactFolderContactCount</S>
+                <S>Get-MgUserContactFolderContactExtension</S>
+                <S>Get-MgUserContactFolderContactExtensionCount</S>
+                <S>Get-MgUserContactFolderContactPhoto</S>
+                <S>Get-MgUserContactFolderContactPhotoContent</S>
+                <S>Get-MgUserContactFolderCount</S>
+                <S>Get-MgUserContactPhoto</S>
+                <S>Get-MgUserContactPhotoContent</S>
+                <S>New-MgUserContact</S>
+                <S>New-MgUserContactExtension</S>
+                <S>New-MgUserContactFolder</S>
+                <S>New-MgUserContactFolderChildFolder</S>
+                <S>New-MgUserContactFolderChildFolderContact</S>
+                <S>New-MgUserContactFolderChildFolderContactExtension</S>
+                <S>New-MgUserContactFolderContact</S>
+                <S>New-MgUserContactFolderContactExtension</S>
+                <S>Remove-MgUserContact</S>
+                <S>Remove-MgUserContactExtension</S>
+                <S>Remove-MgUserContactFolder</S>
+                <S>Remove-MgUserContactFolderChildFolder</S>
+                <S>Remove-MgUserContactFolderChildFolderContact</S>
+                <S>Remove-MgUserContactFolderChildFolderContactExtension</S>
+                <S>Remove-MgUserContactFolderChildFolderContactPhotoContent</S>
+                <S>Remove-MgUserContactFolderContact</S>
+                <S>Remove-MgUserContactFolderContactExtension</S>
+                <S>Remove-MgUserContactFolderContactPhotoContent</S>
+                <S>Remove-MgUserContactPhotoContent</S>
+                <S>Set-MgUserContactFolderChildFolderContactPhotoContent</S>
+                <S>Set-MgUserContactFolderContactPhotoContent</S>
+                <S>Set-MgUserContactPhotoContent</S>
+                <S>Update-MgUserContact</S>
+                <S>Update-MgUserContactExtension</S>
+                <S>Update-MgUserContactFolder</S>
+                <S>Update-MgUserContactFolderChildFolder</S>
+                <S>Update-MgUserContactFolderChildFolderContact</S>
+                <S>Update-MgUserContactFolderChildFolderContactExtension</S>
+                <S>Update-MgUserContactFolderChildFolderContactPhoto</S>
+                <S>Update-MgUserContactFolderContact</S>
+                <S>Update-MgUserContactFolderContactExtension</S>
+                <S>Update-MgUserContactFolderContactPhoto</S>
+                <S>Update-MgUserContactPhoto</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgUserContact</S>
+                <S>Get-MgUserContactCount</S>
+                <S>Get-MgUserContactExtension</S>
+                <S>Get-MgUserContactExtensionCount</S>
+                <S>Get-MgUserContactFolder</S>
+                <S>Get-MgUserContactFolderChildFolder</S>
+                <S>Get-MgUserContactFolderChildFolderContact</S>
+                <S>Get-MgUserContactFolderChildFolderContactCount</S>
+                <S>Get-MgUserContactFolderChildFolderContactExtension</S>
+                <S>Get-MgUserContactFolderChildFolderContactExtensionCount</S>
+                <S>Get-MgUserContactFolderChildFolderContactPhoto</S>
+                <S>Get-MgUserContactFolderChildFolderContactPhotoContent</S>
+                <S>Get-MgUserContactFolderChildFolderCount</S>
+                <S>Get-MgUserContactFolderContact</S>
+                <S>Get-MgUserContactFolderContactCount</S>
+                <S>Get-MgUserContactFolderContactExtension</S>
+                <S>Get-MgUserContactFolderContactExtensionCount</S>
+                <S>Get-MgUserContactFolderContactPhoto</S>
+                <S>Get-MgUserContactFolderContactPhotoContent</S>
+                <S>Get-MgUserContactFolderCount</S>
+                <S>Get-MgUserContactPhoto</S>
+                <S>Get-MgUserContactPhotoContent</S>
+                <S>New-MgUserContact</S>
+                <S>New-MgUserContactExtension</S>
+                <S>New-MgUserContactFolder</S>
+                <S>New-MgUserContactFolderChildFolder</S>
+                <S>New-MgUserContactFolderChildFolderContact</S>
+                <S>New-MgUserContactFolderChildFolderContactExtension</S>
+                <S>New-MgUserContactFolderContact</S>
+                <S>New-MgUserContactFolderContactExtension</S>
+                <S>Remove-MgUserContact</S>
+                <S>Remove-MgUserContactExtension</S>
+                <S>Remove-MgUserContactFolder</S>
+                <S>Remove-MgUserContactFolderChildFolder</S>
+                <S>Remove-MgUserContactFolderChildFolderContact</S>
+                <S>Remove-MgUserContactFolderChildFolderContactExtension</S>
+                <S>Remove-MgUserContactFolderChildFolderContactPhotoContent</S>
+                <S>Remove-MgUserContactFolderContact</S>
+                <S>Remove-MgUserContactFolderContactExtension</S>
+                <S>Remove-MgUserContactFolderContactPhotoContent</S>
+                <S>Remove-MgUserContactPhotoContent</S>
+                <S>Set-MgUserContactFolderChildFolderContactPhotoContent</S>
+                <S>Set-MgUserContactFolderContactPhotoContent</S>
+                <S>Set-MgUserContactPhotoContent</S>
+                <S>Update-MgUserContact</S>
+                <S>Update-MgUserContactExtension</S>
+                <S>Update-MgUserContactFolder</S>
+                <S>Update-MgUserContactFolderChildFolder</S>
+                <S>Update-MgUserContactFolderChildFolderContact</S>
+                <S>Update-MgUserContactFolderChildFolderContactExtension</S>
+                <S>Update-MgUserContactFolderChildFolderContactPhoto</S>
+                <S>Update-MgUserContactFolderContact</S>
+                <S>Update-MgUserContactFolderContactExtension</S>
+                <S>Update-MgUserContactFolderContactPhoto</S>
+                <S>Update-MgUserContactPhoto</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1069697</S>
+          <S N="downloadCount">10500273</S>
+          <S N="packageSize">774953</S>
+          <S N="published">11/21/2024 6:28:38 AM -05:00</S>
+          <S N="created">11/21/2024 6:28:38 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Get-MgUserContact PSCommand_Get-MgUserContact PSFunction_Get-MgUserContactCount PSCommand_Get-MgUserContactCount PSFunction_Get-MgUserContactExtension PSCommand_Get-MgUserContactExtension PSFunction_Get-MgUserContactExtensionCount PSCommand_Get-MgUserContactExtensionCount PSFunction_Get-MgUserContactFolder PSCommand_Get-MgUserContactFolder PSFunction_Get-MgUserContactFolderChildFolder PSCommand_Get-MgUserContactFolderChildFolder PSFunction_Get-MgUserContactFolderChildFolderContact PSCommand_Get-MgUserContactFolderChildFolderContact PSFunction_Get-MgUserContactFolderChildFolderContactCount PSCommand_Get-MgUserContactFolderChildFolderContactCount PSFunction_Get-MgUserContactFolderChildFolderContactExtension PSCommand_Get-MgUserContactFolderChildFolderContactExtension PSFunction_Get-MgUserContactFolderChildFolderContactExtensionCount PSCommand_Get-MgUserContactFolderChildFolderContactExtensionCount PSFunction_Get-MgUserContactFolderChildFolderContactPhoto PSCommand_Get-MgUserContactFolderChildFolderContactPhoto PSFunction_Get-MgUserContactFolderChildFolderContactPhotoContent PSCommand_Get-MgUserContactFolderChildFolderContactPhotoContent PSFunction_Get-MgUserContactFolderChildFolderCount PSCommand_Get-MgUserContactFolderChildFolderCount PSFunction_Get-MgUserContactFolderContact PSCommand_Get-MgUserContactFolderContact PSFunction_Get-MgUserContactFolderContactCount PSCommand_Get-MgUserContactFolderContactCount PSFunction_Get-MgUserContactFolderContactExtension PSCommand_Get-MgUserContactFolderContactExtension PSFunction_Get-MgUserContactFolderContactExtensionCount PSCommand_Get-MgUserContactFolderContactExtensionCount PSFunction_Get-MgUserContactFolderContactPhoto PSCommand_Get-MgUserContactFolderContactPhoto PSFunction_Get-MgUserContactFolderContactPhotoContent PSCommand_Get-MgUserContactFolderContactPhotoContent PSFunction_Get-MgUserContactFolderCount PSCommand_Get-MgUserContactFolderCount PSFunction_Get-MgUserContactPhoto PSCommand_Get-MgUserContactPhoto PSFunction_Get-MgUserContactPhotoContent PSCommand_Get-MgUserContactPhotoContent PSFunction_New-MgUserContact PSCommand_New-MgUserContact PSFunction_New-MgUserContactExtension PSCommand_New-MgUserContactExtension PSFunction_New-MgUserContactFolder PSCommand_New-MgUserContactFolder PSFunction_New-MgUserContactFolderChildFolder PSCommand_New-MgUserContactFolderChildFolder PSFunction_New-MgUserContactFolderChildFolderContact PSCommand_New-MgUserContactFolderChildFolderContact PSFunction_New-MgUserContactFolderChildFolderContactExtension PSCommand_New-MgUserContactFolderChildFolderContactExtension PSFunction_New-MgUserContactFolderContact PSCommand_New-MgUserContactFolderContact PSFunction_New-MgUserContactFolderContactExtension PSCommand_New-MgUserContactFolderContactExtension PSFunction_Remove-MgUserContact PSCommand_Remove-MgUserContact PSFunction_Remove-MgUserContactExtension PSCommand_Remove-MgUserContactExtension PSFunction_Remove-MgUserContactFolder PSCommand_Remove-MgUserContactFolder PSFunction_Remove-MgUserContactFolderChildFolder PSCommand_Remove-MgUserContactFolderChildFolder PSFunction_Remove-MgUserContactFolderChildFolderContact PSCommand_Remove-MgUserContactFolderChildFolderContact PSFunction_Remove-MgUserContactFolderChildFolderContactExtension PSCommand_Remove-MgUserContactFolderChildFolderContactExtension PSFunction_Remove-MgUserContactFolderChildFolderContactPhotoContent PSCommand_Remove-MgUserContactFolderChildFolderContactPhotoContent PSFunction_Remove-MgUserContactFolderContact PSCommand_Remove-MgUserContactFolderContact PSFunction_Remove-MgUserContactFolderContactExtension PSCommand_Remove-MgUserContactFolderContactExtension PSFunction_Remove-MgUserContactFolderContactPhotoContent PSCommand_Remove-MgUserContactFolderContactPhotoContent PSFunction_Remove-MgUserContactPhotoContent PSCommand_Remove-MgUserContactPhotoContent PSFunction_Set-MgUserContactFolderChildFolderContactPhotoContent PSCommand_Set-MgUserContactFolderChildFolderContactPhotoContent PSFunction_Set-MgUserContactFolderContactPhotoContent PSCommand_Set-MgUserContactFolderContactPhotoContent PSFunction_Set-MgUserContactPhotoContent PSCommand_Set-MgUserContactPhotoContent PSFunction_Update-MgUserContact PSCommand_Update-MgUserContact PSFunction_Update-MgUserContactExtension PSCommand_Update-MgUserContactExtension PSFunction_Update-MgUserContactFolder PSCommand_Update-MgUserContactFolder PSFunction_Update-MgUserContactFolderChildFolder PSCommand_Update-MgUserContactFolderChildFolder PSFunction_Update-MgUserContactFolderChildFolderContact PSCommand_Update-MgUserContactFolderChildFolderContact PSFunction_Update-MgUserContactFolderChildFolderContactExtension PSCommand_Update-MgUserContactFolderChildFolderContactExtension PSFunction_Update-MgUserContactFolderChildFolderContactPhoto PSCommand_Update-MgUserContactFolderChildFolderContactPhoto PSFunction_Update-MgUserContactFolderContact PSCommand_Update-MgUserContactFolderContact PSFunction_Update-MgUserContactFolderContactExtension PSCommand_Update-MgUserContactFolderContactExtension PSFunction_Update-MgUserContactFolderContactPhoto PSCommand_Update-MgUserContactFolderContactPhoto PSFunction_Update-MgUserContactPhoto PSCommand_Update-MgUserContactPhoto PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.PersonalContacts.nuspec|Microsoft.Graph.PersonalContacts.format.ps1xml|Microsoft.Graph.PersonalContacts.psd1|Microsoft.Graph.PersonalContacts.psm1|bin\Microsoft.Graph.PersonalContacts.private.dll|bin\Microsoft.Graph.PersonalContacts.private.deps.json|internal\Microsoft.Graph.PersonalContacts.internal.psm1|custom\Microsoft.Graph.PersonalContacts.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">a53e24d0-43dd-43ec-950e-7ac40ea986fc</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.PersonalContacts\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>

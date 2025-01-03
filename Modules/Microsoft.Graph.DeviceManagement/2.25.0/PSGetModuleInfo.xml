@@ -1,0 +1,824 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.DeviceManagement</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:27:25-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:00:56.735084-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgAdminEdge</S>
+                <S>Get-MgAdminEdgeInternetExplorerMode</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListCount</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount</S>
+                <S>Get-MgDeviceManagement</S>
+                <S>Get-MgDeviceManagementDetectedApp</S>
+                <S>Get-MgDeviceManagementDetectedAppCount</S>
+                <S>Get-MgDeviceManagementDetectedAppManagedDevice</S>
+                <S>Get-MgDeviceManagementDetectedAppManagedDeviceCount</S>
+                <S>Get-MgDeviceManagementDeviceCategory</S>
+                <S>Get-MgDeviceManagementDeviceCategoryCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview</S>
+                <S>Get-MgDeviceManagementDeviceConfiguration</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationAssignmentCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationUserStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationUserStatusOverview</S>
+                <S>Get-MgDeviceManagementManagedDevice</S>
+                <S>Get-MgDeviceManagementManagedDeviceCategory</S>
+                <S>Get-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>Get-MgDeviceManagementManagedDeviceConfigurationStateCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceLogCollectionRequest</S>
+                <S>Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceOverview</S>
+                <S>Get-MgDeviceManagementManagedDeviceUser</S>
+                <S>Get-MgDeviceManagementManagedDeviceWindowsProtectionState</S>
+                <S>Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEventCount</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplateCount</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount</S>
+                <S>Get-MgDeviceManagementSoftwareUpdateStatusSummary</S>
+                <S>Get-MgDeviceManagementTroubleshootingEvent</S>
+                <S>Get-MgDeviceManagementTroubleshootingEventCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticOverview</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformationCount</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount</S>
+                <S>New-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>New-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>New-MgDeviceManagementDetectedApp</S>
+                <S>New-MgDeviceManagementDeviceCategory</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>New-MgDeviceManagementDeviceConfiguration</S>
+                <S>New-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>New-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>New-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>New-MgDeviceManagementManagedDevice</S>
+                <S>New-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>New-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>New-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>New-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>New-MgDeviceManagementTroubleshootingEvent</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>New-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+                <S>Remove-MgAdminEdge</S>
+                <S>Remove-MgAdminEdgeInternetExplorerMode</S>
+                <S>Remove-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>Remove-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>Remove-MgDeviceManagementDetectedApp</S>
+                <S>Remove-MgDeviceManagementDeviceCategory</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview</S>
+                <S>Remove-MgDeviceManagementDeviceConfiguration</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview</S>
+                <S>Remove-MgDeviceManagementManagedDevice</S>
+                <S>Remove-MgDeviceManagementManagedDeviceCategory</S>
+                <S>Remove-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>Remove-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>Remove-MgDeviceManagementManagedDeviceLogCollectionRequest</S>
+                <S>Remove-MgDeviceManagementManagedDeviceWindowsProtectionState</S>
+                <S>Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>Remove-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>Remove-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>Remove-MgDeviceManagementTroubleshootingEvent</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticOverview</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>Remove-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+                <S>Update-MgAdminEdge</S>
+                <S>Update-MgAdminEdgeInternetExplorerMode</S>
+                <S>Update-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>Update-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>Update-MgDeviceManagement</S>
+                <S>Update-MgDeviceManagementDetectedApp</S>
+                <S>Update-MgDeviceManagementDeviceCategory</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview</S>
+                <S>Update-MgDeviceManagementDeviceConfiguration</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationUserStatusOverview</S>
+                <S>Update-MgDeviceManagementManagedDevice</S>
+                <S>Update-MgDeviceManagementManagedDeviceCategory</S>
+                <S>Update-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>Update-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>Update-MgDeviceManagementManagedDeviceLogCollectionRequest</S>
+                <S>Update-MgDeviceManagementManagedDeviceWindowsProtectionState</S>
+                <S>Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>Update-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>Update-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>Update-MgDeviceManagementTroubleshootingEvent</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticOverview</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>Update-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgAdminEdge</S>
+                <S>Get-MgAdminEdgeInternetExplorerMode</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListCount</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount</S>
+                <S>Get-MgDeviceManagement</S>
+                <S>Get-MgDeviceManagementDetectedApp</S>
+                <S>Get-MgDeviceManagementDetectedAppCount</S>
+                <S>Get-MgDeviceManagementDetectedAppManagedDevice</S>
+                <S>Get-MgDeviceManagementDetectedAppManagedDeviceCount</S>
+                <S>Get-MgDeviceManagementDeviceCategory</S>
+                <S>Get-MgDeviceManagementDeviceCategoryCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview</S>
+                <S>Get-MgDeviceManagementDeviceConfiguration</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationAssignmentCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationUserStatusCount</S>
+                <S>Get-MgDeviceManagementDeviceConfigurationUserStatusOverview</S>
+                <S>Get-MgDeviceManagementManagedDevice</S>
+                <S>Get-MgDeviceManagementManagedDeviceCategory</S>
+                <S>Get-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>Get-MgDeviceManagementManagedDeviceConfigurationStateCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceLogCollectionRequest</S>
+                <S>Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount</S>
+                <S>Get-MgDeviceManagementManagedDeviceOverview</S>
+                <S>Get-MgDeviceManagementManagedDeviceUser</S>
+                <S>Get-MgDeviceManagementManagedDeviceWindowsProtectionState</S>
+                <S>Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount</S>
+                <S>Get-MgDeviceManagementMobileAppTroubleshootingEventCount</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplateCount</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount</S>
+                <S>Get-MgDeviceManagementSoftwareUpdateStatusSummary</S>
+                <S>Get-MgDeviceManagementTroubleshootingEvent</S>
+                <S>Get-MgDeviceManagementTroubleshootingEventCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticOverview</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformationCount</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+                <S>Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount</S>
+                <S>New-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>New-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>New-MgDeviceManagementDetectedApp</S>
+                <S>New-MgDeviceManagementDeviceCategory</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>New-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>New-MgDeviceManagementDeviceConfiguration</S>
+                <S>New-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>New-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>New-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>New-MgDeviceManagementManagedDevice</S>
+                <S>New-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>New-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>New-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>New-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>New-MgDeviceManagementTroubleshootingEvent</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>New-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+                <S>Remove-MgAdminEdge</S>
+                <S>Remove-MgAdminEdgeInternetExplorerMode</S>
+                <S>Remove-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>Remove-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>Remove-MgDeviceManagementDetectedApp</S>
+                <S>Remove-MgDeviceManagementDeviceCategory</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview</S>
+                <S>Remove-MgDeviceManagementDeviceConfiguration</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview</S>
+                <S>Remove-MgDeviceManagementManagedDevice</S>
+                <S>Remove-MgDeviceManagementManagedDeviceCategory</S>
+                <S>Remove-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>Remove-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>Remove-MgDeviceManagementManagedDeviceLogCollectionRequest</S>
+                <S>Remove-MgDeviceManagementManagedDeviceWindowsProtectionState</S>
+                <S>Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>Remove-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>Remove-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>Remove-MgDeviceManagementTroubleshootingEvent</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticOverview</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>Remove-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+                <S>Update-MgAdminEdge</S>
+                <S>Update-MgAdminEdgeInternetExplorerMode</S>
+                <S>Update-MgAdminEdgeInternetExplorerModeSiteList</S>
+                <S>Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie</S>
+                <S>Update-MgAdminEdgeInternetExplorerModeSiteListSite</S>
+                <S>Update-MgDeviceManagement</S>
+                <S>Update-MgDeviceManagementDetectedApp</S>
+                <S>Update-MgDeviceManagementDeviceCategory</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicy</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyAssignment</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyUserStatus</S>
+                <S>Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview</S>
+                <S>Update-MgDeviceManagementDeviceConfiguration</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationAssignment</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceStatus</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationUserStatus</S>
+                <S>Update-MgDeviceManagementDeviceConfigurationUserStatusOverview</S>
+                <S>Update-MgDeviceManagementManagedDevice</S>
+                <S>Update-MgDeviceManagementManagedDeviceCategory</S>
+                <S>Update-MgDeviceManagementManagedDeviceCompliancePolicyState</S>
+                <S>Update-MgDeviceManagementManagedDeviceConfigurationState</S>
+                <S>Update-MgDeviceManagementManagedDeviceLogCollectionRequest</S>
+                <S>Update-MgDeviceManagementManagedDeviceWindowsProtectionState</S>
+                <S>Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState</S>
+                <S>Update-MgDeviceManagementMobileAppTroubleshootingEvent</S>
+                <S>Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest</S>
+                <S>Update-MgDeviceManagementNotificationMessageTemplate</S>
+                <S>Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage</S>
+                <S>Update-MgDeviceManagementTroubleshootingEvent</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticBaseline</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticCategory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceScore</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticMetricHistory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticModelScore</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticOverview</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticScoreHistory</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice</S>
+                <S>Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance</S>
+                <S>Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary</S>
+                <S>Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary</S>
+                <S>Update-MgDeviceManagementWindowsMalwareInformation</S>
+                <S>Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1207022</S>
+          <S N="downloadCount">11856490</S>
+          <S N="packageSize">5056030</S>
+          <S N="published">11/21/2024 6:27:25 AM -05:00</S>
+          <S N="created">11/21/2024 6:27:25 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Get-MgAdminEdge PSCommand_Get-MgAdminEdge PSFunction_Get-MgAdminEdgeInternetExplorerMode PSCommand_Get-MgAdminEdgeInternetExplorerMode PSFunction_Get-MgAdminEdgeInternetExplorerModeSiteList PSCommand_Get-MgAdminEdgeInternetExplorerModeSiteList PSFunction_Get-MgAdminEdgeInternetExplorerModeSiteListCount PSCommand_Get-MgAdminEdgeInternetExplorerModeSiteListCount PSFunction_Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSCommand_Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSFunction_Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount PSCommand_Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount PSFunction_Get-MgAdminEdgeInternetExplorerModeSiteListSite PSCommand_Get-MgAdminEdgeInternetExplorerModeSiteListSite PSFunction_Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount PSCommand_Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount PSFunction_Get-MgDeviceManagement PSCommand_Get-MgDeviceManagement PSFunction_Get-MgDeviceManagementDetectedApp PSCommand_Get-MgDeviceManagementDetectedApp PSFunction_Get-MgDeviceManagementDetectedAppCount PSCommand_Get-MgDeviceManagementDetectedAppCount PSFunction_Get-MgDeviceManagementDetectedAppManagedDevice PSCommand_Get-MgDeviceManagementDetectedAppManagedDevice PSFunction_Get-MgDeviceManagementDetectedAppManagedDeviceCount PSCommand_Get-MgDeviceManagementDetectedAppManagedDeviceCount PSFunction_Get-MgDeviceManagementDeviceCategory PSCommand_Get-MgDeviceManagementDeviceCategory PSFunction_Get-MgDeviceManagementDeviceCategoryCount PSCommand_Get-MgDeviceManagementDeviceCategoryCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicy PSCommand_Get-MgDeviceManagementDeviceCompliancePolicy PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyAssignment PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyAssignment PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSCommand_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSFunction_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSCommand_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSFunction_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyUserStatus PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyUserStatus PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount PSFunction_Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview PSCommand_Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview PSFunction_Get-MgDeviceManagementDeviceConfiguration PSCommand_Get-MgDeviceManagementDeviceConfiguration PSFunction_Get-MgDeviceManagementDeviceConfigurationAssignment PSCommand_Get-MgDeviceManagementDeviceConfigurationAssignment PSFunction_Get-MgDeviceManagementDeviceConfigurationAssignmentCount PSCommand_Get-MgDeviceManagementDeviceConfigurationAssignmentCount PSFunction_Get-MgDeviceManagementDeviceConfigurationCount PSCommand_Get-MgDeviceManagementDeviceConfigurationCount PSFunction_Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSCommand_Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSFunction_Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount PSCommand_Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount PSFunction_Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary PSCommand_Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary PSFunction_Get-MgDeviceManagementDeviceConfigurationDeviceStatus PSCommand_Get-MgDeviceManagementDeviceConfigurationDeviceStatus PSFunction_Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount PSCommand_Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount PSFunction_Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview PSCommand_Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview PSFunction_Get-MgDeviceManagementDeviceConfigurationUserStatus PSCommand_Get-MgDeviceManagementDeviceConfigurationUserStatus PSFunction_Get-MgDeviceManagementDeviceConfigurationUserStatusCount PSCommand_Get-MgDeviceManagementDeviceConfigurationUserStatusCount PSFunction_Get-MgDeviceManagementDeviceConfigurationUserStatusOverview PSCommand_Get-MgDeviceManagementDeviceConfigurationUserStatusOverview PSFunction_Get-MgDeviceManagementManagedDevice PSCommand_Get-MgDeviceManagementManagedDevice PSFunction_Get-MgDeviceManagementManagedDeviceCategory PSCommand_Get-MgDeviceManagementManagedDeviceCategory PSFunction_Get-MgDeviceManagementManagedDeviceCompliancePolicyState PSCommand_Get-MgDeviceManagementManagedDeviceCompliancePolicyState PSFunction_Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount PSCommand_Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount PSFunction_Get-MgDeviceManagementManagedDeviceConfigurationState PSCommand_Get-MgDeviceManagementManagedDeviceConfigurationState PSFunction_Get-MgDeviceManagementManagedDeviceConfigurationStateCount PSCommand_Get-MgDeviceManagementManagedDeviceConfigurationStateCount PSFunction_Get-MgDeviceManagementManagedDeviceCount PSCommand_Get-MgDeviceManagementManagedDeviceCount PSFunction_Get-MgDeviceManagementManagedDeviceLogCollectionRequest PSCommand_Get-MgDeviceManagementManagedDeviceLogCollectionRequest PSFunction_Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount PSCommand_Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount PSFunction_Get-MgDeviceManagementManagedDeviceOverview PSCommand_Get-MgDeviceManagementManagedDeviceOverview PSFunction_Get-MgDeviceManagementManagedDeviceUser PSCommand_Get-MgDeviceManagementManagedDeviceUser PSFunction_Get-MgDeviceManagementManagedDeviceWindowsProtectionState PSCommand_Get-MgDeviceManagementManagedDeviceWindowsProtectionState PSFunction_Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSCommand_Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSFunction_Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount PSCommand_Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount PSFunction_Get-MgDeviceManagementMobileAppTroubleshootingEvent PSCommand_Get-MgDeviceManagementMobileAppTroubleshootingEvent PSFunction_Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSCommand_Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSFunction_Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount PSCommand_Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount PSFunction_Get-MgDeviceManagementMobileAppTroubleshootingEventCount PSCommand_Get-MgDeviceManagementMobileAppTroubleshootingEventCount PSFunction_Get-MgDeviceManagementNotificationMessageTemplate PSCommand_Get-MgDeviceManagementNotificationMessageTemplate PSFunction_Get-MgDeviceManagementNotificationMessageTemplateCount PSCommand_Get-MgDeviceManagementNotificationMessageTemplateCount PSFunction_Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSCommand_Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSFunction_Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount PSCommand_Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount PSFunction_Get-MgDeviceManagementSoftwareUpdateStatusSummary PSCommand_Get-MgDeviceManagementSoftwareUpdateStatusSummary PSFunction_Get-MgDeviceManagementTroubleshootingEvent PSCommand_Get-MgDeviceManagementTroubleshootingEvent PSFunction_Get-MgDeviceManagementTroubleshootingEventCount PSCommand_Get-MgDeviceManagementTroubleshootingEventCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSFunction_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaseline PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaseline PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticCategory PSCommand_Get-MgDeviceManagementUserExperienceAnalyticCategory PSFunction_Get-MgDeviceManagementUserExperienceAnalyticCategoryCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticCategoryCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSCommand_Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSFunction_Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceScore PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceScore PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticMetricHistory PSCommand_Get-MgDeviceManagementUserExperienceAnalyticMetricHistory PSFunction_Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticModelScore PSCommand_Get-MgDeviceManagementUserExperienceAnalyticModelScore PSFunction_Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticOverview PSCommand_Get-MgDeviceManagementUserExperienceAnalyticOverview PSFunction_Get-MgDeviceManagementUserExperienceAnalyticScoreHistory PSCommand_Get-MgDeviceManagementUserExperienceAnalyticScoreHistory PSFunction_Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSFunction_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount PSCommand_Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount PSFunction_Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSCommand_Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSFunction_Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount PSCommand_Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount PSFunction_Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSCommand_Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSFunction_Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount PSCommand_Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount PSFunction_Get-MgDeviceManagementWindowsMalwareInformation PSCommand_Get-MgDeviceManagementWindowsMalwareInformation PSFunction_Get-MgDeviceManagementWindowsMalwareInformationCount PSCommand_Get-MgDeviceManagementWindowsMalwareInformationCount PSFunction_Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSCommand_Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSFunction_Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount PSCommand_Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount PSFunction_New-MgAdminEdgeInternetExplorerModeSiteList PSCommand_New-MgAdminEdgeInternetExplorerModeSiteList PSFunction_New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSCommand_New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSFunction_New-MgAdminEdgeInternetExplorerModeSiteListSite PSCommand_New-MgAdminEdgeInternetExplorerModeSiteListSite PSFunction_New-MgDeviceManagementDetectedApp PSCommand_New-MgDeviceManagementDetectedApp PSFunction_New-MgDeviceManagementDeviceCategory PSCommand_New-MgDeviceManagementDeviceCategory PSFunction_New-MgDeviceManagementDeviceCompliancePolicy PSCommand_New-MgDeviceManagementDeviceCompliancePolicy PSFunction_New-MgDeviceManagementDeviceCompliancePolicyAssignment PSCommand_New-MgDeviceManagementDeviceCompliancePolicyAssignment PSFunction_New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSCommand_New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSFunction_New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSCommand_New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSFunction_New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSCommand_New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSFunction_New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSCommand_New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSFunction_New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSCommand_New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSFunction_New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSCommand_New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSFunction_New-MgDeviceManagementDeviceCompliancePolicyUserStatus PSCommand_New-MgDeviceManagementDeviceCompliancePolicyUserStatus PSFunction_New-MgDeviceManagementDeviceConfiguration PSCommand_New-MgDeviceManagementDeviceConfiguration PSFunction_New-MgDeviceManagementDeviceConfigurationAssignment PSCommand_New-MgDeviceManagementDeviceConfigurationAssignment PSFunction_New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSCommand_New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSFunction_New-MgDeviceManagementDeviceConfigurationDeviceStatus PSCommand_New-MgDeviceManagementDeviceConfigurationDeviceStatus PSFunction_New-MgDeviceManagementDeviceConfigurationUserStatus PSCommand_New-MgDeviceManagementDeviceConfigurationUserStatus PSFunction_New-MgDeviceManagementManagedDevice PSCommand_New-MgDeviceManagementManagedDevice PSFunction_New-MgDeviceManagementManagedDeviceCompliancePolicyState PSCommand_New-MgDeviceManagementManagedDeviceCompliancePolicyState PSFunction_New-MgDeviceManagementManagedDeviceConfigurationState PSCommand_New-MgDeviceManagementManagedDeviceConfigurationState PSFunction_New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSCommand_New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSFunction_New-MgDeviceManagementMobileAppTroubleshootingEvent PSCommand_New-MgDeviceManagementMobileAppTroubleshootingEvent PSFunction_New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSCommand_New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSFunction_New-MgDeviceManagementNotificationMessageTemplate PSCommand_New-MgDeviceManagementNotificationMessageTemplate PSFunction_New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSCommand_New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSFunction_New-MgDeviceManagementTroubleshootingEvent PSCommand_New-MgDeviceManagementTroubleshootingEvent PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSFunction_New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSCommand_New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSFunction_New-MgDeviceManagementUserExperienceAnalyticBaseline PSCommand_New-MgDeviceManagementUserExperienceAnalyticBaseline PSFunction_New-MgDeviceManagementUserExperienceAnalyticCategory PSCommand_New-MgDeviceManagementUserExperienceAnalyticCategory PSFunction_New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSCommand_New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSFunction_New-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSFunction_New-MgDeviceManagementUserExperienceAnalyticDeviceScore PSCommand_New-MgDeviceManagementUserExperienceAnalyticDeviceScore PSFunction_New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSCommand_New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSFunction_New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSCommand_New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSFunction_New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSFunction_New-MgDeviceManagementUserExperienceAnalyticMetricHistory PSCommand_New-MgDeviceManagementUserExperienceAnalyticMetricHistory PSFunction_New-MgDeviceManagementUserExperienceAnalyticModelScore PSCommand_New-MgDeviceManagementUserExperienceAnalyticModelScore PSFunction_New-MgDeviceManagementUserExperienceAnalyticScoreHistory PSCommand_New-MgDeviceManagementUserExperienceAnalyticScoreHistory PSFunction_New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSCommand_New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSFunction_New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSCommand_New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSFunction_New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSCommand_New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSFunction_New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSCommand_New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSFunction_New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSCommand_New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSFunction_New-MgDeviceManagementWindowsMalwareInformation PSCommand_New-MgDeviceManagementWindowsMalwareInformation PSFunction_New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSCommand_New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSFunction_Remove-MgAdminEdge PSCommand_Remove-MgAdminEdge PSFunction_Remove-MgAdminEdgeInternetExplorerMode PSCommand_Remove-MgAdminEdgeInternetExplorerMode PSFunction_Remove-MgAdminEdgeInternetExplorerModeSiteList PSCommand_Remove-MgAdminEdgeInternetExplorerModeSiteList PSFunction_Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSCommand_Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSFunction_Remove-MgAdminEdgeInternetExplorerModeSiteListSite PSCommand_Remove-MgAdminEdgeInternetExplorerModeSiteListSite PSFunction_Remove-MgDeviceManagementDetectedApp PSCommand_Remove-MgDeviceManagementDetectedApp PSFunction_Remove-MgDeviceManagementDeviceCategory PSCommand_Remove-MgDeviceManagementDeviceCategory PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicy PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicy PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyAssignment PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyAssignment PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus PSFunction_Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview PSCommand_Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview PSFunction_Remove-MgDeviceManagementDeviceConfiguration PSCommand_Remove-MgDeviceManagementDeviceConfiguration PSFunction_Remove-MgDeviceManagementDeviceConfigurationAssignment PSCommand_Remove-MgDeviceManagementDeviceConfigurationAssignment PSFunction_Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSCommand_Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSFunction_Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary PSCommand_Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary PSFunction_Remove-MgDeviceManagementDeviceConfigurationDeviceStatus PSCommand_Remove-MgDeviceManagementDeviceConfigurationDeviceStatus PSFunction_Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview PSCommand_Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview PSFunction_Remove-MgDeviceManagementDeviceConfigurationUserStatus PSCommand_Remove-MgDeviceManagementDeviceConfigurationUserStatus PSFunction_Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview PSCommand_Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview PSFunction_Remove-MgDeviceManagementManagedDevice PSCommand_Remove-MgDeviceManagementManagedDevice PSFunction_Remove-MgDeviceManagementManagedDeviceCategory PSCommand_Remove-MgDeviceManagementManagedDeviceCategory PSFunction_Remove-MgDeviceManagementManagedDeviceCompliancePolicyState PSCommand_Remove-MgDeviceManagementManagedDeviceCompliancePolicyState PSFunction_Remove-MgDeviceManagementManagedDeviceConfigurationState PSCommand_Remove-MgDeviceManagementManagedDeviceConfigurationState PSFunction_Remove-MgDeviceManagementManagedDeviceLogCollectionRequest PSCommand_Remove-MgDeviceManagementManagedDeviceLogCollectionRequest PSFunction_Remove-MgDeviceManagementManagedDeviceWindowsProtectionState PSCommand_Remove-MgDeviceManagementManagedDeviceWindowsProtectionState PSFunction_Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSCommand_Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSFunction_Remove-MgDeviceManagementMobileAppTroubleshootingEvent PSCommand_Remove-MgDeviceManagementMobileAppTroubleshootingEvent PSFunction_Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSCommand_Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSFunction_Remove-MgDeviceManagementNotificationMessageTemplate PSCommand_Remove-MgDeviceManagementNotificationMessageTemplate PSFunction_Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSCommand_Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSFunction_Remove-MgDeviceManagementTroubleshootingEvent PSCommand_Remove-MgDeviceManagementTroubleshootingEvent PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticBaseline PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticBaseline PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticCategory PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticCategory PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticModelScore PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticModelScore PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticOverview PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticOverview PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSFunction_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSCommand_Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSFunction_Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSCommand_Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSFunction_Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSCommand_Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSFunction_Remove-MgDeviceManagementWindowsMalwareInformation PSCommand_Remove-MgDeviceManagementWindowsMalwareInformation PSFunction_Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSCommand_Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSFunction_Update-MgAdminEdge PSCommand_Update-MgAdminEdge PSFunction_Update-MgAdminEdgeInternetExplorerMode PSCommand_Update-MgAdminEdgeInternetExplorerMode PSFunction_Update-MgAdminEdgeInternetExplorerModeSiteList PSCommand_Update-MgAdminEdgeInternetExplorerModeSiteList PSFunction_Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSCommand_Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie PSFunction_Update-MgAdminEdgeInternetExplorerModeSiteListSite PSCommand_Update-MgAdminEdgeInternetExplorerModeSiteListSite PSFunction_Update-MgDeviceManagement PSCommand_Update-MgDeviceManagement PSFunction_Update-MgDeviceManagementDetectedApp PSCommand_Update-MgDeviceManagementDetectedApp PSFunction_Update-MgDeviceManagementDeviceCategory PSCommand_Update-MgDeviceManagementDeviceCategory PSFunction_Update-MgDeviceManagementDeviceCompliancePolicy PSCommand_Update-MgDeviceManagementDeviceCompliancePolicy PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyAssignment PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyAssignment PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration PSFunction_Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSCommand_Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary PSFunction_Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSCommand_Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyUserStatus PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyUserStatus PSFunction_Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview PSCommand_Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview PSFunction_Update-MgDeviceManagementDeviceConfiguration PSCommand_Update-MgDeviceManagementDeviceConfiguration PSFunction_Update-MgDeviceManagementDeviceConfigurationAssignment PSCommand_Update-MgDeviceManagementDeviceConfigurationAssignment PSFunction_Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSCommand_Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary PSFunction_Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary PSCommand_Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary PSFunction_Update-MgDeviceManagementDeviceConfigurationDeviceStatus PSCommand_Update-MgDeviceManagementDeviceConfigurationDeviceStatus PSFunction_Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview PSCommand_Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview PSFunction_Update-MgDeviceManagementDeviceConfigurationUserStatus PSCommand_Update-MgDeviceManagementDeviceConfigurationUserStatus PSFunction_Update-MgDeviceManagementDeviceConfigurationUserStatusOverview PSCommand_Update-MgDeviceManagementDeviceConfigurationUserStatusOverview PSFunction_Update-MgDeviceManagementManagedDevice PSCommand_Update-MgDeviceManagementManagedDevice PSFunction_Update-MgDeviceManagementManagedDeviceCategory PSCommand_Update-MgDeviceManagementManagedDeviceCategory PSFunction_Update-MgDeviceManagementManagedDeviceCompliancePolicyState PSCommand_Update-MgDeviceManagementManagedDeviceCompliancePolicyState PSFunction_Update-MgDeviceManagementManagedDeviceConfigurationState PSCommand_Update-MgDeviceManagementManagedDeviceConfigurationState PSFunction_Update-MgDeviceManagementManagedDeviceLogCollectionRequest PSCommand_Update-MgDeviceManagementManagedDeviceLogCollectionRequest PSFunction_Update-MgDeviceManagementManagedDeviceWindowsProtectionState PSCommand_Update-MgDeviceManagementManagedDeviceWindowsProtectionState PSFunction_Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSCommand_Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState PSFunction_Update-MgDeviceManagementMobileAppTroubleshootingEvent PSCommand_Update-MgDeviceManagementMobileAppTroubleshootingEvent PSFunction_Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSCommand_Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest PSFunction_Update-MgDeviceManagementNotificationMessageTemplate PSCommand_Update-MgDeviceManagementNotificationMessageTemplate PSFunction_Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSCommand_Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage PSFunction_Update-MgDeviceManagementTroubleshootingEvent PSCommand_Update-MgDeviceManagementTroubleshootingEvent PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview PSFunction_Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSCommand_Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue PSFunction_Update-MgDeviceManagementUserExperienceAnalyticBaseline PSCommand_Update-MgDeviceManagementUserExperienceAnalyticBaseline PSFunction_Update-MgDeviceManagementUserExperienceAnalyticCategory PSCommand_Update-MgDeviceManagementUserExperienceAnalyticCategory PSFunction_Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSCommand_Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue PSFunction_Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance PSFunction_Update-MgDeviceManagementUserExperienceAnalyticDeviceScore PSCommand_Update-MgDeviceManagementUserExperienceAnalyticDeviceScore PSFunction_Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSCommand_Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory PSFunction_Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSCommand_Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess PSFunction_Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance PSFunction_Update-MgDeviceManagementUserExperienceAnalyticMetricHistory PSCommand_Update-MgDeviceManagementUserExperienceAnalyticMetricHistory PSFunction_Update-MgDeviceManagementUserExperienceAnalyticModelScore PSCommand_Update-MgDeviceManagementUserExperienceAnalyticModelScore PSFunction_Update-MgDeviceManagementUserExperienceAnalyticOverview PSCommand_Update-MgDeviceManagementUserExperienceAnalyticOverview PSFunction_Update-MgDeviceManagementUserExperienceAnalyticScoreHistory PSCommand_Update-MgDeviceManagementUserExperienceAnalyticScoreHistory PSFunction_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric PSCommand_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric PSFunction_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSCommand_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric PSFunction_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSCommand_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice PSFunction_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSCommand_Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance PSFunction_Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSCommand_Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary PSFunction_Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSCommand_Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary PSFunction_Update-MgDeviceManagementWindowsMalwareInformation PSCommand_Update-MgDeviceManagementWindowsMalwareInformation PSFunction_Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSCommand_Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.DeviceManagement.nuspec|Microsoft.Graph.DeviceManagement.format.ps1xml|Microsoft.Graph.DeviceManagement.psd1|Microsoft.Graph.DeviceManagement.psm1|bin\Microsoft.Graph.DeviceManagement.private.dll|bin\Microsoft.Graph.DeviceManagement.private.deps.json|internal\Microsoft.Graph.DeviceManagement.internal.psm1|custom\Microsoft.Graph.DeviceManagement.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">4131557d-8635-4903-9cfd-d59ddef4a597</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.DeviceManagement\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,170 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.SchemaExtensions</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:28:47-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:02:42.2511185-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgSchemaExtension</S>
+                <S>Get-MgSchemaExtensionCount</S>
+                <S>New-MgSchemaExtension</S>
+                <S>Remove-MgSchemaExtension</S>
+                <S>Update-MgSchemaExtension</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgSchemaExtension</S>
+                <S>Get-MgSchemaExtensionCount</S>
+                <S>New-MgSchemaExtension</S>
+                <S>Remove-MgSchemaExtension</S>
+                <S>Update-MgSchemaExtension</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1066535</S>
+          <S N="downloadCount">10612323</S>
+          <S N="packageSize">331438</S>
+          <S N="published">11/21/2024 6:28:47 AM -05:00</S>
+          <S N="created">11/21/2024 6:28:47 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Get-MgSchemaExtension PSCommand_Get-MgSchemaExtension PSFunction_Get-MgSchemaExtensionCount PSCommand_Get-MgSchemaExtensionCount PSFunction_New-MgSchemaExtension PSCommand_New-MgSchemaExtension PSFunction_Remove-MgSchemaExtension PSCommand_Remove-MgSchemaExtension PSFunction_Update-MgSchemaExtension PSCommand_Update-MgSchemaExtension PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.SchemaExtensions.nuspec|Microsoft.Graph.SchemaExtensions.format.ps1xml|Microsoft.Graph.SchemaExtensions.psd1|Microsoft.Graph.SchemaExtensions.psm1|bin\Microsoft.Graph.SchemaExtensions.private.dll|bin\Microsoft.Graph.SchemaExtensions.private.deps.json|internal\Microsoft.Graph.SchemaExtensions.internal.psm1|custom\Microsoft.Graph.SchemaExtensions.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">fd6bc590-0f4b-4644-baf0-a816bf40616e</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.SchemaExtensions\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>

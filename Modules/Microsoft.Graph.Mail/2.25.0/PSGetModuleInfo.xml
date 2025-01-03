@@ -1,0 +1,314 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.Mail</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:28:13-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:02:08.4350297-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgUserInferenceClassification</S>
+                <S>Get-MgUserInferenceClassificationOverride</S>
+                <S>Get-MgUserInferenceClassificationOverrideCount</S>
+                <S>Get-MgUserMailFolder</S>
+                <S>Get-MgUserMailFolderChildFolder</S>
+                <S>Get-MgUserMailFolderChildFolderCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessage</S>
+                <S>Get-MgUserMailFolderChildFolderMessageAttachment</S>
+                <S>Get-MgUserMailFolderChildFolderMessageAttachmentCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessageContent</S>
+                <S>Get-MgUserMailFolderChildFolderMessageCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>Get-MgUserMailFolderChildFolderMessageExtensionCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessageRule</S>
+                <S>Get-MgUserMailFolderChildFolderMessageRuleCount</S>
+                <S>Get-MgUserMailFolderCount</S>
+                <S>Get-MgUserMailFolderMessage</S>
+                <S>Get-MgUserMailFolderMessageAttachment</S>
+                <S>Get-MgUserMailFolderMessageAttachmentCount</S>
+                <S>Get-MgUserMailFolderMessageCount</S>
+                <S>Get-MgUserMailFolderMessageExtension</S>
+                <S>Get-MgUserMailFolderMessageExtensionCount</S>
+                <S>Get-MgUserMailFolderMessageRule</S>
+                <S>Get-MgUserMailFolderMessageRuleCount</S>
+                <S>Get-MgUserMessage</S>
+                <S>Get-MgUserMessageAttachment</S>
+                <S>Get-MgUserMessageAttachmentCount</S>
+                <S>Get-MgUserMessageContent</S>
+                <S>Get-MgUserMessageCount</S>
+                <S>Get-MgUserMessageExtension</S>
+                <S>Get-MgUserMessageExtensionCount</S>
+                <S>New-MgUserInferenceClassificationOverride</S>
+                <S>New-MgUserMailFolder</S>
+                <S>New-MgUserMailFolderChildFolder</S>
+                <S>New-MgUserMailFolderChildFolderMessage</S>
+                <S>New-MgUserMailFolderChildFolderMessageAttachment</S>
+                <S>New-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>New-MgUserMailFolderChildFolderMessageRule</S>
+                <S>New-MgUserMailFolderMessage</S>
+                <S>New-MgUserMailFolderMessageAttachment</S>
+                <S>New-MgUserMailFolderMessageExtension</S>
+                <S>New-MgUserMailFolderMessageRule</S>
+                <S>New-MgUserMessage</S>
+                <S>New-MgUserMessageAttachment</S>
+                <S>New-MgUserMessageExtension</S>
+                <S>Remove-MgUserInferenceClassificationOverride</S>
+                <S>Remove-MgUserMailFolder</S>
+                <S>Remove-MgUserMailFolderChildFolder</S>
+                <S>Remove-MgUserMailFolderChildFolderMessage</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageAttachment</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageContent</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageRule</S>
+                <S>Remove-MgUserMailFolderMessage</S>
+                <S>Remove-MgUserMailFolderMessageAttachment</S>
+                <S>Remove-MgUserMailFolderMessageContent</S>
+                <S>Remove-MgUserMailFolderMessageExtension</S>
+                <S>Remove-MgUserMailFolderMessageRule</S>
+                <S>Remove-MgUserMessage</S>
+                <S>Remove-MgUserMessageAttachment</S>
+                <S>Remove-MgUserMessageContent</S>
+                <S>Remove-MgUserMessageExtension</S>
+                <S>Set-MgUserMailFolderChildFolderMessageContent</S>
+                <S>Set-MgUserMailFolderMessageContent</S>
+                <S>Set-MgUserMessageContent</S>
+                <S>Update-MgUserInferenceClassification</S>
+                <S>Update-MgUserInferenceClassificationOverride</S>
+                <S>Update-MgUserMailFolder</S>
+                <S>Update-MgUserMailFolderChildFolder</S>
+                <S>Update-MgUserMailFolderChildFolderMessage</S>
+                <S>Update-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>Update-MgUserMailFolderChildFolderMessageRule</S>
+                <S>Update-MgUserMailFolderMessage</S>
+                <S>Update-MgUserMailFolderMessageExtension</S>
+                <S>Update-MgUserMailFolderMessageRule</S>
+                <S>Update-MgUserMessage</S>
+                <S>Update-MgUserMessageExtension</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgUserInferenceClassification</S>
+                <S>Get-MgUserInferenceClassificationOverride</S>
+                <S>Get-MgUserInferenceClassificationOverrideCount</S>
+                <S>Get-MgUserMailFolder</S>
+                <S>Get-MgUserMailFolderChildFolder</S>
+                <S>Get-MgUserMailFolderChildFolderCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessage</S>
+                <S>Get-MgUserMailFolderChildFolderMessageAttachment</S>
+                <S>Get-MgUserMailFolderChildFolderMessageAttachmentCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessageContent</S>
+                <S>Get-MgUserMailFolderChildFolderMessageCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>Get-MgUserMailFolderChildFolderMessageExtensionCount</S>
+                <S>Get-MgUserMailFolderChildFolderMessageRule</S>
+                <S>Get-MgUserMailFolderChildFolderMessageRuleCount</S>
+                <S>Get-MgUserMailFolderCount</S>
+                <S>Get-MgUserMailFolderMessage</S>
+                <S>Get-MgUserMailFolderMessageAttachment</S>
+                <S>Get-MgUserMailFolderMessageAttachmentCount</S>
+                <S>Get-MgUserMailFolderMessageCount</S>
+                <S>Get-MgUserMailFolderMessageExtension</S>
+                <S>Get-MgUserMailFolderMessageExtensionCount</S>
+                <S>Get-MgUserMailFolderMessageRule</S>
+                <S>Get-MgUserMailFolderMessageRuleCount</S>
+                <S>Get-MgUserMessage</S>
+                <S>Get-MgUserMessageAttachment</S>
+                <S>Get-MgUserMessageAttachmentCount</S>
+                <S>Get-MgUserMessageContent</S>
+                <S>Get-MgUserMessageCount</S>
+                <S>Get-MgUserMessageExtension</S>
+                <S>Get-MgUserMessageExtensionCount</S>
+                <S>New-MgUserInferenceClassificationOverride</S>
+                <S>New-MgUserMailFolder</S>
+                <S>New-MgUserMailFolderChildFolder</S>
+                <S>New-MgUserMailFolderChildFolderMessage</S>
+                <S>New-MgUserMailFolderChildFolderMessageAttachment</S>
+                <S>New-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>New-MgUserMailFolderChildFolderMessageRule</S>
+                <S>New-MgUserMailFolderMessage</S>
+                <S>New-MgUserMailFolderMessageAttachment</S>
+                <S>New-MgUserMailFolderMessageExtension</S>
+                <S>New-MgUserMailFolderMessageRule</S>
+                <S>New-MgUserMessage</S>
+                <S>New-MgUserMessageAttachment</S>
+                <S>New-MgUserMessageExtension</S>
+                <S>Remove-MgUserInferenceClassificationOverride</S>
+                <S>Remove-MgUserMailFolder</S>
+                <S>Remove-MgUserMailFolderChildFolder</S>
+                <S>Remove-MgUserMailFolderChildFolderMessage</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageAttachment</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageContent</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>Remove-MgUserMailFolderChildFolderMessageRule</S>
+                <S>Remove-MgUserMailFolderMessage</S>
+                <S>Remove-MgUserMailFolderMessageAttachment</S>
+                <S>Remove-MgUserMailFolderMessageContent</S>
+                <S>Remove-MgUserMailFolderMessageExtension</S>
+                <S>Remove-MgUserMailFolderMessageRule</S>
+                <S>Remove-MgUserMessage</S>
+                <S>Remove-MgUserMessageAttachment</S>
+                <S>Remove-MgUserMessageContent</S>
+                <S>Remove-MgUserMessageExtension</S>
+                <S>Set-MgUserMailFolderChildFolderMessageContent</S>
+                <S>Set-MgUserMailFolderMessageContent</S>
+                <S>Set-MgUserMessageContent</S>
+                <S>Update-MgUserInferenceClassification</S>
+                <S>Update-MgUserInferenceClassificationOverride</S>
+                <S>Update-MgUserMailFolder</S>
+                <S>Update-MgUserMailFolderChildFolder</S>
+                <S>Update-MgUserMailFolderChildFolderMessage</S>
+                <S>Update-MgUserMailFolderChildFolderMessageExtension</S>
+                <S>Update-MgUserMailFolderChildFolderMessageRule</S>
+                <S>Update-MgUserMailFolderMessage</S>
+                <S>Update-MgUserMailFolderMessageExtension</S>
+                <S>Update-MgUserMailFolderMessageRule</S>
+                <S>Update-MgUserMessage</S>
+                <S>Update-MgUserMessageExtension</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1075530</S>
+          <S N="downloadCount">14487996</S>
+          <S N="packageSize">1017141</S>
+          <S N="published">11/21/2024 6:28:13 AM -05:00</S>
+          <S N="created">11/21/2024 6:28:13 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Get-MgUserInferenceClassification PSCommand_Get-MgUserInferenceClassification PSFunction_Get-MgUserInferenceClassificationOverride PSCommand_Get-MgUserInferenceClassificationOverride PSFunction_Get-MgUserInferenceClassificationOverrideCount PSCommand_Get-MgUserInferenceClassificationOverrideCount PSFunction_Get-MgUserMailFolder PSCommand_Get-MgUserMailFolder PSFunction_Get-MgUserMailFolderChildFolder PSCommand_Get-MgUserMailFolderChildFolder PSFunction_Get-MgUserMailFolderChildFolderCount PSCommand_Get-MgUserMailFolderChildFolderCount PSFunction_Get-MgUserMailFolderChildFolderMessage PSCommand_Get-MgUserMailFolderChildFolderMessage PSFunction_Get-MgUserMailFolderChildFolderMessageAttachment PSCommand_Get-MgUserMailFolderChildFolderMessageAttachment PSFunction_Get-MgUserMailFolderChildFolderMessageAttachmentCount PSCommand_Get-MgUserMailFolderChildFolderMessageAttachmentCount PSFunction_Get-MgUserMailFolderChildFolderMessageContent PSCommand_Get-MgUserMailFolderChildFolderMessageContent PSFunction_Get-MgUserMailFolderChildFolderMessageCount PSCommand_Get-MgUserMailFolderChildFolderMessageCount PSFunction_Get-MgUserMailFolderChildFolderMessageExtension PSCommand_Get-MgUserMailFolderChildFolderMessageExtension PSFunction_Get-MgUserMailFolderChildFolderMessageExtensionCount PSCommand_Get-MgUserMailFolderChildFolderMessageExtensionCount PSFunction_Get-MgUserMailFolderChildFolderMessageRule PSCommand_Get-MgUserMailFolderChildFolderMessageRule PSFunction_Get-MgUserMailFolderChildFolderMessageRuleCount PSCommand_Get-MgUserMailFolderChildFolderMessageRuleCount PSFunction_Get-MgUserMailFolderCount PSCommand_Get-MgUserMailFolderCount PSFunction_Get-MgUserMailFolderMessage PSCommand_Get-MgUserMailFolderMessage PSFunction_Get-MgUserMailFolderMessageAttachment PSCommand_Get-MgUserMailFolderMessageAttachment PSFunction_Get-MgUserMailFolderMessageAttachmentCount PSCommand_Get-MgUserMailFolderMessageAttachmentCount PSFunction_Get-MgUserMailFolderMessageCount PSCommand_Get-MgUserMailFolderMessageCount PSFunction_Get-MgUserMailFolderMessageExtension PSCommand_Get-MgUserMailFolderMessageExtension PSFunction_Get-MgUserMailFolderMessageExtensionCount PSCommand_Get-MgUserMailFolderMessageExtensionCount PSFunction_Get-MgUserMailFolderMessageRule PSCommand_Get-MgUserMailFolderMessageRule PSFunction_Get-MgUserMailFolderMessageRuleCount PSCommand_Get-MgUserMailFolderMessageRuleCount PSFunction_Get-MgUserMessage PSCommand_Get-MgUserMessage PSFunction_Get-MgUserMessageAttachment PSCommand_Get-MgUserMessageAttachment PSFunction_Get-MgUserMessageAttachmentCount PSCommand_Get-MgUserMessageAttachmentCount PSFunction_Get-MgUserMessageContent PSCommand_Get-MgUserMessageContent PSFunction_Get-MgUserMessageCount PSCommand_Get-MgUserMessageCount PSFunction_Get-MgUserMessageExtension PSCommand_Get-MgUserMessageExtension PSFunction_Get-MgUserMessageExtensionCount PSCommand_Get-MgUserMessageExtensionCount PSFunction_New-MgUserInferenceClassificationOverride PSCommand_New-MgUserInferenceClassificationOverride PSFunction_New-MgUserMailFolder PSCommand_New-MgUserMailFolder PSFunction_New-MgUserMailFolderChildFolder PSCommand_New-MgUserMailFolderChildFolder PSFunction_New-MgUserMailFolderChildFolderMessage PSCommand_New-MgUserMailFolderChildFolderMessage PSFunction_New-MgUserMailFolderChildFolderMessageAttachment PSCommand_New-MgUserMailFolderChildFolderMessageAttachment PSFunction_New-MgUserMailFolderChildFolderMessageExtension PSCommand_New-MgUserMailFolderChildFolderMessageExtension PSFunction_New-MgUserMailFolderChildFolderMessageRule PSCommand_New-MgUserMailFolderChildFolderMessageRule PSFunction_New-MgUserMailFolderMessage PSCommand_New-MgUserMailFolderMessage PSFunction_New-MgUserMailFolderMessageAttachment PSCommand_New-MgUserMailFolderMessageAttachment PSFunction_New-MgUserMailFolderMessageExtension PSCommand_New-MgUserMailFolderMessageExtension PSFunction_New-MgUserMailFolderMessageRule PSCommand_New-MgUserMailFolderMessageRule PSFunction_New-MgUserMessage PSCommand_New-MgUserMessage PSFunction_New-MgUserMessageAttachment PSCommand_New-MgUserMessageAttachment PSFunction_New-MgUserMessageExtension PSCommand_New-MgUserMessageExtension PSFunction_Remove-MgUserInferenceClassificationOverride PSCommand_Remove-MgUserInferenceClassificationOverride PSFunction_Remove-MgUserMailFolder PSCommand_Remove-MgUserMailFolder PSFunction_Remove-MgUserMailFolderChildFolder PSCommand_Remove-MgUserMailFolderChildFolder PSFunction_Remove-MgUserMailFolderChildFolderMessage PSCommand_Remove-MgUserMailFolderChildFolderMessage PSFunction_Remove-MgUserMailFolderChildFolderMessageAttachment PSCommand_Remove-MgUserMailFolderChildFolderMessageAttachment PSFunction_Remove-MgUserMailFolderChildFolderMessageContent PSCommand_Remove-MgUserMailFolderChildFolderMessageContent PSFunction_Remove-MgUserMailFolderChildFolderMessageExtension PSCommand_Remove-MgUserMailFolderChildFolderMessageExtension PSFunction_Remove-MgUserMailFolderChildFolderMessageRule PSCommand_Remove-MgUserMailFolderChildFolderMessageRule PSFunction_Remove-MgUserMailFolderMessage PSCommand_Remove-MgUserMailFolderMessage PSFunction_Remove-MgUserMailFolderMessageAttachment PSCommand_Remove-MgUserMailFolderMessageAttachment PSFunction_Remove-MgUserMailFolderMessageContent PSCommand_Remove-MgUserMailFolderMessageContent PSFunction_Remove-MgUserMailFolderMessageExtension PSCommand_Remove-MgUserMailFolderMessageExtension PSFunction_Remove-MgUserMailFolderMessageRule PSCommand_Remove-MgUserMailFolderMessageRule PSFunction_Remove-MgUserMessage PSCommand_Remove-MgUserMessage PSFunction_Remove-MgUserMessageAttachment PSCommand_Remove-MgUserMessageAttachment PSFunction_Remove-MgUserMessageContent PSCommand_Remove-MgUserMessageContent PSFunction_Remove-MgUserMessageExtension PSCommand_Remove-MgUserMessageExtension PSFunction_Set-MgUserMailFolderChildFolderMessageContent PSCommand_Set-MgUserMailFolderChildFolderMessageContent PSFunction_Set-MgUserMailFolderMessageContent PSCommand_Set-MgUserMailFolderMessageContent PSFunction_Set-MgUserMessageContent PSCommand_Set-MgUserMessageContent PSFunction_Update-MgUserInferenceClassification PSCommand_Update-MgUserInferenceClassification PSFunction_Update-MgUserInferenceClassificationOverride PSCommand_Update-MgUserInferenceClassificationOverride PSFunction_Update-MgUserMailFolder PSCommand_Update-MgUserMailFolder PSFunction_Update-MgUserMailFolderChildFolder PSCommand_Update-MgUserMailFolderChildFolder PSFunction_Update-MgUserMailFolderChildFolderMessage PSCommand_Update-MgUserMailFolderChildFolderMessage PSFunction_Update-MgUserMailFolderChildFolderMessageExtension PSCommand_Update-MgUserMailFolderChildFolderMessageExtension PSFunction_Update-MgUserMailFolderChildFolderMessageRule PSCommand_Update-MgUserMailFolderChildFolderMessageRule PSFunction_Update-MgUserMailFolderMessage PSCommand_Update-MgUserMailFolderMessage PSFunction_Update-MgUserMailFolderMessageExtension PSCommand_Update-MgUserMailFolderMessageExtension PSFunction_Update-MgUserMailFolderMessageRule PSCommand_Update-MgUserMailFolderMessageRule PSFunction_Update-MgUserMessage PSCommand_Update-MgUserMessage PSFunction_Update-MgUserMessageExtension PSCommand_Update-MgUserMessageExtension PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.Mail.nuspec|Microsoft.Graph.Mail.format.ps1xml|Microsoft.Graph.Mail.psd1|Microsoft.Graph.Mail.psm1|bin\Microsoft.Graph.Mail.private.dll|bin\Microsoft.Graph.Mail.private.deps.json|internal\Microsoft.Graph.Mail.internal.psm1|custom\Microsoft.Graph.Mail.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">6e4d36b5-7ff2-454b-8572-674b3ab0362b</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.Mail\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>

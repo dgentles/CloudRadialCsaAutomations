@@ -1,0 +1,512 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.Users.Actions</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:29:07-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:03:27.659331-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-MgUserChatMember</S>
+                <S>Add-MgUserDriveListContentTypeCopy</S>
+                <S>Add-MgUserDriveListContentTypeCopyFromContentTypeHub</S>
+                <S>Add-MgUserFollowedSite</S>
+                <S>Clear-MgUserChatMessageReaction</S>
+                <S>Clear-MgUserChatMessageReplyReaction</S>
+                <S>Clear-MgUserManagedDevice</S>
+                <S>Clear-MgUserPresence</S>
+                <S>Clear-MgUserPresenceUserPreferredPresence</S>
+                <S>Confirm-MgUserMemberGroup</S>
+                <S>Confirm-MgUserMemberObject</S>
+                <S>Copy-MgUserDriveItem</S>
+                <S>Copy-MgUserDriveListContentTypeToDefaultContentLocation</S>
+                <S>Copy-MgUserDriveRoot</S>
+                <S>Copy-MgUserMailFolder</S>
+                <S>Copy-MgUserMailFolderChildFolder</S>
+                <S>Copy-MgUserMailFolderChildFolderMessage</S>
+                <S>Copy-MgUserMailFolderMessage</S>
+                <S>Copy-MgUserMessage</S>
+                <S>Copy-MgUserOnenoteNotebook</S>
+                <S>Copy-MgUserOnenotePageToSection</S>
+                <S>Copy-MgUserOnenoteSectionToNotebook</S>
+                <S>Copy-MgUserOnenoteSectionToSectionGroup</S>
+                <S>Disable-MgUserAuthenticationPhoneMethodSmsSignIn</S>
+                <S>Disable-MgUserManagedDeviceLostMode</S>
+                <S>Enable-MgUserAuthenticationPhoneMethodSmsSignIn</S>
+                <S>Export-MgUserPersonalData</S>
+                <S>Find-MgUserManagedDevice</S>
+                <S>Find-MgUserMeetingTime</S>
+                <S>Get-MgUserById</S>
+                <S>Get-MgUserCalendarSchedule</S>
+                <S>Get-MgUserDefaultCalendarSchedule</S>
+                <S>Get-MgUserMailTip</S>
+                <S>Get-MgUserMemberGroup</S>
+                <S>Get-MgUserMemberObject</S>
+                <S>Get-MgUserOnenoteNotebookFromWebUrl</S>
+                <S>Grant-MgUserDriveItemPermission</S>
+                <S>Grant-MgUserDriveRootPermission</S>
+                <S>Hide-MgUserChatForUser</S>
+                <S>Invoke-MgAcceptUserEvent</S>
+                <S>Invoke-MgAcceptUserEventInstance</S>
+                <S>Invoke-MgAcceptUserEventInstanceTentatively</S>
+                <S>Invoke-MgAcceptUserEventTentatively</S>
+                <S>Invoke-MgCheckinUserDriveItem</S>
+                <S>Invoke-MgCheckinUserDriveRoot</S>
+                <S>Invoke-MgCheckoutUserDriveItem</S>
+                <S>Invoke-MgCheckoutUserDriveRoot</S>
+                <S>Invoke-MgCleanUserManagedDeviceWindowsDevice</S>
+                <S>Invoke-MgCreateOrGetUserOnlineMeeting</S>
+                <S>Invoke-MgDeclineUserEvent</S>
+                <S>Invoke-MgDeclineUserEventInstance</S>
+                <S>Invoke-MgDismissUserEventInstanceReminder</S>
+                <S>Invoke-MgDismissUserEventReminder</S>
+                <S>Invoke-MgDownUserManagedDeviceShut</S>
+                <S>Invoke-MgExtractUserDriveItemSensitivityLabel</S>
+                <S>Invoke-MgExtractUserDriveRootSensitivityLabel</S>
+                <S>Invoke-MgFollowUserDriveItem</S>
+                <S>Invoke-MgFollowUserDriveRoot</S>
+                <S>Invoke-MgForwardUserEvent</S>
+                <S>Invoke-MgForwardUserEventInstance</S>
+                <S>Invoke-MgForwardUserMailFolderChildFolderMessage</S>
+                <S>Invoke-MgForwardUserMailFolderMessage</S>
+                <S>Invoke-MgForwardUserMessage</S>
+                <S>Invoke-MgGraphUserChat</S>
+                <S>Invoke-MgInviteUserDriveItem</S>
+                <S>Invoke-MgInviteUserDriveRoot</S>
+                <S>Invoke-MgLicenseUser</S>
+                <S>Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser</S>
+                <S>Invoke-MgMarkUserChatReadForUser</S>
+                <S>Invoke-MgMarkUserChatUnreadForUser</S>
+                <S>Invoke-MgPreviewUserDriveItem</S>
+                <S>Invoke-MgPreviewUserDriveRoot</S>
+                <S>Invoke-MgReauthorizeUserDriveItemSubscription</S>
+                <S>Invoke-MgReauthorizeUserDriveListSubscription</S>
+                <S>Invoke-MgReauthorizeUserDriveRootSubscription</S>
+                <S>Invoke-MgReplyAllUserMailFolderChildFolderMessage</S>
+                <S>Invoke-MgReplyAllUserMailFolderMessage</S>
+                <S>Invoke-MgReplyAllUserMessage</S>
+                <S>Invoke-MgReplyUserMailFolderChildFolderMessage</S>
+                <S>Invoke-MgReplyUserMailFolderMessage</S>
+                <S>Invoke-MgReplyUserMessage</S>
+                <S>Invoke-MgRetireUserManagedDevice</S>
+                <S>Invoke-MgRetryUserServiceProvisioning</S>
+                <S>Invoke-MgScanUserManagedDeviceWindowsDefender</S>
+                <S>Invoke-MgSnoozeUserEventInstanceReminder</S>
+                <S>Invoke-MgSnoozeUserEventReminder</S>
+                <S>Invoke-MgSoftUserChatMessageDelete</S>
+                <S>Invoke-MgSoftUserChatMessageReplyDelete</S>
+                <S>Invoke-MgTranslateUserExchangeId</S>
+                <S>Invoke-MgUnfollowUserDriveItem</S>
+                <S>Invoke-MgUnfollowUserDriveRoot</S>
+                <S>Join-MgUserDriveListContentTypeWithHubSite</S>
+                <S>Lock-MgUserManagedDeviceRemote</S>
+                <S>Move-MgUserMailFolder</S>
+                <S>Move-MgUserMailFolderChildFolder</S>
+                <S>Move-MgUserMailFolderChildFolderMessage</S>
+                <S>Move-MgUserMailFolderMessage</S>
+                <S>Move-MgUserMessage</S>
+                <S>New-MgUserDriveItemLink</S>
+                <S>New-MgUserDriveItemListItemLink</S>
+                <S>New-MgUserDriveItemUploadSession</S>
+                <S>New-MgUserDriveListItemLink</S>
+                <S>New-MgUserDriveRootLink</S>
+                <S>New-MgUserDriveRootListItemLink</S>
+                <S>New-MgUserDriveRootUploadSession</S>
+                <S>New-MgUserEventAttachmentUploadSession</S>
+                <S>New-MgUserEventInstanceAttachmentUploadSession</S>
+                <S>New-MgUserMailFolderChildFolderMessageAttachmentUploadSession</S>
+                <S>New-MgUserMailFolderChildFolderMessageForward</S>
+                <S>New-MgUserMailFolderChildFolderMessageReply</S>
+                <S>New-MgUserMailFolderChildFolderMessageReplyAll</S>
+                <S>New-MgUserMailFolderMessageAttachmentUploadSession</S>
+                <S>New-MgUserMailFolderMessageForward</S>
+                <S>New-MgUserMailFolderMessageReply</S>
+                <S>New-MgUserMailFolderMessageReplyAll</S>
+                <S>New-MgUserManagedDeviceLogCollectionResponseDownloadUrl</S>
+                <S>New-MgUserManagedDeviceWindowsDefenderUpdateSignature</S>
+                <S>New-MgUserMessageAttachmentUploadSession</S>
+                <S>New-MgUserMessageForward</S>
+                <S>New-MgUserMessageReply</S>
+                <S>New-MgUserMessageReplyAll</S>
+                <S>New-MgUserTodoListTaskAttachmentUploadSession</S>
+                <S>Publish-MgUserDriveListContentType</S>
+                <S>Remove-MgAllUserDeviceFromManagement</S>
+                <S>Remove-MgUserDriveItemPermanent</S>
+                <S>Remove-MgUserDriveRootPermanent</S>
+                <S>Remove-MgUserFollowedSite</S>
+                <S>Remove-MgUserManagedDeviceUserFromSharedAppleDevice</S>
+                <S>Request-MgUserManagedDeviceRemoteAssistance</S>
+                <S>Reset-MgUserAuthenticationMethodPassword</S>
+                <S>Reset-MgUserManagedDevicePasscode</S>
+                <S>Restart-MgUserManagedDeviceNow</S>
+                <S>Restore-MgUserDriveItem</S>
+                <S>Restore-MgUserDriveItemListItemDocumentSetVersion</S>
+                <S>Restore-MgUserDriveItemListItemVersion</S>
+                <S>Restore-MgUserDriveItemVersion</S>
+                <S>Restore-MgUserDriveListItemDocumentSetVersion</S>
+                <S>Restore-MgUserDriveListItemVersion</S>
+                <S>Restore-MgUserDriveRoot</S>
+                <S>Restore-MgUserDriveRootListItemDocumentSetVersion</S>
+                <S>Restore-MgUserDriveRootListItemVersion</S>
+                <S>Restore-MgUserDriveRootVersion</S>
+                <S>Restore-MgUserManagedDevicePasscode</S>
+                <S>Revoke-MgUserSignInSession</S>
+                <S>Send-MgUserChatActivityNotification</S>
+                <S>Send-MgUserMail</S>
+                <S>Send-MgUserMailFolderChildFolderMessage</S>
+                <S>Send-MgUserMailFolderMessage</S>
+                <S>Send-MgUserMessage</S>
+                <S>Send-MgUserOnlineMeetingVirtualAppointmentReminderSm</S>
+                <S>Send-MgUserOnlineMeetingVirtualAppointmentSm</S>
+                <S>Send-MgUserTeamworkActivityNotification</S>
+                <S>Set-MgUserChatMessageReaction</S>
+                <S>Set-MgUserChatMessageReplyReaction</S>
+                <S>Set-MgUserDriveItemSensitivityLabel</S>
+                <S>Set-MgUserDriveRootSensitivityLabel</S>
+                <S>Set-MgUserLicense</S>
+                <S>Set-MgUserPresence</S>
+                <S>Set-MgUserPresenceStatusMessage</S>
+                <S>Set-MgUserPresenceUserPreferredPresence</S>
+                <S>Skip-MgUserManagedDeviceActivationLock</S>
+                <S>Start-MgUserSolutionWorkingTimeScheduleWorkingTime</S>
+                <S>Stop-MgUserEvent</S>
+                <S>Stop-MgUserEventInstance</S>
+                <S>Stop-MgUserSolutionWorkingTimeScheduleWorkingTime</S>
+                <S>Sync-MgUserManagedDevice</S>
+                <S>Test-MgUserDriveItemPermission</S>
+                <S>Test-MgUserDriveRootPermission</S>
+                <S>Test-MgUserProperty</S>
+                <S>Undo-MgUserChatMessageReplySoftDelete</S>
+                <S>Undo-MgUserChatMessageSoftDelete</S>
+                <S>Unpublish-MgUserDriveListContentType</S>
+                <S>Update-MgUserChatInstalledApp</S>
+                <S>Update-MgUserManagedDeviceWindowsDeviceAccount</S>
+                <S>Update-MgUserOnenotePageContent</S>
+                <S>Update-MgUserPassword</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-MgUserChatMember</S>
+                <S>Add-MgUserDriveListContentTypeCopy</S>
+                <S>Add-MgUserDriveListContentTypeCopyFromContentTypeHub</S>
+                <S>Add-MgUserFollowedSite</S>
+                <S>Clear-MgUserChatMessageReaction</S>
+                <S>Clear-MgUserChatMessageReplyReaction</S>
+                <S>Clear-MgUserManagedDevice</S>
+                <S>Clear-MgUserPresence</S>
+                <S>Clear-MgUserPresenceUserPreferredPresence</S>
+                <S>Confirm-MgUserMemberGroup</S>
+                <S>Confirm-MgUserMemberObject</S>
+                <S>Copy-MgUserDriveItem</S>
+                <S>Copy-MgUserDriveListContentTypeToDefaultContentLocation</S>
+                <S>Copy-MgUserDriveRoot</S>
+                <S>Copy-MgUserMailFolder</S>
+                <S>Copy-MgUserMailFolderChildFolder</S>
+                <S>Copy-MgUserMailFolderChildFolderMessage</S>
+                <S>Copy-MgUserMailFolderMessage</S>
+                <S>Copy-MgUserMessage</S>
+                <S>Copy-MgUserOnenoteNotebook</S>
+                <S>Copy-MgUserOnenotePageToSection</S>
+                <S>Copy-MgUserOnenoteSectionToNotebook</S>
+                <S>Copy-MgUserOnenoteSectionToSectionGroup</S>
+                <S>Disable-MgUserAuthenticationPhoneMethodSmsSignIn</S>
+                <S>Disable-MgUserManagedDeviceLostMode</S>
+                <S>Enable-MgUserAuthenticationPhoneMethodSmsSignIn</S>
+                <S>Export-MgUserPersonalData</S>
+                <S>Find-MgUserManagedDevice</S>
+                <S>Find-MgUserMeetingTime</S>
+                <S>Get-MgUserById</S>
+                <S>Get-MgUserCalendarSchedule</S>
+                <S>Get-MgUserDefaultCalendarSchedule</S>
+                <S>Get-MgUserMailTip</S>
+                <S>Get-MgUserMemberGroup</S>
+                <S>Get-MgUserMemberObject</S>
+                <S>Get-MgUserOnenoteNotebookFromWebUrl</S>
+                <S>Grant-MgUserDriveItemPermission</S>
+                <S>Grant-MgUserDriveRootPermission</S>
+                <S>Hide-MgUserChatForUser</S>
+                <S>Invoke-MgAcceptUserEvent</S>
+                <S>Invoke-MgAcceptUserEventInstance</S>
+                <S>Invoke-MgAcceptUserEventInstanceTentatively</S>
+                <S>Invoke-MgAcceptUserEventTentatively</S>
+                <S>Invoke-MgCheckinUserDriveItem</S>
+                <S>Invoke-MgCheckinUserDriveRoot</S>
+                <S>Invoke-MgCheckoutUserDriveItem</S>
+                <S>Invoke-MgCheckoutUserDriveRoot</S>
+                <S>Invoke-MgCleanUserManagedDeviceWindowsDevice</S>
+                <S>Invoke-MgCreateOrGetUserOnlineMeeting</S>
+                <S>Invoke-MgDeclineUserEvent</S>
+                <S>Invoke-MgDeclineUserEventInstance</S>
+                <S>Invoke-MgDismissUserEventInstanceReminder</S>
+                <S>Invoke-MgDismissUserEventReminder</S>
+                <S>Invoke-MgDownUserManagedDeviceShut</S>
+                <S>Invoke-MgExtractUserDriveItemSensitivityLabel</S>
+                <S>Invoke-MgExtractUserDriveRootSensitivityLabel</S>
+                <S>Invoke-MgFollowUserDriveItem</S>
+                <S>Invoke-MgFollowUserDriveRoot</S>
+                <S>Invoke-MgForwardUserEvent</S>
+                <S>Invoke-MgForwardUserEventInstance</S>
+                <S>Invoke-MgForwardUserMailFolderChildFolderMessage</S>
+                <S>Invoke-MgForwardUserMailFolderMessage</S>
+                <S>Invoke-MgForwardUserMessage</S>
+                <S>Invoke-MgGraphUserChat</S>
+                <S>Invoke-MgInviteUserDriveItem</S>
+                <S>Invoke-MgInviteUserDriveRoot</S>
+                <S>Invoke-MgLicenseUser</S>
+                <S>Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser</S>
+                <S>Invoke-MgMarkUserChatReadForUser</S>
+                <S>Invoke-MgMarkUserChatUnreadForUser</S>
+                <S>Invoke-MgPreviewUserDriveItem</S>
+                <S>Invoke-MgPreviewUserDriveRoot</S>
+                <S>Invoke-MgReauthorizeUserDriveItemSubscription</S>
+                <S>Invoke-MgReauthorizeUserDriveListSubscription</S>
+                <S>Invoke-MgReauthorizeUserDriveRootSubscription</S>
+                <S>Invoke-MgReplyAllUserMailFolderChildFolderMessage</S>
+                <S>Invoke-MgReplyAllUserMailFolderMessage</S>
+                <S>Invoke-MgReplyAllUserMessage</S>
+                <S>Invoke-MgReplyUserMailFolderChildFolderMessage</S>
+                <S>Invoke-MgReplyUserMailFolderMessage</S>
+                <S>Invoke-MgReplyUserMessage</S>
+                <S>Invoke-MgRetireUserManagedDevice</S>
+                <S>Invoke-MgRetryUserServiceProvisioning</S>
+                <S>Invoke-MgScanUserManagedDeviceWindowsDefender</S>
+                <S>Invoke-MgSnoozeUserEventInstanceReminder</S>
+                <S>Invoke-MgSnoozeUserEventReminder</S>
+                <S>Invoke-MgSoftUserChatMessageDelete</S>
+                <S>Invoke-MgSoftUserChatMessageReplyDelete</S>
+                <S>Invoke-MgTranslateUserExchangeId</S>
+                <S>Invoke-MgUnfollowUserDriveItem</S>
+                <S>Invoke-MgUnfollowUserDriveRoot</S>
+                <S>Join-MgUserDriveListContentTypeWithHubSite</S>
+                <S>Lock-MgUserManagedDeviceRemote</S>
+                <S>Move-MgUserMailFolder</S>
+                <S>Move-MgUserMailFolderChildFolder</S>
+                <S>Move-MgUserMailFolderChildFolderMessage</S>
+                <S>Move-MgUserMailFolderMessage</S>
+                <S>Move-MgUserMessage</S>
+                <S>New-MgUserDriveItemLink</S>
+                <S>New-MgUserDriveItemListItemLink</S>
+                <S>New-MgUserDriveItemUploadSession</S>
+                <S>New-MgUserDriveListItemLink</S>
+                <S>New-MgUserDriveRootLink</S>
+                <S>New-MgUserDriveRootListItemLink</S>
+                <S>New-MgUserDriveRootUploadSession</S>
+                <S>New-MgUserEventAttachmentUploadSession</S>
+                <S>New-MgUserEventInstanceAttachmentUploadSession</S>
+                <S>New-MgUserMailFolderChildFolderMessageAttachmentUploadSession</S>
+                <S>New-MgUserMailFolderChildFolderMessageForward</S>
+                <S>New-MgUserMailFolderChildFolderMessageReply</S>
+                <S>New-MgUserMailFolderChildFolderMessageReplyAll</S>
+                <S>New-MgUserMailFolderMessageAttachmentUploadSession</S>
+                <S>New-MgUserMailFolderMessageForward</S>
+                <S>New-MgUserMailFolderMessageReply</S>
+                <S>New-MgUserMailFolderMessageReplyAll</S>
+                <S>New-MgUserManagedDeviceLogCollectionResponseDownloadUrl</S>
+                <S>New-MgUserManagedDeviceWindowsDefenderUpdateSignature</S>
+                <S>New-MgUserMessageAttachmentUploadSession</S>
+                <S>New-MgUserMessageForward</S>
+                <S>New-MgUserMessageReply</S>
+                <S>New-MgUserMessageReplyAll</S>
+                <S>New-MgUserTodoListTaskAttachmentUploadSession</S>
+                <S>Publish-MgUserDriveListContentType</S>
+                <S>Remove-MgAllUserDeviceFromManagement</S>
+                <S>Remove-MgUserDriveItemPermanent</S>
+                <S>Remove-MgUserDriveRootPermanent</S>
+                <S>Remove-MgUserFollowedSite</S>
+                <S>Remove-MgUserManagedDeviceUserFromSharedAppleDevice</S>
+                <S>Request-MgUserManagedDeviceRemoteAssistance</S>
+                <S>Reset-MgUserAuthenticationMethodPassword</S>
+                <S>Reset-MgUserManagedDevicePasscode</S>
+                <S>Restart-MgUserManagedDeviceNow</S>
+                <S>Restore-MgUserDriveItem</S>
+                <S>Restore-MgUserDriveItemListItemDocumentSetVersion</S>
+                <S>Restore-MgUserDriveItemListItemVersion</S>
+                <S>Restore-MgUserDriveItemVersion</S>
+                <S>Restore-MgUserDriveListItemDocumentSetVersion</S>
+                <S>Restore-MgUserDriveListItemVersion</S>
+                <S>Restore-MgUserDriveRoot</S>
+                <S>Restore-MgUserDriveRootListItemDocumentSetVersion</S>
+                <S>Restore-MgUserDriveRootListItemVersion</S>
+                <S>Restore-MgUserDriveRootVersion</S>
+                <S>Restore-MgUserManagedDevicePasscode</S>
+                <S>Revoke-MgUserSignInSession</S>
+                <S>Send-MgUserChatActivityNotification</S>
+                <S>Send-MgUserMail</S>
+                <S>Send-MgUserMailFolderChildFolderMessage</S>
+                <S>Send-MgUserMailFolderMessage</S>
+                <S>Send-MgUserMessage</S>
+                <S>Send-MgUserOnlineMeetingVirtualAppointmentReminderSm</S>
+                <S>Send-MgUserOnlineMeetingVirtualAppointmentSm</S>
+                <S>Send-MgUserTeamworkActivityNotification</S>
+                <S>Set-MgUserChatMessageReaction</S>
+                <S>Set-MgUserChatMessageReplyReaction</S>
+                <S>Set-MgUserDriveItemSensitivityLabel</S>
+                <S>Set-MgUserDriveRootSensitivityLabel</S>
+                <S>Set-MgUserLicense</S>
+                <S>Set-MgUserPresence</S>
+                <S>Set-MgUserPresenceStatusMessage</S>
+                <S>Set-MgUserPresenceUserPreferredPresence</S>
+                <S>Skip-MgUserManagedDeviceActivationLock</S>
+                <S>Start-MgUserSolutionWorkingTimeScheduleWorkingTime</S>
+                <S>Stop-MgUserEvent</S>
+                <S>Stop-MgUserEventInstance</S>
+                <S>Stop-MgUserSolutionWorkingTimeScheduleWorkingTime</S>
+                <S>Sync-MgUserManagedDevice</S>
+                <S>Test-MgUserDriveItemPermission</S>
+                <S>Test-MgUserDriveRootPermission</S>
+                <S>Test-MgUserProperty</S>
+                <S>Undo-MgUserChatMessageReplySoftDelete</S>
+                <S>Undo-MgUserChatMessageSoftDelete</S>
+                <S>Unpublish-MgUserDriveListContentType</S>
+                <S>Update-MgUserChatInstalledApp</S>
+                <S>Update-MgUserManagedDeviceWindowsDeviceAccount</S>
+                <S>Update-MgUserOnenotePageContent</S>
+                <S>Update-MgUserPassword</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1119359</S>
+          <S N="downloadCount">11721236</S>
+          <S N="packageSize">3398121</S>
+          <S N="published">11/21/2024 6:29:07 AM -05:00</S>
+          <S N="created">11/21/2024 6:29:07 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Add-MgUserChatMember PSCommand_Add-MgUserChatMember PSFunction_Add-MgUserDriveListContentTypeCopy PSCommand_Add-MgUserDriveListContentTypeCopy PSFunction_Add-MgUserDriveListContentTypeCopyFromContentTypeHub PSCommand_Add-MgUserDriveListContentTypeCopyFromContentTypeHub PSFunction_Add-MgUserFollowedSite PSCommand_Add-MgUserFollowedSite PSFunction_Clear-MgUserChatMessageReaction PSCommand_Clear-MgUserChatMessageReaction PSFunction_Clear-MgUserChatMessageReplyReaction PSCommand_Clear-MgUserChatMessageReplyReaction PSFunction_Clear-MgUserManagedDevice PSCommand_Clear-MgUserManagedDevice PSFunction_Clear-MgUserPresence PSCommand_Clear-MgUserPresence PSFunction_Clear-MgUserPresenceUserPreferredPresence PSCommand_Clear-MgUserPresenceUserPreferredPresence PSFunction_Confirm-MgUserMemberGroup PSCommand_Confirm-MgUserMemberGroup PSFunction_Confirm-MgUserMemberObject PSCommand_Confirm-MgUserMemberObject PSFunction_Copy-MgUserDriveItem PSCommand_Copy-MgUserDriveItem PSFunction_Copy-MgUserDriveListContentTypeToDefaultContentLocation PSCommand_Copy-MgUserDriveListContentTypeToDefaultContentLocation PSFunction_Copy-MgUserDriveRoot PSCommand_Copy-MgUserDriveRoot PSFunction_Copy-MgUserMailFolder PSCommand_Copy-MgUserMailFolder PSFunction_Copy-MgUserMailFolderChildFolder PSCommand_Copy-MgUserMailFolderChildFolder PSFunction_Copy-MgUserMailFolderChildFolderMessage PSCommand_Copy-MgUserMailFolderChildFolderMessage PSFunction_Copy-MgUserMailFolderMessage PSCommand_Copy-MgUserMailFolderMessage PSFunction_Copy-MgUserMessage PSCommand_Copy-MgUserMessage PSFunction_Copy-MgUserOnenoteNotebook PSCommand_Copy-MgUserOnenoteNotebook PSFunction_Copy-MgUserOnenotePageToSection PSCommand_Copy-MgUserOnenotePageToSection PSFunction_Copy-MgUserOnenoteSectionToNotebook PSCommand_Copy-MgUserOnenoteSectionToNotebook PSFunction_Copy-MgUserOnenoteSectionToSectionGroup PSCommand_Copy-MgUserOnenoteSectionToSectionGroup PSFunction_Disable-MgUserAuthenticationPhoneMethodSmsSignIn PSCommand_Disable-MgUserAuthenticationPhoneMethodSmsSignIn PSFunction_Disable-MgUserManagedDeviceLostMode PSCommand_Disable-MgUserManagedDeviceLostMode PSFunction_Enable-MgUserAuthenticationPhoneMethodSmsSignIn PSCommand_Enable-MgUserAuthenticationPhoneMethodSmsSignIn PSFunction_Export-MgUserPersonalData PSCommand_Export-MgUserPersonalData PSFunction_Find-MgUserManagedDevice PSCommand_Find-MgUserManagedDevice PSFunction_Find-MgUserMeetingTime PSCommand_Find-MgUserMeetingTime PSFunction_Get-MgUserById PSCommand_Get-MgUserById PSFunction_Get-MgUserCalendarSchedule PSCommand_Get-MgUserCalendarSchedule PSFunction_Get-MgUserDefaultCalendarSchedule PSCommand_Get-MgUserDefaultCalendarSchedule PSFunction_Get-MgUserMailTip PSCommand_Get-MgUserMailTip PSFunction_Get-MgUserMemberGroup PSCommand_Get-MgUserMemberGroup PSFunction_Get-MgUserMemberObject PSCommand_Get-MgUserMemberObject PSFunction_Get-MgUserOnenoteNotebookFromWebUrl PSCommand_Get-MgUserOnenoteNotebookFromWebUrl PSFunction_Grant-MgUserDriveItemPermission PSCommand_Grant-MgUserDriveItemPermission PSFunction_Grant-MgUserDriveRootPermission PSCommand_Grant-MgUserDriveRootPermission PSFunction_Hide-MgUserChatForUser PSCommand_Hide-MgUserChatForUser PSFunction_Invoke-MgAcceptUserEvent PSCommand_Invoke-MgAcceptUserEvent PSFunction_Invoke-MgAcceptUserEventInstance PSCommand_Invoke-MgAcceptUserEventInstance PSFunction_Invoke-MgAcceptUserEventInstanceTentatively PSCommand_Invoke-MgAcceptUserEventInstanceTentatively PSFunction_Invoke-MgAcceptUserEventTentatively PSCommand_Invoke-MgAcceptUserEventTentatively PSFunction_Invoke-MgCheckinUserDriveItem PSCommand_Invoke-MgCheckinUserDriveItem PSFunction_Invoke-MgCheckinUserDriveRoot PSCommand_Invoke-MgCheckinUserDriveRoot PSFunction_Invoke-MgCheckoutUserDriveItem PSCommand_Invoke-MgCheckoutUserDriveItem PSFunction_Invoke-MgCheckoutUserDriveRoot PSCommand_Invoke-MgCheckoutUserDriveRoot PSFunction_Invoke-MgCleanUserManagedDeviceWindowsDevice PSCommand_Invoke-MgCleanUserManagedDeviceWindowsDevice PSFunction_Invoke-MgCreateOrGetUserOnlineMeeting PSCommand_Invoke-MgCreateOrGetUserOnlineMeeting PSFunction_Invoke-MgDeclineUserEvent PSCommand_Invoke-MgDeclineUserEvent PSFunction_Invoke-MgDeclineUserEventInstance PSCommand_Invoke-MgDeclineUserEventInstance PSFunction_Invoke-MgDismissUserEventInstanceReminder PSCommand_Invoke-MgDismissUserEventInstanceReminder PSFunction_Invoke-MgDismissUserEventReminder PSCommand_Invoke-MgDismissUserEventReminder PSFunction_Invoke-MgDownUserManagedDeviceShut PSCommand_Invoke-MgDownUserManagedDeviceShut PSFunction_Invoke-MgExtractUserDriveItemSensitivityLabel PSCommand_Invoke-MgExtractUserDriveItemSensitivityLabel PSFunction_Invoke-MgExtractUserDriveRootSensitivityLabel PSCommand_Invoke-MgExtractUserDriveRootSensitivityLabel PSFunction_Invoke-MgFollowUserDriveItem PSCommand_Invoke-MgFollowUserDriveItem PSFunction_Invoke-MgFollowUserDriveRoot PSCommand_Invoke-MgFollowUserDriveRoot PSFunction_Invoke-MgForwardUserEvent PSCommand_Invoke-MgForwardUserEvent PSFunction_Invoke-MgForwardUserEventInstance PSCommand_Invoke-MgForwardUserEventInstance PSFunction_Invoke-MgForwardUserMailFolderChildFolderMessage PSCommand_Invoke-MgForwardUserMailFolderChildFolderMessage PSFunction_Invoke-MgForwardUserMailFolderMessage PSCommand_Invoke-MgForwardUserMailFolderMessage PSFunction_Invoke-MgForwardUserMessage PSCommand_Invoke-MgForwardUserMessage PSFunction_Invoke-MgGraphUserChat PSCommand_Invoke-MgGraphUserChat PSFunction_Invoke-MgInviteUserDriveItem PSCommand_Invoke-MgInviteUserDriveItem PSFunction_Invoke-MgInviteUserDriveRoot PSCommand_Invoke-MgInviteUserDriveRoot PSFunction_Invoke-MgLicenseUser PSCommand_Invoke-MgLicenseUser PSFunction_Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser PSCommand_Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser PSFunction_Invoke-MgMarkUserChatReadForUser PSCommand_Invoke-MgMarkUserChatReadForUser PSFunction_Invoke-MgMarkUserChatUnreadForUser PSCommand_Invoke-MgMarkUserChatUnreadForUser PSFunction_Invoke-MgPreviewUserDriveItem PSCommand_Invoke-MgPreviewUserDriveItem PSFunction_Invoke-MgPreviewUserDriveRoot PSCommand_Invoke-MgPreviewUserDriveRoot PSFunction_Invoke-MgReauthorizeUserDriveItemSubscription PSCommand_Invoke-MgReauthorizeUserDriveItemSubscription PSFunction_Invoke-MgReauthorizeUserDriveListSubscription PSCommand_Invoke-MgReauthorizeUserDriveListSubscription PSFunction_Invoke-MgReauthorizeUserDriveRootSubscription PSCommand_Invoke-MgReauthorizeUserDriveRootSubscription PSFunction_Invoke-MgReplyAllUserMailFolderChildFolderMessage PSCommand_Invoke-MgReplyAllUserMailFolderChildFolderMessage PSFunction_Invoke-MgReplyAllUserMailFolderMessage PSCommand_Invoke-MgReplyAllUserMailFolderMessage PSFunction_Invoke-MgReplyAllUserMessage PSCommand_Invoke-MgReplyAllUserMessage PSFunction_Invoke-MgReplyUserMailFolderChildFolderMessage PSCommand_Invoke-MgReplyUserMailFolderChildFolderMessage PSFunction_Invoke-MgReplyUserMailFolderMessage PSCommand_Invoke-MgReplyUserMailFolderMessage PSFunction_Invoke-MgReplyUserMessage PSCommand_Invoke-MgReplyUserMessage PSFunction_Invoke-MgRetireUserManagedDevice PSCommand_Invoke-MgRetireUserManagedDevice PSFunction_Invoke-MgRetryUserServiceProvisioning PSCommand_Invoke-MgRetryUserServiceProvisioning PSFunction_Invoke-MgScanUserManagedDeviceWindowsDefender PSCommand_Invoke-MgScanUserManagedDeviceWindowsDefender PSFunction_Invoke-MgSnoozeUserEventInstanceReminder PSCommand_Invoke-MgSnoozeUserEventInstanceReminder PSFunction_Invoke-MgSnoozeUserEventReminder PSCommand_Invoke-MgSnoozeUserEventReminder PSFunction_Invoke-MgSoftUserChatMessageDelete PSCommand_Invoke-MgSoftUserChatMessageDelete PSFunction_Invoke-MgSoftUserChatMessageReplyDelete PSCommand_Invoke-MgSoftUserChatMessageReplyDelete PSFunction_Invoke-MgTranslateUserExchangeId PSCommand_Invoke-MgTranslateUserExchangeId PSFunction_Invoke-MgUnfollowUserDriveItem PSCommand_Invoke-MgUnfollowUserDriveItem PSFunction_Invoke-MgUnfollowUserDriveRoot PSCommand_Invoke-MgUnfollowUserDriveRoot PSFunction_Join-MgUserDriveListContentTypeWithHubSite PSCommand_Join-MgUserDriveListContentTypeWithHubSite PSFunction_Lock-MgUserManagedDeviceRemote PSCommand_Lock-MgUserManagedDeviceRemote PSFunction_Move-MgUserMailFolder PSCommand_Move-MgUserMailFolder PSFunction_Move-MgUserMailFolderChildFolder PSCommand_Move-MgUserMailFolderChildFolder PSFunction_Move-MgUserMailFolderChildFolderMessage PSCommand_Move-MgUserMailFolderChildFolderMessage PSFunction_Move-MgUserMailFolderMessage PSCommand_Move-MgUserMailFolderMessage PSFunction_Move-MgUserMessage PSCommand_Move-MgUserMessage PSFunction_New-MgUserDriveItemLink PSCommand_New-MgUserDriveItemLink PSFunction_New-MgUserDriveItemListItemLink PSCommand_New-MgUserDriveItemListItemLink PSFunction_New-MgUserDriveItemUploadSession PSCommand_New-MgUserDriveItemUploadSession PSFunction_New-MgUserDriveListItemLink PSCommand_New-MgUserDriveListItemLink PSFunction_New-MgUserDriveRootLink PSCommand_New-MgUserDriveRootLink PSFunction_New-MgUserDriveRootListItemLink PSCommand_New-MgUserDriveRootListItemLink PSFunction_New-MgUserDriveRootUploadSession PSCommand_New-MgUserDriveRootUploadSession PSFunction_New-MgUserEventAttachmentUploadSession PSCommand_New-MgUserEventAttachmentUploadSession PSFunction_New-MgUserEventInstanceAttachmentUploadSession PSCommand_New-MgUserEventInstanceAttachmentUploadSession PSFunction_New-MgUserMailFolderChildFolderMessageAttachmentUploadSession PSCommand_New-MgUserMailFolderChildFolderMessageAttachmentUploadSession PSFunction_New-MgUserMailFolderChildFolderMessageForward PSCommand_New-MgUserMailFolderChildFolderMessageForward PSFunction_New-MgUserMailFolderChildFolderMessageReply PSCommand_New-MgUserMailFolderChildFolderMessageReply PSFunction_New-MgUserMailFolderChildFolderMessageReplyAll PSCommand_New-MgUserMailFolderChildFolderMessageReplyAll PSFunction_New-MgUserMailFolderMessageAttachmentUploadSession PSCommand_New-MgUserMailFolderMessageAttachmentUploadSession PSFunction_New-MgUserMailFolderMessageForward PSCommand_New-MgUserMailFolderMessageForward PSFunction_New-MgUserMailFolderMessageReply PSCommand_New-MgUserMailFolderMessageReply PSFunction_New-MgUserMailFolderMessageReplyAll PSCommand_New-MgUserMailFolderMessageReplyAll PSFunction_New-MgUserManagedDeviceLogCollectionResponseDownloadUrl PSCommand_New-MgUserManagedDeviceLogCollectionResponseDownloadUrl PSFunction_New-MgUserManagedDeviceWindowsDefenderUpdateSignature PSCommand_New-MgUserManagedDeviceWindowsDefenderUpdateSignature PSFunction_New-MgUserMessageAttachmentUploadSession PSCommand_New-MgUserMessageAttachmentUploadSession PSFunction_New-MgUserMessageForward PSCommand_New-MgUserMessageForward PSFunction_New-MgUserMessageReply PSCommand_New-MgUserMessageReply PSFunction_New-MgUserMessageReplyAll PSCommand_New-MgUserMessageReplyAll PSFunction_New-MgUserTodoListTaskAttachmentUploadSession PSCommand_New-MgUserTodoListTaskAttachmentUploadSession PSFunction_Publish-MgUserDriveListContentType PSCommand_Publish-MgUserDriveListContentType PSFunction_Remove-MgAllUserDeviceFromManagement PSCommand_Remove-MgAllUserDeviceFromManagement PSFunction_Remove-MgUserDriveItemPermanent PSCommand_Remove-MgUserDriveItemPermanent PSFunction_Remove-MgUserDriveRootPermanent PSCommand_Remove-MgUserDriveRootPermanent PSFunction_Remove-MgUserFollowedSite PSCommand_Remove-MgUserFollowedSite PSFunction_Remove-MgUserManagedDeviceUserFromSharedAppleDevice PSCommand_Remove-MgUserManagedDeviceUserFromSharedAppleDevice PSFunction_Request-MgUserManagedDeviceRemoteAssistance PSCommand_Request-MgUserManagedDeviceRemoteAssistance PSFunction_Reset-MgUserAuthenticationMethodPassword PSCommand_Reset-MgUserAuthenticationMethodPassword PSFunction_Reset-MgUserManagedDevicePasscode PSCommand_Reset-MgUserManagedDevicePasscode PSFunction_Restart-MgUserManagedDeviceNow PSCommand_Restart-MgUserManagedDeviceNow PSFunction_Restore-MgUserDriveItem PSCommand_Restore-MgUserDriveItem PSFunction_Restore-MgUserDriveItemListItemDocumentSetVersion PSCommand_Restore-MgUserDriveItemListItemDocumentSetVersion PSFunction_Restore-MgUserDriveItemListItemVersion PSCommand_Restore-MgUserDriveItemListItemVersion PSFunction_Restore-MgUserDriveItemVersion PSCommand_Restore-MgUserDriveItemVersion PSFunction_Restore-MgUserDriveListItemDocumentSetVersion PSCommand_Restore-MgUserDriveListItemDocumentSetVersion PSFunction_Restore-MgUserDriveListItemVersion PSCommand_Restore-MgUserDriveListItemVersion PSFunction_Restore-MgUserDriveRoot PSCommand_Restore-MgUserDriveRoot PSFunction_Restore-MgUserDriveRootListItemDocumentSetVersion PSCommand_Restore-MgUserDriveRootListItemDocumentSetVersion PSFunction_Restore-MgUserDriveRootListItemVersion PSCommand_Restore-MgUserDriveRootListItemVersion PSFunction_Restore-MgUserDriveRootVersion PSCommand_Restore-MgUserDriveRootVersion PSFunction_Restore-MgUserManagedDevicePasscode PSCommand_Restore-MgUserManagedDevicePasscode PSFunction_Revoke-MgUserSignInSession PSCommand_Revoke-MgUserSignInSession PSFunction_Send-MgUserChatActivityNotification PSCommand_Send-MgUserChatActivityNotification PSFunction_Send-MgUserMail PSCommand_Send-MgUserMail PSFunction_Send-MgUserMailFolderChildFolderMessage PSCommand_Send-MgUserMailFolderChildFolderMessage PSFunction_Send-MgUserMailFolderMessage PSCommand_Send-MgUserMailFolderMessage PSFunction_Send-MgUserMessage PSCommand_Send-MgUserMessage PSFunction_Send-MgUserOnlineMeetingVirtualAppointmentReminderSm PSCommand_Send-MgUserOnlineMeetingVirtualAppointmentReminderSm PSFunction_Send-MgUserOnlineMeetingVirtualAppointmentSm PSCommand_Send-MgUserOnlineMeetingVirtualAppointmentSm PSFunction_Send-MgUserTeamworkActivityNotification PSCommand_Send-MgUserTeamworkActivityNotification PSFunction_Set-MgUserChatMessageReaction PSCommand_Set-MgUserChatMessageReaction PSFunction_Set-MgUserChatMessageReplyReaction PSCommand_Set-MgUserChatMessageReplyReaction PSFunction_Set-MgUserDriveItemSensitivityLabel PSCommand_Set-MgUserDriveItemSensitivityLabel PSFunction_Set-MgUserDriveRootSensitivityLabel PSCommand_Set-MgUserDriveRootSensitivityLabel PSFunction_Set-MgUserLicense PSCommand_Set-MgUserLicense PSFunction_Set-MgUserPresence PSCommand_Set-MgUserPresence PSFunction_Set-MgUserPresenceStatusMessage PSCommand_Set-MgUserPresenceStatusMessage PSFunction_Set-MgUserPresenceUserPreferredPresence PSCommand_Set-MgUserPresenceUserPreferredPresence PSFunction_Skip-MgUserManagedDeviceActivationLock PSCommand_Skip-MgUserManagedDeviceActivationLock PSFunction_Start-MgUserSolutionWorkingTimeScheduleWorkingTime PSCommand_Start-MgUserSolutionWorkingTimeScheduleWorkingTime PSFunction_Stop-MgUserEvent PSCommand_Stop-MgUserEvent PSFunction_Stop-MgUserEventInstance PSCommand_Stop-MgUserEventInstance PSFunction_Stop-MgUserSolutionWorkingTimeScheduleWorkingTime PSCommand_Stop-MgUserSolutionWorkingTimeScheduleWorkingTime PSFunction_Sync-MgUserManagedDevice PSCommand_Sync-MgUserManagedDevice PSFunction_Test-MgUserDriveItemPermission PSCommand_Test-MgUserDriveItemPermission PSFunction_Test-MgUserDriveRootPermission PSCommand_Test-MgUserDriveRootPermission PSFunction_Test-MgUserProperty PSCommand_Test-MgUserProperty PSFunction_Undo-MgUserChatMessageReplySoftDelete PSCommand_Undo-MgUserChatMessageReplySoftDelete PSFunction_Undo-MgUserChatMessageSoftDelete PSCommand_Undo-MgUserChatMessageSoftDelete PSFunction_Unpublish-MgUserDriveListContentType PSCommand_Unpublish-MgUserDriveListContentType PSFunction_Update-MgUserChatInstalledApp PSCommand_Update-MgUserChatInstalledApp PSFunction_Update-MgUserManagedDeviceWindowsDeviceAccount PSCommand_Update-MgUserManagedDeviceWindowsDeviceAccount PSFunction_Update-MgUserOnenotePageContent PSCommand_Update-MgUserOnenotePageContent PSFunction_Update-MgUserPassword PSCommand_Update-MgUserPassword PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.Users.Actions.nuspec|Microsoft.Graph.Users.Actions.format.ps1xml|Microsoft.Graph.Users.Actions.psd1|Microsoft.Graph.Users.Actions.psm1|bin\Microsoft.Graph.Users.Actions.private.dll|bin\Microsoft.Graph.Users.Actions.private.deps.json|internal\Microsoft.Graph.Users.Actions.internal.psm1|custom\Microsoft.Graph.Users.Actions.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">86213a25-bec4-4d70-8793-58670c62686f</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.Users.Actions\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>

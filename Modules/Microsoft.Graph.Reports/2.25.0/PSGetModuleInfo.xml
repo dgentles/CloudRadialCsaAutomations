@@ -1,0 +1,456 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.Reports</S>
+      <Version N="Version">2.25.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-11-21T06:28:44-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-12-27T09:02:35.158622-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/dev/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Export-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Export-MgReportPartnerBillingUsageBilled</S>
+                <S>Export-MgReportPartnerBillingUsageUnbilled</S>
+                <S>Get-MgAdminReportSetting</S>
+                <S>Get-MgAuditLogDirectoryAudit</S>
+                <S>Get-MgAuditLogDirectoryAuditCount</S>
+                <S>Get-MgAuditLogProvisioning</S>
+                <S>Get-MgAuditLogProvisioningCount</S>
+                <S>Get-MgAuditLogSignIn</S>
+                <S>Get-MgAuditLogSignInCount</S>
+                <S>Get-MgDeviceManagementReport</S>
+                <S>Get-MgDeviceManagementReportExportJob</S>
+                <S>Get-MgDeviceManagementReportExportJobCount</S>
+                <S>Get-MgReportAuthenticationMethod</S>
+                <S>Get-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>Get-MgReportAuthenticationMethodUserRegistrationDetailCount</S>
+                <S>Get-MgReportDailyPrintUsageByPrinter</S>
+                <S>Get-MgReportDailyPrintUsageByPrinterCount</S>
+                <S>Get-MgReportDailyPrintUsageByUser</S>
+                <S>Get-MgReportDailyPrintUsageByUserCount</S>
+                <S>Get-MgReportDeviceConfigurationDeviceActivity</S>
+                <S>Get-MgReportDeviceConfigurationUserActivity</S>
+                <S>Get-MgReportEmailActivityCount</S>
+                <S>Get-MgReportEmailActivityUserCount</S>
+                <S>Get-MgReportEmailActivityUserDetail</S>
+                <S>Get-MgReportEmailAppUsageAppUserCount</S>
+                <S>Get-MgReportEmailAppUsageUserCount</S>
+                <S>Get-MgReportEmailAppUsageUserDetail</S>
+                <S>Get-MgReportEmailAppUsageVersionUserCount</S>
+                <S>Get-MgReportGroupArchivedPrintJob</S>
+                <S>Get-MgReportM365AppPlatformUserCount</S>
+                <S>Get-MgReportM365AppUserCount</S>
+                <S>Get-MgReportM365AppUserDetail</S>
+                <S>Get-MgReportMailboxUsageDetail</S>
+                <S>Get-MgReportMailboxUsageMailboxCount</S>
+                <S>Get-MgReportMailboxUsageQuotaStatusMailboxCount</S>
+                <S>Get-MgReportMailboxUsageStorage</S>
+                <S>Get-MgReportManagedDeviceEnrollmentFailureDetail</S>
+                <S>Get-MgReportManagedDeviceEnrollmentTopFailure</S>
+                <S>Get-MgReportMonthlyPrintUsageByPrinter</S>
+                <S>Get-MgReportMonthlyPrintUsageByPrinterCount</S>
+                <S>Get-MgReportMonthlyPrintUsageByUser</S>
+                <S>Get-MgReportMonthlyPrintUsageByUserCount</S>
+                <S>Get-MgReportOffice365ActivationCount</S>
+                <S>Get-MgReportOffice365ActivationUserCount</S>
+                <S>Get-MgReportOffice365ActivationUserDetail</S>
+                <S>Get-MgReportOffice365ActiveUserCount</S>
+                <S>Get-MgReportOffice365ActiveUserDetail</S>
+                <S>Get-MgReportOffice365GroupActivityCount</S>
+                <S>Get-MgReportOffice365GroupActivityDetail</S>
+                <S>Get-MgReportOffice365GroupActivityFileCount</S>
+                <S>Get-MgReportOffice365GroupActivityGroupCount</S>
+                <S>Get-MgReportOffice365GroupActivityStorage</S>
+                <S>Get-MgReportOffice365ServiceUserCount</S>
+                <S>Get-MgReportOneDriveActivityFileCount</S>
+                <S>Get-MgReportOneDriveActivityUserCount</S>
+                <S>Get-MgReportOneDriveActivityUserDetail</S>
+                <S>Get-MgReportOneDriveUsageAccountCount</S>
+                <S>Get-MgReportOneDriveUsageAccountDetail</S>
+                <S>Get-MgReportOneDriveUsageFileCount</S>
+                <S>Get-MgReportOneDriveUsageStorage</S>
+                <S>Get-MgReportPartner</S>
+                <S>Get-MgReportPartnerBilling</S>
+                <S>Get-MgReportPartnerBillingManifest</S>
+                <S>Get-MgReportPartnerBillingManifestCount</S>
+                <S>Get-MgReportPartnerBillingOperation</S>
+                <S>Get-MgReportPartnerBillingOperationCount</S>
+                <S>Get-MgReportPartnerBillingReconciliation</S>
+                <S>Get-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Get-MgReportPartnerBillingUsage</S>
+                <S>Get-MgReportPartnerBillingUsageBilled</S>
+                <S>Get-MgReportPartnerBillingUsageUnbilled</S>
+                <S>Get-MgReportPrinterArchivedPrintJob</S>
+                <S>Get-MgReportRelyingPartyDetailedSummary</S>
+                <S>Get-MgReportSecurity</S>
+                <S>Get-MgReportSecurityAttackSimulationRepeatOffender</S>
+                <S>Get-MgReportSecurityAttackSimulationTrainingUserCoverage</S>
+                <S>Get-MgReportSecurityAttackSimulationUserCoverage</S>
+                <S>Get-MgReportSharePointActivityFileCount</S>
+                <S>Get-MgReportSharePointActivityPage</S>
+                <S>Get-MgReportSharePointActivityUserCount</S>
+                <S>Get-MgReportSharePointActivityUserDetail</S>
+                <S>Get-MgReportSharePointSiteUsageDetail</S>
+                <S>Get-MgReportSharePointSiteUsageFileCount</S>
+                <S>Get-MgReportSharePointSiteUsagePage</S>
+                <S>Get-MgReportSharePointSiteUsageSiteCount</S>
+                <S>Get-MgReportSharePointSiteUsageStorage</S>
+                <S>Get-MgReportSkypeForBusinessActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessActivityUserCount</S>
+                <S>Get-MgReportSkypeForBusinessActivityUserDetail</S>
+                <S>Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount</S>
+                <S>Get-MgReportSkypeForBusinessDeviceUsageUserCount</S>
+                <S>Get-MgReportSkypeForBusinessDeviceUsageUserDetail</S>
+                <S>Get-MgReportSkypeForBusinessOrganizerActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount</S>
+                <S>Get-MgReportSkypeForBusinessOrganizerActivityUserCount</S>
+                <S>Get-MgReportSkypeForBusinessParticipantActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessParticipantActivityMinuteCount</S>
+                <S>Get-MgReportSkypeForBusinessParticipantActivityUserCount</S>
+                <S>Get-MgReportSkypeForBusinessPeerToPeerActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount</S>
+                <S>Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount</S>
+                <S>Get-MgReportTeamActivityCount</S>
+                <S>Get-MgReportTeamActivityDetail</S>
+                <S>Get-MgReportTeamActivityDistributionCount</S>
+                <S>Get-MgReportTeamCount</S>
+                <S>Get-MgReportTeamDeviceUsageDistributionUserCount</S>
+                <S>Get-MgReportTeamDeviceUsageUserCount</S>
+                <S>Get-MgReportTeamDeviceUsageUserDetail</S>
+                <S>Get-MgReportTeamUserActivityCount</S>
+                <S>Get-MgReportTeamUserActivityUserCount</S>
+                <S>Get-MgReportTeamUserActivityUserDetail</S>
+                <S>Get-MgReportUserArchivedPrintJob</S>
+                <S>Get-MgReportYammerActivityCount</S>
+                <S>Get-MgReportYammerActivityUserCount</S>
+                <S>Get-MgReportYammerActivityUserDetail</S>
+                <S>Get-MgReportYammerDeviceUsageDistributionUserCount</S>
+                <S>Get-MgReportYammerDeviceUsageUserCount</S>
+                <S>Get-MgReportYammerDeviceUsageUserDetail</S>
+                <S>Get-MgReportYammerGroupActivityCount</S>
+                <S>Get-MgReportYammerGroupActivityDetail</S>
+                <S>Get-MgReportYammerGroupActivityGroupCount</S>
+                <S>Invoke-MgGraphReportAuthenticationMethod</S>
+                <S>New-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>New-MgReportPartnerBillingManifest</S>
+                <S>New-MgReportPartnerBillingOperation</S>
+                <S>Remove-MgAdminReportSetting</S>
+                <S>Remove-MgDeviceManagementReport</S>
+                <S>Remove-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>Remove-MgReportPartnerBilling</S>
+                <S>Remove-MgReportPartnerBillingManifest</S>
+                <S>Remove-MgReportPartnerBillingOperation</S>
+                <S>Remove-MgReportPartnerBillingReconciliation</S>
+                <S>Remove-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Remove-MgReportPartnerBillingUsage</S>
+                <S>Remove-MgReportPartnerBillingUsageBilled</S>
+                <S>Remove-MgReportPartnerBillingUsageUnbilled</S>
+                <S>Update-MgAdminReportSetting</S>
+                <S>Update-MgDeviceManagementReport</S>
+                <S>Update-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>Update-MgReportPartnerBilling</S>
+                <S>Update-MgReportPartnerBillingManifest</S>
+                <S>Update-MgReportPartnerBillingOperation</S>
+                <S>Update-MgReportPartnerBillingReconciliation</S>
+                <S>Update-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Update-MgReportPartnerBillingUsage</S>
+                <S>Update-MgReportPartnerBillingUsageBilled</S>
+                <S>Update-MgReportPartnerBillingUsageUnbilled</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Export-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Export-MgReportPartnerBillingUsageBilled</S>
+                <S>Export-MgReportPartnerBillingUsageUnbilled</S>
+                <S>Get-MgAdminReportSetting</S>
+                <S>Get-MgAuditLogDirectoryAudit</S>
+                <S>Get-MgAuditLogDirectoryAuditCount</S>
+                <S>Get-MgAuditLogProvisioning</S>
+                <S>Get-MgAuditLogProvisioningCount</S>
+                <S>Get-MgAuditLogSignIn</S>
+                <S>Get-MgAuditLogSignInCount</S>
+                <S>Get-MgDeviceManagementReport</S>
+                <S>Get-MgDeviceManagementReportExportJob</S>
+                <S>Get-MgDeviceManagementReportExportJobCount</S>
+                <S>Get-MgReportAuthenticationMethod</S>
+                <S>Get-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>Get-MgReportAuthenticationMethodUserRegistrationDetailCount</S>
+                <S>Get-MgReportDailyPrintUsageByPrinter</S>
+                <S>Get-MgReportDailyPrintUsageByPrinterCount</S>
+                <S>Get-MgReportDailyPrintUsageByUser</S>
+                <S>Get-MgReportDailyPrintUsageByUserCount</S>
+                <S>Get-MgReportDeviceConfigurationDeviceActivity</S>
+                <S>Get-MgReportDeviceConfigurationUserActivity</S>
+                <S>Get-MgReportEmailActivityCount</S>
+                <S>Get-MgReportEmailActivityUserCount</S>
+                <S>Get-MgReportEmailActivityUserDetail</S>
+                <S>Get-MgReportEmailAppUsageAppUserCount</S>
+                <S>Get-MgReportEmailAppUsageUserCount</S>
+                <S>Get-MgReportEmailAppUsageUserDetail</S>
+                <S>Get-MgReportEmailAppUsageVersionUserCount</S>
+                <S>Get-MgReportGroupArchivedPrintJob</S>
+                <S>Get-MgReportM365AppPlatformUserCount</S>
+                <S>Get-MgReportM365AppUserCount</S>
+                <S>Get-MgReportM365AppUserDetail</S>
+                <S>Get-MgReportMailboxUsageDetail</S>
+                <S>Get-MgReportMailboxUsageMailboxCount</S>
+                <S>Get-MgReportMailboxUsageQuotaStatusMailboxCount</S>
+                <S>Get-MgReportMailboxUsageStorage</S>
+                <S>Get-MgReportManagedDeviceEnrollmentFailureDetail</S>
+                <S>Get-MgReportManagedDeviceEnrollmentTopFailure</S>
+                <S>Get-MgReportMonthlyPrintUsageByPrinter</S>
+                <S>Get-MgReportMonthlyPrintUsageByPrinterCount</S>
+                <S>Get-MgReportMonthlyPrintUsageByUser</S>
+                <S>Get-MgReportMonthlyPrintUsageByUserCount</S>
+                <S>Get-MgReportOffice365ActivationCount</S>
+                <S>Get-MgReportOffice365ActivationUserCount</S>
+                <S>Get-MgReportOffice365ActivationUserDetail</S>
+                <S>Get-MgReportOffice365ActiveUserCount</S>
+                <S>Get-MgReportOffice365ActiveUserDetail</S>
+                <S>Get-MgReportOffice365GroupActivityCount</S>
+                <S>Get-MgReportOffice365GroupActivityDetail</S>
+                <S>Get-MgReportOffice365GroupActivityFileCount</S>
+                <S>Get-MgReportOffice365GroupActivityGroupCount</S>
+                <S>Get-MgReportOffice365GroupActivityStorage</S>
+                <S>Get-MgReportOffice365ServiceUserCount</S>
+                <S>Get-MgReportOneDriveActivityFileCount</S>
+                <S>Get-MgReportOneDriveActivityUserCount</S>
+                <S>Get-MgReportOneDriveActivityUserDetail</S>
+                <S>Get-MgReportOneDriveUsageAccountCount</S>
+                <S>Get-MgReportOneDriveUsageAccountDetail</S>
+                <S>Get-MgReportOneDriveUsageFileCount</S>
+                <S>Get-MgReportOneDriveUsageStorage</S>
+                <S>Get-MgReportPartner</S>
+                <S>Get-MgReportPartnerBilling</S>
+                <S>Get-MgReportPartnerBillingManifest</S>
+                <S>Get-MgReportPartnerBillingManifestCount</S>
+                <S>Get-MgReportPartnerBillingOperation</S>
+                <S>Get-MgReportPartnerBillingOperationCount</S>
+                <S>Get-MgReportPartnerBillingReconciliation</S>
+                <S>Get-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Get-MgReportPartnerBillingUsage</S>
+                <S>Get-MgReportPartnerBillingUsageBilled</S>
+                <S>Get-MgReportPartnerBillingUsageUnbilled</S>
+                <S>Get-MgReportPrinterArchivedPrintJob</S>
+                <S>Get-MgReportRelyingPartyDetailedSummary</S>
+                <S>Get-MgReportSecurity</S>
+                <S>Get-MgReportSecurityAttackSimulationRepeatOffender</S>
+                <S>Get-MgReportSecurityAttackSimulationTrainingUserCoverage</S>
+                <S>Get-MgReportSecurityAttackSimulationUserCoverage</S>
+                <S>Get-MgReportSharePointActivityFileCount</S>
+                <S>Get-MgReportSharePointActivityPage</S>
+                <S>Get-MgReportSharePointActivityUserCount</S>
+                <S>Get-MgReportSharePointActivityUserDetail</S>
+                <S>Get-MgReportSharePointSiteUsageDetail</S>
+                <S>Get-MgReportSharePointSiteUsageFileCount</S>
+                <S>Get-MgReportSharePointSiteUsagePage</S>
+                <S>Get-MgReportSharePointSiteUsageSiteCount</S>
+                <S>Get-MgReportSharePointSiteUsageStorage</S>
+                <S>Get-MgReportSkypeForBusinessActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessActivityUserCount</S>
+                <S>Get-MgReportSkypeForBusinessActivityUserDetail</S>
+                <S>Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount</S>
+                <S>Get-MgReportSkypeForBusinessDeviceUsageUserCount</S>
+                <S>Get-MgReportSkypeForBusinessDeviceUsageUserDetail</S>
+                <S>Get-MgReportSkypeForBusinessOrganizerActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount</S>
+                <S>Get-MgReportSkypeForBusinessOrganizerActivityUserCount</S>
+                <S>Get-MgReportSkypeForBusinessParticipantActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessParticipantActivityMinuteCount</S>
+                <S>Get-MgReportSkypeForBusinessParticipantActivityUserCount</S>
+                <S>Get-MgReportSkypeForBusinessPeerToPeerActivityCount</S>
+                <S>Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount</S>
+                <S>Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount</S>
+                <S>Get-MgReportTeamActivityCount</S>
+                <S>Get-MgReportTeamActivityDetail</S>
+                <S>Get-MgReportTeamActivityDistributionCount</S>
+                <S>Get-MgReportTeamCount</S>
+                <S>Get-MgReportTeamDeviceUsageDistributionUserCount</S>
+                <S>Get-MgReportTeamDeviceUsageUserCount</S>
+                <S>Get-MgReportTeamDeviceUsageUserDetail</S>
+                <S>Get-MgReportTeamUserActivityCount</S>
+                <S>Get-MgReportTeamUserActivityUserCount</S>
+                <S>Get-MgReportTeamUserActivityUserDetail</S>
+                <S>Get-MgReportUserArchivedPrintJob</S>
+                <S>Get-MgReportYammerActivityCount</S>
+                <S>Get-MgReportYammerActivityUserCount</S>
+                <S>Get-MgReportYammerActivityUserDetail</S>
+                <S>Get-MgReportYammerDeviceUsageDistributionUserCount</S>
+                <S>Get-MgReportYammerDeviceUsageUserCount</S>
+                <S>Get-MgReportYammerDeviceUsageUserDetail</S>
+                <S>Get-MgReportYammerGroupActivityCount</S>
+                <S>Get-MgReportYammerGroupActivityDetail</S>
+                <S>Get-MgReportYammerGroupActivityGroupCount</S>
+                <S>Invoke-MgGraphReportAuthenticationMethod</S>
+                <S>New-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>New-MgReportPartnerBillingManifest</S>
+                <S>New-MgReportPartnerBillingOperation</S>
+                <S>Remove-MgAdminReportSetting</S>
+                <S>Remove-MgDeviceManagementReport</S>
+                <S>Remove-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>Remove-MgReportPartnerBilling</S>
+                <S>Remove-MgReportPartnerBillingManifest</S>
+                <S>Remove-MgReportPartnerBillingOperation</S>
+                <S>Remove-MgReportPartnerBillingReconciliation</S>
+                <S>Remove-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Remove-MgReportPartnerBillingUsage</S>
+                <S>Remove-MgReportPartnerBillingUsageBilled</S>
+                <S>Remove-MgReportPartnerBillingUsageUnbilled</S>
+                <S>Update-MgAdminReportSetting</S>
+                <S>Update-MgDeviceManagementReport</S>
+                <S>Update-MgReportAuthenticationMethodUserRegistrationDetail</S>
+                <S>Update-MgReportPartnerBilling</S>
+                <S>Update-MgReportPartnerBillingManifest</S>
+                <S>Update-MgReportPartnerBillingOperation</S>
+                <S>Update-MgReportPartnerBillingReconciliation</S>
+                <S>Update-MgReportPartnerBillingReconciliationBilled</S>
+                <S>Update-MgReportPartnerBillingUsage</S>
+                <S>Update-MgReportPartnerBillingUsageBilled</S>
+                <S>Update-MgReportPartnerBillingUsageUnbilled</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.25.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.25.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1084195</S>
+          <S N="downloadCount">10651503</S>
+          <S N="packageSize">1319279</S>
+          <S N="published">11/21/2024 6:28:44 AM -05:00</S>
+          <S N="created">11/21/2024 6:28:44 AM -05:00</S>
+          <S N="lastUpdated">12/27/2024 1:50:00 PM -05:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Export-MgReportPartnerBillingReconciliationBilled PSCommand_Export-MgReportPartnerBillingReconciliationBilled PSFunction_Export-MgReportPartnerBillingUsageBilled PSCommand_Export-MgReportPartnerBillingUsageBilled PSFunction_Export-MgReportPartnerBillingUsageUnbilled PSCommand_Export-MgReportPartnerBillingUsageUnbilled PSFunction_Get-MgAdminReportSetting PSCommand_Get-MgAdminReportSetting PSFunction_Get-MgAuditLogDirectoryAudit PSCommand_Get-MgAuditLogDirectoryAudit PSFunction_Get-MgAuditLogDirectoryAuditCount PSCommand_Get-MgAuditLogDirectoryAuditCount PSFunction_Get-MgAuditLogProvisioning PSCommand_Get-MgAuditLogProvisioning PSFunction_Get-MgAuditLogProvisioningCount PSCommand_Get-MgAuditLogProvisioningCount PSFunction_Get-MgAuditLogSignIn PSCommand_Get-MgAuditLogSignIn PSFunction_Get-MgAuditLogSignInCount PSCommand_Get-MgAuditLogSignInCount PSFunction_Get-MgDeviceManagementReport PSCommand_Get-MgDeviceManagementReport PSFunction_Get-MgDeviceManagementReportExportJob PSCommand_Get-MgDeviceManagementReportExportJob PSFunction_Get-MgDeviceManagementReportExportJobCount PSCommand_Get-MgDeviceManagementReportExportJobCount PSFunction_Get-MgReportAuthenticationMethod PSCommand_Get-MgReportAuthenticationMethod PSFunction_Get-MgReportAuthenticationMethodUserRegistrationDetail PSCommand_Get-MgReportAuthenticationMethodUserRegistrationDetail PSFunction_Get-MgReportAuthenticationMethodUserRegistrationDetailCount PSCommand_Get-MgReportAuthenticationMethodUserRegistrationDetailCount PSFunction_Get-MgReportDailyPrintUsageByPrinter PSCommand_Get-MgReportDailyPrintUsageByPrinter PSFunction_Get-MgReportDailyPrintUsageByPrinterCount PSCommand_Get-MgReportDailyPrintUsageByPrinterCount PSFunction_Get-MgReportDailyPrintUsageByUser PSCommand_Get-MgReportDailyPrintUsageByUser PSFunction_Get-MgReportDailyPrintUsageByUserCount PSCommand_Get-MgReportDailyPrintUsageByUserCount PSFunction_Get-MgReportDeviceConfigurationDeviceActivity PSCommand_Get-MgReportDeviceConfigurationDeviceActivity PSFunction_Get-MgReportDeviceConfigurationUserActivity PSCommand_Get-MgReportDeviceConfigurationUserActivity PSFunction_Get-MgReportEmailActivityCount PSCommand_Get-MgReportEmailActivityCount PSFunction_Get-MgReportEmailActivityUserCount PSCommand_Get-MgReportEmailActivityUserCount PSFunction_Get-MgReportEmailActivityUserDetail PSCommand_Get-MgReportEmailActivityUserDetail PSFunction_Get-MgReportEmailAppUsageAppUserCount PSCommand_Get-MgReportEmailAppUsageAppUserCount PSFunction_Get-MgReportEmailAppUsageUserCount PSCommand_Get-MgReportEmailAppUsageUserCount PSFunction_Get-MgReportEmailAppUsageUserDetail PSCommand_Get-MgReportEmailAppUsageUserDetail PSFunction_Get-MgReportEmailAppUsageVersionUserCount PSCommand_Get-MgReportEmailAppUsageVersionUserCount PSFunction_Get-MgReportGroupArchivedPrintJob PSCommand_Get-MgReportGroupArchivedPrintJob PSFunction_Get-MgReportM365AppPlatformUserCount PSCommand_Get-MgReportM365AppPlatformUserCount PSFunction_Get-MgReportM365AppUserCount PSCommand_Get-MgReportM365AppUserCount PSFunction_Get-MgReportM365AppUserDetail PSCommand_Get-MgReportM365AppUserDetail PSFunction_Get-MgReportMailboxUsageDetail PSCommand_Get-MgReportMailboxUsageDetail PSFunction_Get-MgReportMailboxUsageMailboxCount PSCommand_Get-MgReportMailboxUsageMailboxCount PSFunction_Get-MgReportMailboxUsageQuotaStatusMailboxCount PSCommand_Get-MgReportMailboxUsageQuotaStatusMailboxCount PSFunction_Get-MgReportMailboxUsageStorage PSCommand_Get-MgReportMailboxUsageStorage PSFunction_Get-MgReportManagedDeviceEnrollmentFailureDetail PSCommand_Get-MgReportManagedDeviceEnrollmentFailureDetail PSFunction_Get-MgReportManagedDeviceEnrollmentTopFailure PSCommand_Get-MgReportManagedDeviceEnrollmentTopFailure PSFunction_Get-MgReportMonthlyPrintUsageByPrinter PSCommand_Get-MgReportMonthlyPrintUsageByPrinter PSFunction_Get-MgReportMonthlyPrintUsageByPrinterCount PSCommand_Get-MgReportMonthlyPrintUsageByPrinterCount PSFunction_Get-MgReportMonthlyPrintUsageByUser PSCommand_Get-MgReportMonthlyPrintUsageByUser PSFunction_Get-MgReportMonthlyPrintUsageByUserCount PSCommand_Get-MgReportMonthlyPrintUsageByUserCount PSFunction_Get-MgReportOffice365ActivationCount PSCommand_Get-MgReportOffice365ActivationCount PSFunction_Get-MgReportOffice365ActivationUserCount PSCommand_Get-MgReportOffice365ActivationUserCount PSFunction_Get-MgReportOffice365ActivationUserDetail PSCommand_Get-MgReportOffice365ActivationUserDetail PSFunction_Get-MgReportOffice365ActiveUserCount PSCommand_Get-MgReportOffice365ActiveUserCount PSFunction_Get-MgReportOffice365ActiveUserDetail PSCommand_Get-MgReportOffice365ActiveUserDetail PSFunction_Get-MgReportOffice365GroupActivityCount PSCommand_Get-MgReportOffice365GroupActivityCount PSFunction_Get-MgReportOffice365GroupActivityDetail PSCommand_Get-MgReportOffice365GroupActivityDetail PSFunction_Get-MgReportOffice365GroupActivityFileCount PSCommand_Get-MgReportOffice365GroupActivityFileCount PSFunction_Get-MgReportOffice365GroupActivityGroupCount PSCommand_Get-MgReportOffice365GroupActivityGroupCount PSFunction_Get-MgReportOffice365GroupActivityStorage PSCommand_Get-MgReportOffice365GroupActivityStorage PSFunction_Get-MgReportOffice365ServiceUserCount PSCommand_Get-MgReportOffice365ServiceUserCount PSFunction_Get-MgReportOneDriveActivityFileCount PSCommand_Get-MgReportOneDriveActivityFileCount PSFunction_Get-MgReportOneDriveActivityUserCount PSCommand_Get-MgReportOneDriveActivityUserCount PSFunction_Get-MgReportOneDriveActivityUserDetail PSCommand_Get-MgReportOneDriveActivityUserDetail PSFunction_Get-MgReportOneDriveUsageAccountCount PSCommand_Get-MgReportOneDriveUsageAccountCount PSFunction_Get-MgReportOneDriveUsageAccountDetail PSCommand_Get-MgReportOneDriveUsageAccountDetail PSFunction_Get-MgReportOneDriveUsageFileCount PSCommand_Get-MgReportOneDriveUsageFileCount PSFunction_Get-MgReportOneDriveUsageStorage PSCommand_Get-MgReportOneDriveUsageStorage PSFunction_Get-MgReportPartner PSCommand_Get-MgReportPartner PSFunction_Get-MgReportPartnerBilling PSCommand_Get-MgReportPartnerBilling PSFunction_Get-MgReportPartnerBillingManifest PSCommand_Get-MgReportPartnerBillingManifest PSFunction_Get-MgReportPartnerBillingManifestCount PSCommand_Get-MgReportPartnerBillingManifestCount PSFunction_Get-MgReportPartnerBillingOperation PSCommand_Get-MgReportPartnerBillingOperation PSFunction_Get-MgReportPartnerBillingOperationCount PSCommand_Get-MgReportPartnerBillingOperationCount PSFunction_Get-MgReportPartnerBillingReconciliation PSCommand_Get-MgReportPartnerBillingReconciliation PSFunction_Get-MgReportPartnerBillingReconciliationBilled PSCommand_Get-MgReportPartnerBillingReconciliationBilled PSFunction_Get-MgReportPartnerBillingUsage PSCommand_Get-MgReportPartnerBillingUsage PSFunction_Get-MgReportPartnerBillingUsageBilled PSCommand_Get-MgReportPartnerBillingUsageBilled PSFunction_Get-MgReportPartnerBillingUsageUnbilled PSCommand_Get-MgReportPartnerBillingUsageUnbilled PSFunction_Get-MgReportPrinterArchivedPrintJob PSCommand_Get-MgReportPrinterArchivedPrintJob PSFunction_Get-MgReportRelyingPartyDetailedSummary PSCommand_Get-MgReportRelyingPartyDetailedSummary PSFunction_Get-MgReportSecurity PSCommand_Get-MgReportSecurity PSFunction_Get-MgReportSecurityAttackSimulationRepeatOffender PSCommand_Get-MgReportSecurityAttackSimulationRepeatOffender PSFunction_Get-MgReportSecurityAttackSimulationTrainingUserCoverage PSCommand_Get-MgReportSecurityAttackSimulationTrainingUserCoverage PSFunction_Get-MgReportSecurityAttackSimulationUserCoverage PSCommand_Get-MgReportSecurityAttackSimulationUserCoverage PSFunction_Get-MgReportSharePointActivityFileCount PSCommand_Get-MgReportSharePointActivityFileCount PSFunction_Get-MgReportSharePointActivityPage PSCommand_Get-MgReportSharePointActivityPage PSFunction_Get-MgReportSharePointActivityUserCount PSCommand_Get-MgReportSharePointActivityUserCount PSFunction_Get-MgReportSharePointActivityUserDetail PSCommand_Get-MgReportSharePointActivityUserDetail PSFunction_Get-MgReportSharePointSiteUsageDetail PSCommand_Get-MgReportSharePointSiteUsageDetail PSFunction_Get-MgReportSharePointSiteUsageFileCount PSCommand_Get-MgReportSharePointSiteUsageFileCount PSFunction_Get-MgReportSharePointSiteUsagePage PSCommand_Get-MgReportSharePointSiteUsagePage PSFunction_Get-MgReportSharePointSiteUsageSiteCount PSCommand_Get-MgReportSharePointSiteUsageSiteCount PSFunction_Get-MgReportSharePointSiteUsageStorage PSCommand_Get-MgReportSharePointSiteUsageStorage PSFunction_Get-MgReportSkypeForBusinessActivityCount PSCommand_Get-MgReportSkypeForBusinessActivityCount PSFunction_Get-MgReportSkypeForBusinessActivityUserCount PSCommand_Get-MgReportSkypeForBusinessActivityUserCount PSFunction_Get-MgReportSkypeForBusinessActivityUserDetail PSCommand_Get-MgReportSkypeForBusinessActivityUserDetail PSFunction_Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount PSCommand_Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount PSFunction_Get-MgReportSkypeForBusinessDeviceUsageUserCount PSCommand_Get-MgReportSkypeForBusinessDeviceUsageUserCount PSFunction_Get-MgReportSkypeForBusinessDeviceUsageUserDetail PSCommand_Get-MgReportSkypeForBusinessDeviceUsageUserDetail PSFunction_Get-MgReportSkypeForBusinessOrganizerActivityCount PSCommand_Get-MgReportSkypeForBusinessOrganizerActivityCount PSFunction_Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount PSCommand_Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount PSFunction_Get-MgReportSkypeForBusinessOrganizerActivityUserCount PSCommand_Get-MgReportSkypeForBusinessOrganizerActivityUserCount PSFunction_Get-MgReportSkypeForBusinessParticipantActivityCount PSCommand_Get-MgReportSkypeForBusinessParticipantActivityCount PSFunction_Get-MgReportSkypeForBusinessParticipantActivityMinuteCount PSCommand_Get-MgReportSkypeForBusinessParticipantActivityMinuteCount PSFunction_Get-MgReportSkypeForBusinessParticipantActivityUserCount PSCommand_Get-MgReportSkypeForBusinessParticipantActivityUserCount PSFunction_Get-MgReportSkypeForBusinessPeerToPeerActivityCount PSCommand_Get-MgReportSkypeForBusinessPeerToPeerActivityCount PSFunction_Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount PSCommand_Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount PSFunction_Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount PSCommand_Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount PSFunction_Get-MgReportTeamActivityCount PSCommand_Get-MgReportTeamActivityCount PSFunction_Get-MgReportTeamActivityDetail PSCommand_Get-MgReportTeamActivityDetail PSFunction_Get-MgReportTeamActivityDistributionCount PSCommand_Get-MgReportTeamActivityDistributionCount PSFunction_Get-MgReportTeamCount PSCommand_Get-MgReportTeamCount PSFunction_Get-MgReportTeamDeviceUsageDistributionUserCount PSCommand_Get-MgReportTeamDeviceUsageDistributionUserCount PSFunction_Get-MgReportTeamDeviceUsageUserCount PSCommand_Get-MgReportTeamDeviceUsageUserCount PSFunction_Get-MgReportTeamDeviceUsageUserDetail PSCommand_Get-MgReportTeamDeviceUsageUserDetail PSFunction_Get-MgReportTeamUserActivityCount PSCommand_Get-MgReportTeamUserActivityCount PSFunction_Get-MgReportTeamUserActivityUserCount PSCommand_Get-MgReportTeamUserActivityUserCount PSFunction_Get-MgReportTeamUserActivityUserDetail PSCommand_Get-MgReportTeamUserActivityUserDetail PSFunction_Get-MgReportUserArchivedPrintJob PSCommand_Get-MgReportUserArchivedPrintJob PSFunction_Get-MgReportYammerActivityCount PSCommand_Get-MgReportYammerActivityCount PSFunction_Get-MgReportYammerActivityUserCount PSCommand_Get-MgReportYammerActivityUserCount PSFunction_Get-MgReportYammerActivityUserDetail PSCommand_Get-MgReportYammerActivityUserDetail PSFunction_Get-MgReportYammerDeviceUsageDistributionUserCount PSCommand_Get-MgReportYammerDeviceUsageDistributionUserCount PSFunction_Get-MgReportYammerDeviceUsageUserCount PSCommand_Get-MgReportYammerDeviceUsageUserCount PSFunction_Get-MgReportYammerDeviceUsageUserDetail PSCommand_Get-MgReportYammerDeviceUsageUserDetail PSFunction_Get-MgReportYammerGroupActivityCount PSCommand_Get-MgReportYammerGroupActivityCount PSFunction_Get-MgReportYammerGroupActivityDetail PSCommand_Get-MgReportYammerGroupActivityDetail PSFunction_Get-MgReportYammerGroupActivityGroupCount PSCommand_Get-MgReportYammerGroupActivityGroupCount PSFunction_Invoke-MgGraphReportAuthenticationMethod PSCommand_Invoke-MgGraphReportAuthenticationMethod PSFunction_New-MgReportAuthenticationMethodUserRegistrationDetail PSCommand_New-MgReportAuthenticationMethodUserRegistrationDetail PSFunction_New-MgReportPartnerBillingManifest PSCommand_New-MgReportPartnerBillingManifest PSFunction_New-MgReportPartnerBillingOperation PSCommand_New-MgReportPartnerBillingOperation PSFunction_Remove-MgAdminReportSetting PSCommand_Remove-MgAdminReportSetting PSFunction_Remove-MgDeviceManagementReport PSCommand_Remove-MgDeviceManagementReport PSFunction_Remove-MgReportAuthenticationMethodUserRegistrationDetail PSCommand_Remove-MgReportAuthenticationMethodUserRegistrationDetail PSFunction_Remove-MgReportPartnerBilling PSCommand_Remove-MgReportPartnerBilling PSFunction_Remove-MgReportPartnerBillingManifest PSCommand_Remove-MgReportPartnerBillingManifest PSFunction_Remove-MgReportPartnerBillingOperation PSCommand_Remove-MgReportPartnerBillingOperation PSFunction_Remove-MgReportPartnerBillingReconciliation PSCommand_Remove-MgReportPartnerBillingReconciliation PSFunction_Remove-MgReportPartnerBillingReconciliationBilled PSCommand_Remove-MgReportPartnerBillingReconciliationBilled PSFunction_Remove-MgReportPartnerBillingUsage PSCommand_Remove-MgReportPartnerBillingUsage PSFunction_Remove-MgReportPartnerBillingUsageBilled PSCommand_Remove-MgReportPartnerBillingUsageBilled PSFunction_Remove-MgReportPartnerBillingUsageUnbilled PSCommand_Remove-MgReportPartnerBillingUsageUnbilled PSFunction_Update-MgAdminReportSetting PSCommand_Update-MgAdminReportSetting PSFunction_Update-MgDeviceManagementReport PSCommand_Update-MgDeviceManagementReport PSFunction_Update-MgReportAuthenticationMethodUserRegistrationDetail PSCommand_Update-MgReportAuthenticationMethodUserRegistrationDetail PSFunction_Update-MgReportPartnerBilling PSCommand_Update-MgReportPartnerBilling PSFunction_Update-MgReportPartnerBillingManifest PSCommand_Update-MgReportPartnerBillingManifest PSFunction_Update-MgReportPartnerBillingOperation PSCommand_Update-MgReportPartnerBillingOperation PSFunction_Update-MgReportPartnerBillingReconciliation PSCommand_Update-MgReportPartnerBillingReconciliation PSFunction_Update-MgReportPartnerBillingReconciliationBilled PSCommand_Update-MgReportPartnerBillingReconciliationBilled PSFunction_Update-MgReportPartnerBillingUsage PSCommand_Update-MgReportPartnerBillingUsage PSFunction_Update-MgReportPartnerBillingUsageBilled PSCommand_Update-MgReportPartnerBillingUsageBilled PSFunction_Update-MgReportPartnerBillingUsageUnbilled PSCommand_Update-MgReportPartnerBillingUsageUnbilled PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-12-27T13:50:00Z</S>
+          <S N="NormalizedVersion">2.25.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.Reports.nuspec|Microsoft.Graph.Reports.format.ps1xml|Microsoft.Graph.Reports.psd1|Microsoft.Graph.Reports.psm1|bin\Microsoft.Graph.Reports.private.dll|bin\Microsoft.Graph.Reports.private.deps.json|internal\Microsoft.Graph.Reports.internal.psm1|custom\Microsoft.Graph.Reports.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">0bfc88b7-a8ad-471a-8c86-5f0aa3c84217</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DennisGentles\OneDrive - CloudFirst Technology Solutions, Inc\Documents\PowerShell\Modules\Microsoft.Graph.Reports\2.25.0</S>
+    </MS>
+  </Obj>
+</Objs>
