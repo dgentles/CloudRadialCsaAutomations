@@ -84,14 +84,13 @@ write-host $base64AuthInfo
     Write-Host "API response: $($response | ConvertTo-Json -Depth 4)"
 }
 
-$CompanyId = $Request.Body.CompanyId
-$CompanyId2 = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "CompanyId" }).Value
+#$CompanyId = $Request.Body.CompanyId
+$CompanyId = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "CompanyId" }).Value
 
 #$companyId = $Request.Body.Ticket.Questions.find(question => question.Id === "CompanyId").Value; - Error Java Script Code
 $tenantId = $Request.Body.Company.CompanyTenantId
 $SecurityKey = $env:SecurityKey
 Write-Host "The Company ID is: $Request.Body.CompanyId"
-Write-Host "The Company ID is: $CompanyId2"
 Write-Host "The Company ID is: $CompanyId"
 if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
     Write-Host "Invalid security key"
