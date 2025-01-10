@@ -69,7 +69,7 @@ function Set-CloudRadialToken {
 write-host $base64AuthInfo
 
     $body = @{
-        "companyId" = $CompanyId
+        "CompanyId" = $CompanyId
         "token" = "$Token"
         "value" = "$GroupList"
     }
@@ -84,8 +84,9 @@ write-host $base64AuthInfo
     Write-Host "API response: $($response | ConvertTo-Json -Depth 4)"
 }
 
-$companyId = $Request.Body.CompanyId
-$tenantId = $Request.Body.TenantId
+$TenantId = $Request.Body.TenantId
+$TicketId = $Request.Body.TicketId
+$CompanyId = $Request.Body.CompanyId
 $SecurityKey = $env:SecurityKey
 
 if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
@@ -93,8 +94,8 @@ if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
     break;
 }
 
-if (-Not $companyId) {
-    $companyId = 1
+if (-Not $CompanyId) {
+    $CompanyId = 1
 }
 
 if (-Not $tenantId) {
