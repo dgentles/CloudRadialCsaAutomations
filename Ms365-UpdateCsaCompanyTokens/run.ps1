@@ -85,12 +85,14 @@ write-host $base64AuthInfo
 }
 
 $CompanyId = $Request.Body.CompanyId
-#$companyId = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "CompanyId" }).Value
+$CompanyId2 = ($Request.Body.Ticket.Questions | Where-Object { $_.Id -eq "CompanyId" }).Value
 
 #$companyId = $Request.Body.Ticket.Questions.find(question => question.Id === "CompanyId").Value; - Error Java Script Code
 $tenantId = $Request.Body.Company.CompanyTenantId
 $SecurityKey = $env:SecurityKey
-Write-Host "The Company ID is: $CompanyId."
+Write-Host "The Company ID is: $Request.Body.CompanyId"
+Write-Host "The Company ID is: $CompanyId2"
+Write-Host "The Company ID is: $CompanyId"
 if ($SecurityKey -And $SecurityKey -ne $Request.Headers.SecurityKey) {
     Write-Host "Invalid security key"
     break;
