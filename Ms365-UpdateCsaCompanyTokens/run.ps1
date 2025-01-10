@@ -69,7 +69,7 @@ function Set-CloudRadialToken {
 write-host $base64AuthInfo
 
     $body = @{
-        "companyId" = $CompanyId
+        "CompanyId" = $CompanyId
         "token" = "$Token"
         "value" = "$GroupList"
     }
