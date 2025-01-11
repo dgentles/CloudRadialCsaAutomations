@@ -3,9 +3,9 @@ Import-Module Az.Accounts
 Import-Module Az.Functions
 
 # Authenticate to Partner Center API
-$tenantId = "<Your-Tenant-ID>"
-$clientId = "<Your-Client-ID>"
-$clientSecret = "<Your-Client-Secret>"
+$tenantId = $env:Ms365_TenantId
+$clientId = $env:Ms365_AuthAppId     
+$clientSecret = $env:Ms365_AuthSecretId
 $resource = "https://api.partnercenter.microsoft.com"
 $authContext = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.microsoftonline.com/$tenantId")
 $authResult = $authContext.AcquireTokenAsync($resource, [Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential]::new($clientId, $clientSecret)).Result
@@ -19,12 +19,12 @@ $pricingUrls = @(
 )
 
 # Save the CSVs to a SharePoint folder
-$sharepointSiteUrl = "<Your-SharePoint-Site-URL>"
-$sharepointFolderPath = "<Your-SharePoint-Folder-Path>"
+$sharepointSiteUrl = "https://palaisparc.sharepoint.com/sites/SalesMarketingTeam-Marketing"
+$sharepointFolderPath = "/Shared Documents/Marketing/MicrosoftPriceLists"
 
 # Authenticate to SharePoint
 $sharepointContext = [Microsoft.SharePoint.Client.ClientContext]::new($sharepointSiteUrl)
-$sharepointContext.Credentials = [Microsoft.SharePoint.Client.SharePointOnlineCredentials]::new("<Your-SharePoint-Username>", (ConvertTo-SecureString "<Your-SharePoint-Password>" -AsPlainText -Force))
+$sharepointContext.Credentials = [Microsoft.SharePoint.Client.SharePointOnlineCredentials]::new("microsoft@cloudfirstinc.com", (ConvertTo-SecureString "Pr1c1ing1!" -AsPlainText -Force))
 
 foreach ($pricingUrl in $pricingUrls) {
     # Download the pricing CSV
