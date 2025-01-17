@@ -1,8 +1,6 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-#name: Azure Login
-#uses: Azure/login@v2.2.0
-            
+
 name: Build and deploy Powershell project to Azure Function App - CloudFirstFunctions
 
 on:
@@ -29,4 +27,4 @@ jobs:
           app-name: 'CloudFirstFunctions'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E0C5B3FBB1C24C8B92A0FD2FDD8BB534 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D39BC83526DA4280BD4A28BE76B1D1A5 }}
