@@ -51,7 +51,7 @@ param($Request, $TriggerMetadata)
 # Utility: Logging
 # -------------------------------
 
-$CorrelationId = [guid]::
+$CorrelationId = [guid]::NewGuid().ToString()
 $DebugEnabled = ($env:DebugLogging -eq "1")
 
 function Write-Info {
@@ -126,7 +126,7 @@ function New-ConnectWiseHeaders {
     )
 
     $authString = "{0}+{1}:{2}" -f $CompanyId, $PublicKey, $PrivateKey
-    $encodedAuth = [Convert]::
+    $encodedAuth = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($authString))
 
     return @{
         "Authorization" = "Basic {0}" -f $encodedAuth
@@ -195,7 +195,7 @@ function Invoke-ConnectWiseApi {
                 $sleepSeconds = [int]$retryAfter
             }
             else {
-                $sleepSeconds = [Math]:: [Math]:: $attempt))
+                $sleepSeconds = [Math]::Pow(2, $attempt) + 1
             }
 
             Write-Info ("Retrying in {0} seconds" -f $sleepSeconds)
@@ -230,7 +230,7 @@ function Get-RequestBodyObject {
     }
 
     if ($Request.Body -is [string]) {
-        if ([string]:: {
+        if ([string]::IsNullOrWhiteSpace($Request.Body)) {
             return $null
         }
 
@@ -255,21 +255,21 @@ function Get-InputValue {
     foreach ($name in $Names) {
         if ($Body) {
             $bodyProp = $Body.PSObject.Properties[$name]
-            if ($bodyProp -and -not [string]:: {
+            if ($bodyProp -and -not [string]::IsNullOrWhiteSpace([string]$bodyProp.Value)) {
                 return [string]$bodyProp.Value
             }
         }
 
         if ($Request.Query) {
             $queryValue = $Request.Query[$name]
-            if (-not [string]:: {
+            if (-not [string]::IsNullOrWhiteSpace([string]$queryValue)) {
                 return [string]$queryValue
             }
         }
 
         if ($Request.Headers) {
             $headerValue = $Request.Headers[$name]
-            if (-not [string]:: {
+            if (-not [string]::IsNullOrWhiteSpace([string]$headerValue)) {
                 return [string]$headerValue
             }
         }
@@ -467,12 +467,12 @@ function New-CopilotDispatchContext {
 
     $noteText = @()
     foreach ($note in $Notes) {
-        $text = $note.text
-        if ([string]:: {
+            $text = $note.text
+        if ([string]::IsNullOrWhiteSpace([string]$text)) {
             $text = $note.detailDescription
         }
 
-        if (-not [string]:: {
+        if (-not [string]::IsNullOrWhiteSpace([string]$text)) {
             $noteText += ("Note [{0}] by {1}: {2}" -f $note.dateCreated, $note.createdBy, $text)
         }
     }
@@ -576,10 +576,10 @@ function New-CopilotDispatchContext {
             missingFields   = $missingFields
             hasNotes        = ($Notes.Count -gt 0)
             noteCount       = $Notes.Count
-            hasAgreement    = (-not [string]::
-            hasCategory     = (-not [string]::
-            hasSubcategory  = (-not [string]::
-            hasItem         = (-not [string]::
+            hasAgreement    = (-not [string]::IsNullOrWhiteSpace([string]$Ticket.agreement.name))
+            hasCategory     = (-not [string]::IsNullOrWhiteSpace([string]$Ticket.type.name))
+            hasSubcategory  = (-not [string]::IsNullOrWhiteSpace([string]$Ticket.subType.name))
+            hasItem         = (-not [string]::IsNullOrWhiteSpace([string]$Ticket.item.name))
         }
 
         agentInstructions = @{
@@ -651,7 +651,7 @@ try {
     $SecurityKey = $env:SecurityKey
 
     if ($SecurityKey -and $SecurityKey -ne $RequestSecurityKey -and $SecurityKey -ne $Request.Headers.SecurityKey) {
-        Send-JsonResponse -StatusCode ([HttpStatusCode]:: -Body @{
+        Send-JsonResponse -StatusCode ([HttpStatusCode]::Unauthorized) -Body @{
             success       = $false
             correlationId = $CorrelationId
             error         = "Invalid security key."
@@ -660,7 +660,7 @@ try {
     }
 
     if (-not $TicketId) {
-        Send-JsonResponse -StatusCode ([HttpStatusCode]:: -Body @{
+        Send-JsonResponse -StatusCode ([HttpStatusCode]::BadRequest) -Body @{
             success       = $false
             correlationId = $CorrelationId
             error         = "Missing TicketId. Provide TicketId in the JSON body, query string, or header."
@@ -679,13 +679,14 @@ try {
     $missingSettings = @()
 
     foreach ($setting in $requiredSettings) {
-        if ([string]::IsNullOrWhiteSpace([string](:).Value)) {
+        $value = Get-Item -Path Env:$setting -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Value
+        if ([string]::IsNullOrWhiteSpace([string]$value)) {
             $missingSettings += $setting
         }
     }
 
     if ($missingSettings.Count -gt 0) {
-        Send-JsonResponse -StatusCode ([HttpStatusCode]:: -Body @{
+        Send-JsonResponse -StatusCode ([HttpStatusCode]::InternalServerError) -Body @{
             success         = $false
             correlationId   = $CorrelationId
             error           = "Missing required application settings."
@@ -786,13 +787,13 @@ try {
         }
     }
 
-    Send-JsonResponse -StatusCode ([HttpStatusCode]:: -Body $response
+    Send-JsonResponse -StatusCode ([HttpStatusCode]::OK) -Body $response
 }
 catch {
     $errorMessage = $_.Exception.Message
     Write-ErrorLog $errorMessage
 
-    Send-JsonResponse -StatusCode ([HttpStatusCode]:: -Body @{
+    Send-JsonResponse -StatusCode ([HttpStatusCode]::InternalServerError) -Body @{
         success       = $false
         correlationId = $CorrelationId
         error         = $errorMessage
