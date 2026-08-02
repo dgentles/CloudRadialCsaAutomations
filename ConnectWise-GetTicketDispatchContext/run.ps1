@@ -617,6 +617,15 @@ try {
 
     $body = Get-RequestBodyObject -Request $Request
 
+    Write-Host "BODY TYPE:"
+    Write-Host ($Request.Body.GetType().FullName)
+
+    Write-Host "BODY CONTENT:"
+    Write-Host ($Request.Body | ConvertTo-Json -Depth 10)
+
+    Write-Host "QUERY:"
+    Write-Host ($Request.Query | ConvertTo-Json -Depth 10)
+
     $TicketId = Get-InputValue -Request $Request -Body $body -Names @("TicketId", "ticketId", "id")
     $RequestSecurityKey = Get-InputValue -Request $Request -Body $body -Names @("SecurityKey", "securityKey")
 
