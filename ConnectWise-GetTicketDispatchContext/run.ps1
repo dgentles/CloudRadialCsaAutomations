@@ -254,9 +254,29 @@ function Get-InputValue {
 
     foreach ($name in $Names) {
         if ($Body) {
-            $bodyProp = $Body.PSObject.Properties[$name]
-            if ($bodyProp -and -not [string]::IsNullOrWhiteSpace([string]$bodyProp.Value)) {
-                return [string]$bodyProp.Value
+            # If body is a hashtable/ordered dictionary, access by key
+            if ($Body -is [System.Collections.IDictionary]) {
+                if ($Body.Contains($name)) {
+                    $val = $Body[$name]
+                    if (-not [string]::IsNullOrWhiteSpace([string]$val)) { return [string]$val }
+                }
+
+                # try case-insensitive key match
+                $matchedKey = $Body.Keys | Where-Object { $_ -eq $name -or $_.ToString().ToLower() -eq $name.ToLower() } | Select-Object -First 1
+                if ($matchedKey) {
+                    $val = $Body[$matchedKey]
+                    if (-not [string]::IsNullOrWhiteSpace([string]$val)) { return [string]$val }
+                }
+            }
+            else {
+                $bodyProp = $Body.PSObject.Properties[$name]
+                if ($bodyProp -and -not [string]::IsNullOrWhiteSpace([string]$bodyProp.Value)) {
+                    return [string]$bodyProp.Value
+                }
+
+                # try case-insensitive property name
+                $prop = $Body.PSObject.Properties | Where-Object { $_.Name -eq $name -or $_.Name.ToLower() -eq $name.ToLower() } | Select-Object -First 1
+                if ($prop -and -not [string]::IsNullOrWhiteSpace([string]$prop.Value)) { return [string]$prop.Value }
             }
         }
 
@@ -265,12 +285,26 @@ function Get-InputValue {
             if (-not [string]::IsNullOrWhiteSpace([string]$queryValue)) {
                 return [string]$queryValue
             }
+
+            foreach ($key in $Request.Query.Keys) {
+                if ($key -eq $name -or $key.ToString().ToLower() -eq $name.ToLower()) {
+                    $qv = $Request.Query[$key]
+                    if (-not [string]::IsNullOrWhiteSpace([string]$qv)) { return [string]$qv }
+                }
+            }
         }
 
         if ($Request.Headers) {
             $headerValue = $Request.Headers[$name]
             if (-not [string]::IsNullOrWhiteSpace([string]$headerValue)) {
                 return [string]$headerValue
+            }
+
+            foreach ($key in $Request.Headers.Keys) {
+                if ($key -eq $name -or $key.ToString().ToLower() -eq $name.ToLower()) {
+                    $hv = $Request.Headers[$key]
+                    if (-not [string]::IsNullOrWhiteSpace([string]$hv)) { return [string]$hv }
+                }
             }
         }
     }
