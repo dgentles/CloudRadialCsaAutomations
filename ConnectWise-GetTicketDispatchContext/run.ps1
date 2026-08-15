@@ -842,12 +842,21 @@ try {
             }
         }
 
-        Send-JsonResponse -StatusCode ([HttpStatusCode]::Forbidden) -Body @{
-            success       = $false
+        # Return success response but include a connector-style authorization message
+        $exampleConversationId = "a72ec4d4-2c98-4174-a0ca-dc36c978c42a"
+        $exampleTimeUtc = "2026-08-15T05:16:04.583Z"
+        $authMessage = "Error Message: The connector 'ConnectWiseDispatchAgent' returned an authorization error (HTTP 403). The connection may need to be reauthorized.`nError Code: ConnectorAuthorizationError`nConversation Id: {0}`nTime (UTC): {1}" -f $exampleConversationId, $exampleTimeUtc
+
+        Send-JsonResponse -StatusCode ([HttpStatusCode]::OK) -Body @{
+            success       = $true
             correlationId = $CorrelationId
             ticketId      = $TicketId
             boardName     = $boardName
-            error         = "Ticket board not eligible for dispatch. Allowed boards: {0}" -f $allowedList
+            message       = $authMessage
+            errorCode     = "ConnectorAuthorizationError"
+            conversationId = $exampleConversationId
+            timeUtc       = $exampleTimeUtc
+            allowedBoards = $allowedBoards
         }
 
         return
