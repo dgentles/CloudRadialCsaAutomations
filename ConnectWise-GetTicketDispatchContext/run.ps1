@@ -753,6 +753,106 @@ try {
         -TicketId $TicketId `
         -Headers $headers
 
+    # -------------------------------
+    # Board filtering: allow only specific service or project boards
+    # Configure via environment variables:
+    #  - ConnectWisePsa_AllowedServiceBoards (comma-separated)
+    #  - ConnectWisePsa_AllowedProjectBoards (comma-separated)
+    # If neither is set, defaults to Service Desk, Projects, Engineering.
+    $boardName = $null
+    try { $boardName = $ticket.board.name } catch { $boardName = $null }
+
+    $allowedServiceEnv = $env:ConnectWisePsa_AllowedServiceBoards
+    $allowedProjectEnv = $env:ConnectWisePsa_AllowedProjectBoards
+
+    $allowedBoards = @()
+
+    if (-not [string]::IsNullOrWhiteSpace($allowedServiceEnv)) {
+        $allowedBoards += ($allowedServiceEnv -split ',') | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' }
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($allowedProjectEnv)) {
+        $allowedBoards += ($allowedProjectEnv -split ',') | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' }
+    }
+
+    if ($allowedBoards.Count -eq 0) {
+        $allowedServiceDefaults = @(
+            'AutomateBoard',
+            'Managed Service Alerts',
+            'Managed Services Board',
+            'Service Desk',
+            'Network',
+            'Security & Monitoring',
+            'Test Board'
+        )
+
+        $allowedProjectDefaults = @(
+            'Engineering',
+            'Engin',
+            'Change Management',
+            'CWRMM'
+        )
+
+        $allowedBoards = $allowedServiceDefaults + $allowedProjectDefaults
+    }
+
+    $boardNormalized = ''
+    if ($boardName) { $boardNormalized = $boardName.ToString().Trim().ToLower() }
+
+    $isAllowed = $false
+    foreach ($b in $allowedBoards) {
+        if ($b.ToString().Trim().ToLower() -eq $boardNormalized) {
+            $isAllowed = $true
+            break
+        }
+    }
+
+    if (-not $isAllowed) {
+        $allowedList = ($allowedBoards -join ', ')
+        Write-Info ("Ticket {0} is on board '{1}' which is not in the allowed boards list." -f $TicketId, $boardName)
+
+        # Structured blocked-ticket log for metrics/alerts
+        $blockedLog = @{
+            event = 'BLOCKED_TICKET'
+            correlationId = $CorrelationId
+            ticketId = $TicketId
+            boardName = $boardName
+            allowedBoards = $allowedBoards
+            timestampUtc = (Get-Date).ToUniversalTime().ToString('o')
+        }
+
+        try {
+            Write-Info ("BLOCKED_TICKET: {0}" -f ($blockedLog | ConvertTo-Json -Depth 5))
+        }
+        catch {
+            Write-Info ("BLOCKED_TICKET: ticketId={0} board={1}" -f $TicketId, $boardName)
+        }
+
+        # Optional webhook for metrics: set ConnectWisePsa_BlockedTicketWebhook to a URL
+        if (-not [string]::IsNullOrWhiteSpace($env:ConnectWisePsa_BlockedTicketWebhook)) {
+            try {
+                $webhookUrl = $env:ConnectWisePsa_BlockedTicketWebhook
+                $headersForWebhook = @{ 'Content-Type' = 'application/json' }
+                $bodyJson = $blockedLog | ConvertTo-Json -Depth 10
+                Invoke-RestMethod -Uri $webhookUrl -Method Post -Headers $headersForWebhook -Body $bodyJson -ErrorAction Stop
+                Write-Info "Blocked-ticket webhook POST succeeded."
+            }
+            catch {
+                Write-ErrorLog ("Failed to POST blocked-ticket webhook: {0}" -f $_.Exception.Message)
+            }
+        }
+
+        Send-JsonResponse -StatusCode ([HttpStatusCode]::Forbidden) -Body @{
+            success       = $false
+            correlationId = $CorrelationId
+            ticketId      = $TicketId
+            boardName     = $boardName
+            error         = "Ticket board not eligible for dispatch. Allowed boards: {0}" -f $allowedList
+        }
+
+        return
+    }
+
     $notes = @()
     if ($IncludeNotes) {
         Write-Info ("Retrieving up to {0} notes for ticket {1}" -f $MaxNotes, $TicketId)
